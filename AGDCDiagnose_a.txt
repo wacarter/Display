@@ -1,0 +1,2247 @@
+AGDCDiagnose Version: 5.2.7.7
+### Start: GPUWrangler #######################################################
+Stats: GPUCAdded:1 GpuAdded:3 Eject:0/f0/fd0/c0 Remove:0/t0 Un:0
+
+gpu 0x314a flags 0xb2000010 (IG,published,quiet,pubSched,pubArmed) vid.did=8086.591b b:d:f=0:2:0 
+gpu 0x314a        pci 0x100000293 IOService:/AppleACPIPlatformExpert/PCI0@0/AppleACPIPCI/IGPU@2
+gpu 0x314a       agdc 0x100000629     /AppleIntelFramebufferController/IntelFBClientControl
+gpu 0x314a       gpuc 0x000000000 
+gpu 0x314a agdpclient 0x000000000 
+gpu 0x314a      accel 0x1000005d1     /IntelAccelerator
+gpu 0x314a      fb0:0 0x1000005d5     /AppleIntelFramebuffer@0
+
+gpu 0x9ff5 flags 0xbe000020 (DG,published,driversStarted,hasGPUC,quiet,pubSched,pubArmed) vid.did=1002.67ef b:d:f=1:0:0 
+gpu 0x9ff5        pci 0x100000216 IOService:/AppleACPIPlatformExpert/PCI0@0/AppleACPIPCI/PEG0@1/IOPP/GFX0@0
+gpu 0x9ff5       agdc 0x10000060c     /AtiDeviceControl
+gpu 0x9ff5       gpuc 0x100000593     /AMD9500ControllerWrangler
+gpu 0x9ff5 agdpclient 0x10000060e     /AtiDeviceControl/AppleGraphicsDevicePolicy/AGDPClientControl
+gpu 0x9ff5      accel 0x1000005d8     /AMDRadeonX4000_AMDBaffinGraphicsAccelerator
+gpu 0x9ff5      fb0:0 0x1000005ee     /ATY,Longavi@0/AMDFramebufferVIB
+gpu 0x9ff5      fb1:1 0x1000005f4     /ATY,Longavi@1/AMDFramebufferVIB
+gpu 0x9ff5      fb2:2 0x1000005fa     /ATY,Longavi@2/AMDFramebufferVIB
+gpu 0x9ff5      fb3:3 0x100000600     /ATY,Longavi@3/AMDFramebufferVIB
+gpu 0x9ff5      fb4:4 0x100000606     /ATY,Longavi@4/AMDFramebufferVIB
+
+gpu 0x8000 flags 0xb2000040 (NG,published,quiet,pubSched,pubArmed) vid.did=ffff.ffff b:d:f=??? 
+gpu 0x8000        pci 0x000000000 
+gpu 0x8000       agdc 0x000000000 
+gpu 0x8000       gpuc 0x000000000 
+gpu 0x8000 agdpclient 0x000000000 
+gpu 0x8000      accel 0x10000062f IOService:/IOResources/DisplayLinkVirtualDevice/DisplayLinkAccelerator
+gpu 0x8000      fb0:0 0x1000005e4 IOService:/IOResources/DisplayLinkVirtualDevice/DisplayLinkParent0@0/DisplayLinkFramebuffer@0
+gpu 0x8000      fb1:1 0x100000614 IOService:/IOResources/DisplayLinkVirtualDevice/DisplayLinkParent1@1/DisplayLinkFramebuffer@1
+gpu 0x8000      fb2:2 0x10000061b IOService:/IOResources/DisplayLinkVirtualDevice/DisplayLinkParent2@2/DisplayLinkFramebuffer@2
+gpu 0x8000      fb3:3 0x100000621 IOService:/IOResources/DisplayLinkVirtualDevice/DisplayLinkParent3@3/DisplayLinkFramebuffer@3
+
+### End: GPUWrangler (took 0.111 sec) ########################################
+
+### Start: EFIDisplayInfo ####################################################
+Not present
+Dumping EFI data for GPU Path IOService:/AppleACPIPlatformExpert/PCI0@0/AppleACPIPCI/IGPU@2
+Dumping EFI data for GPU Path IOService:/AppleACPIPlatformExpert/PCI0@0/AppleACPIPCI/PEG0@1/IOPP/GFX0@0
+Dumping EFI data for GPU Path (null)
+### End: EFIDisplayInfo (took 0.109 sec) #####################################
+
+### Start: Mux ###############################################################
+System is in Dynamic mode: Better Battery Mode set, using Discrete
+gMUX Status: Version: 4.0.1d, 3D:2, FB:6
+LVDS: EG [DDC: None], DP: EG [Disabled] [0, 0]
+  IG: FB0:off FB1:N/A FB2:N/A FB3:N/A FB4:N/A 3D:idle HDA:N/A  Power:on 
+  EG: FB0:off FB1:on  FB2:off FB3:off FB4:off 3D:idle HDA:busy Power:on 
+Policy:on GPUPowerDown:on Backlight Control:on Recovery:on
+Power State Machine IG: 0 EG: 0
+StateMachine: 0 [AGC_GPU_IDLE]
+Switch Statistics: Switches 8 Errors 0 CRC 00000000
+  0000: 0000182 ms 	  0016: 0000000 ms 
+  0001: 0000751 ms 	  0017: 0000000 ms 
+  0002: 0000196 ms 	  0018: 0000000 ms 
+  0003: 0000817 ms 	  0019: 0000000 ms 
+  0004: 0000151 ms 	  0020: 0000000 ms 
+  0005: 0000767 ms 	  0021: 0000000 ms 
+  0006: 0000151 ms 	  0022: 0000000 ms 
+  0007: 0000452 ms*	  0023: 0000000 ms 
+  0008: 0000000 ms 	  0024: 0000000 ms 
+  0009: 0000000 ms 	  0025: 0000000 ms 
+  0010: 0000000 ms 	  0026: 0000000 ms 
+  0011: 0000000 ms 	  0027: 0000000 ms 
+  0012: 0000000 ms 	  0028: 0000000 ms 
+  0013: 0000000 ms 	  0029: 0000000 ms 
+  0014: 0000000 ms 	  0030: 0000000 ms 
+  0015: 0000000 ms 	  0031: 0000000 ms 
+Register Dump:
+  00: 6b 6b 6b 6b 00 00 00 00 
+  08: 00 00 03 03 03 03 03 03 
+  10: 03 02 00 00 ff ff 00 00 
+  18: 00 00 00 00 00 00 00 00 
+  20: 00 00 00 00 00 00 00 00 
+  28: 02 02 02 02 02 02 02 02 
+  30: 02 02 02 02 02 02 02 02 
+  38: 02 02 02 02 02 02 02 02 
+  40: 01 88 88 88 88 88 88 88 
+  48: 88 88 88 88 88 88 88 88 
+  50: 03 5f 1f 00 08 08 08 08 
+  58: 08 08 08 08 08 08 08 00 
+  60: 00 00 00 00 00 00 00 00 
+  68: 00 00 00 00 00 00 00 00 
+  70: ff ff ff ff 00 00 00 00 
+  78: 00 00 00 00 00 00 00 03 
+### End: Mux (took 0.044 sec) ################################################
+
+### Start: Ports #############################################################
+### Start: AGDC[1] 0x1000005b8 ###############################################
+IOService:/IOResources/AppleGPUWrangler
+Vendor: Apple [0000106b]: AppleGPUWrangler [8 10000] (0)
+### End: AGDC[1] 0x1000005b8 (took 0.000 sec) ################################
+
+### Start: AGDC[2] 0x100000591 ###############################################
+IOService:/AppleACPIPlatformExpert/GMUX/AppleMuxControl/AGDCMuxClientControl
+Vendor: AppleMuxControl [0000106b]: AppleMuxControl [9 10000] (0)
+### End: AGDC[2] 0x100000591 (took 0.000 sec) ################################
+
+### Start: AGDC[3] 0x100000593 ###############################################
+IOService:/AppleACPIPlatformExpert/PCI0@0/AppleACPIPCI/PEG0@1/IOPP/GFX0@0/AMD9500ControllerWrangler
+Vendor: AMD [00001002]: GPURoot [7 30000] (0)
+### End: AGDC[3] 0x100000593 (took 0.000 sec) ################################
+
+### Start: AGDC[4] 0x10000060c ###############################################
+IOService:/AppleACPIPlatformExpert/PCI0@0/AppleACPIPCI/PEG0@1/IOPP/GFX0@0/AtiDeviceControl
+See 0x10000060e
+### End: AGDC[4] 0x10000060c (took 0.000 sec) ################################
+
+### Start: AGDC[5] 0x10000060e ###############################################
+IOService:/AppleACPIPlatformExpert/PCI0@0/AppleACPIPCI/PEG0@1/IOPP/GFX0@0/AtiDeviceControl/AppleGraphicsDevicePolicy/AGDPClientControl
+Vendor: AMD [00001002]: DiscreteGPU [2 30000] (0)
+FBs: 5, Ports: 0x3e mst:0x3c ddc:0x3e aux:0x3e, Streams: dp:6 dvi:7 mst:6 max:6
+Framebuffers:
+  0: Address:  1.0 Stream: Enabled  Group: -1           Assoc'd  MayGroup Fixed    
+* 1: Address:  2.0 Stream: Enabled  Group: -1  Online   Assoc'd  MayGroup          
+  2: Address:  3.0 Stream: Enabled  Group: -1           Assoc'd  MayGroup          
+  3: Address:  4.0 Stream: Enabled  Group: -1           Assoc'd  MayGroup          
+  4: Address:  5.0 Stream: Enabled  Group: -1           Assoc'd  MayGroup          
+Port Capabilities:
+  1: AUX, DDC
+* 2: AUX, DDC, MST
+  3: AUX, DDC, MST
+  4: AUX, DDC, MST
+  5: AUX, DDC, MST
+Connections:
+  1: 
+* 2: [DP 1.2 2 x HBR2] 	 Status: [2 x HBR2 77 0] 	 caps [features 0x101001b, p_encoding 0xd] 	 DVI/HDMI Branch OUI:144-204-036 SYNAS? [083-089-078-065-083-016] HW Version: 16   FW Version: 5.4
+  3: 
+  4: 
+  5: 
+## Register Dump Port 2 - Start ## 
+000000: 0x12 0x14 0xc2 0x01 0x01 0x15 0x01 0x83 0x2a 0x3f 0x04 0x00 0x00 0x00 0x84 0x00
+  Reg: 000000: 12 : DPCD_REV: 1.2
+  Reg: 000001: 14 : MAX_LINK_RATE: HBR2
+  Reg: 000002: c2 : MAX_LANE_COUNT: 2, TPS3_SUPPORTED: 1, ENHANCED_FRAME_CAP: 1
+  Reg: 000003: 01 : MAX_DOWNSPREAD: 0.5% down, NO_AUX_HANDSHAKE_LINK_TRAINING: 0
+  Reg: 000004: 01 : NORP: 1
+  Reg: 000005: 15 : DOWNSTREAMPORT_PRESENT: DWN_STRM_PORT_PRESENT: 1, DWN_STRM_PORT_TYPE: [2] DVI/HDMI, FORMAT_CONVERSION: 0, DETAILED_CAP_INFO_AVAILABLE: 1
+  Reg: 000006: 01 : MAIN_LINK_CHANNEL_CODING: ANSI 8B/10B
+  Reg: 000007: 83 : DOWN_STREAM_PORT_COUNT: DWN_STRM_PORT_COUNT: 3, MSA_TIMING_PAR_IGNORED: 0, OUI: 1
+  Reg: 000008: 2a : RECEIVE_PORT0_CAP_0: LOCAL_EDID_PRESENT: 1, ASSOCIATED_TO_PRECEDING_PORT: 0
+  Reg: 000009: 3f : RECEIVE_PORT0_CAP_1: BUFFER_SIZE: 2048
+  Reg: 00000a: 04 : RECEIVE_PORT1_CAP_0:
+  Reg: 00000b: 00 : RECEIVE_PORT1_CAP_1:
+  Reg: 00000c: 00 : I2C Speed: 
+  Reg: 00000d: 00 : eDP_CONFIGURATION_CAP: ALTERNATE_SCRAMBLER_RESET_CAPABLE: 0, FRAMING_CHANGE_CAPABLE: 0
+  Reg: 00000e: 84 : TRAINING_AUX_RD_INTERVAL: 0 RESERVED, EXTENDED_RECEIVER_CAPABILITY_FIELD_PRESENT: YES
+  Reg: 00000f: 00 : ADAPTER_CAP: FORCE_LOAD_SENSE_CAP: 0, ALTERNATE_I2C_PATTERN_CAP: 0
+000020: 0x00 0x00 0x01
+  Reg: 000020: 00 : FAUX_CAP: FAUX_CAP: 0
+  Reg: 000021: 00 : MSTM_CAP: MST_CAP: 0
+  Reg: 000022: 01 : NUMBER_OF_AUDIO_ENDPOINTS: 1
+000060: 0x01 0x21 0x00 0x14 0x0b 0x00 0x00 0x00 0x01 0x03 0x02 0x11 0x08 0x00 0x00 0x04
+  Reg: 000060: 01 : DSC Support: 1
+  Reg: 000061: 21 : DSC Algorithm revision: 33
+  Reg: 000062: 00 : DSC RC Buffer Block size: 0
+  Reg: 000063: 14 : DSC RC Buffer size: 20
+  Reg: 000064: 0b : DSC slice Capabilities 1 : 11
+  Reg: 000065: 00 : DSC Line buffer bit depth: 0
+  Reg: 000066: 00 : DSC Block prediction support: 0
+  Reg: 000067: 00 : DSC Maximum bit per pixel: 0
+  Reg: 000068: 01 : DSC Maximum bit per pixel: 1
+  Reg: 000069: 03 : DSC Decoder color format capabilities: 3
+  Reg: 00006a: 02 : DSC decoder color depth capabilities: 2
+  Reg: 00006b: 11 : DSC Peak Throughput: 17
+  Reg: 00006c: 08 : DSC Maximum Slice width: 8
+  Reg: 00006d: 00 : DSC Slice capabilities 2: 0
+  Reg: 00006e: 00 : Reserved: 0
+  Reg: 00006f: 04 : DSC Bits per pixel increment: 4
+000090: 0x0f
+  Reg: 000090: 0f : FEC Capability: 0xf
+000080: 0x0b 0xf0 0x01 0x06 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00
+  Reg: 000080: 0b : DETAILED_CAP_INFO_AVAILABLE: DWN_STRM_PORTX_CAP: [3] HDMI, DWN_STRM_PORTX_HPD: 1, NON_EDID_DWN_STRM_PORTX_ATTRIBUTE: 0 Reserved
+  Reg: 000084: 00 : DETAILED_CAP_INFO_AVAILABLE: DWN_STRM_PORTX_CAP: [0] DisplayPort, DWN_STRM_PORTX_HPD: 0, NON_EDID_DWN_STRM_PORTX_ATTRIBUTE: 0 
+  Reg: 000088: 00 : DETAILED_CAP_INFO_AVAILABLE: DWN_STRM_PORTX_CAP: [0] DisplayPort, DWN_STRM_PORTX_HPD: 0, NON_EDID_DWN_STRM_PORTX_ATTRIBUTE: 0 
+  Reg: 00008c: 00 : DETAILED_CAP_INFO_AVAILABLE: DWN_STRM_PORTX_CAP: [0] DisplayPort, DWN_STRM_PORTX_HPD: 0, NON_EDID_DWN_STRM_PORTX_ATTRIBUTE: 0 
+000100: 0x14 0x82
+  Reg: 000100: 14 : LINK_BW_SET: HBR2
+  Reg: 000101: 82 : LANE_COUNT_SET: LANE_COUNT_SET 2, ENHANCED_FRAME_EN: 1
+000107: 0x10
+  Reg: 000107: 10 : DOWNSPREAD_CTRL: SPREAD_AMP: 1, MSA_TIMING_PAR_IGNORE_EN: 0
+00010a: 0x00
+  Reg: 00010a: 00 : eDP_CONFIGURATION_CAP_SET: ALTERNATE_SCRAMBLER_RESET_CAPABLE: 0, FRAMING_CHANGE_CAPABLE: 0
+000111: 0x00
+  Reg: 000111: 00 : MSTM_CTRL: UPSTREAM_IS_SRC:0 UP_REQ_EN:0 MST_EN:0
+000120: 0x00
+  Reg: 000120: 00 : FEC Configuration: 0x0
+000160: 0x00
+  Reg: 000160: 00 : DSC Enable: 0x0
+000200: 0x01 0x00 0x77 0x00 0x01 0x03 0x22 0x22
+  Reg: 000200: 01 : SINK_COUNT: SINK_COUNT 1, CP_READY: 0
+  Reg: 000202: 77 : LANE0: CR_DONE: 1, CHANNEL_EQ_DONE: 1, SYMBOL_LOCKED: 1
+  Reg: 000202: 77 : LANE1: CR_DONE: 1, CHANNEL_EQ_DONE: 1, SYMBOL_LOCKED: 1
+  Reg: 000203: 00 : LANE2: CR_DONE: 0, CHANNEL_EQ_DONE: 0, SYMBOL_LOCKED: 0
+  Reg: 000203: 00 : LANE3: CR_DONE: 0, CHANNEL_EQ_DONE: 0, SYMBOL_LOCKED: 0
+  Reg: 000205: 03 : SINK_STATUS: RECEIVE_PORT_0_STATUS: 1, RECEIVE_PORT_1_STATUS: 1
+  Reg: 000206: 22 : LANE0: VOLTAGE_SWING: 2, PRE-EMPHASIS: 0
+  Reg: 000206: 22 : LANE1: VOLTAGE_SWING: 2, PRE-EMPHASIS: 0
+  Reg: 000207: 22 : LANE2: VOLTAGE_SWING: 2, PRE-EMPHASIS: 0
+  Reg: 000207: 22 : LANE3: VOLTAGE_SWING: 2, PRE-EMPHASIS: 0
+00020f: 0x00
+  Reg: 00020f: 00 : DSC Status: 0
+000280: 0x00
+  Reg: 000280: 00 : FEC Status: 0
+00042f: 0x00
+  Reg: 00042f: 00 : DISPLAY_ROTATION: 0x0
+002200: 0x14 0x14 0xc2 0x01 0x01 0x15 0x01 0x83 0x2a 0x3f 0x04 0x00 0x00 0x00 0x84 0x00
+  Reg: 002200: 14 : DPCD_REV: 1.4
+  Reg: 002201: 14 : MAX_LINK_RATE: HBR2
+  Reg: 002202: c2 : MAX_LANE_COUNT: 2, TPS3_SUPPORTED: 1, ENHANCED_FRAME_CAP: 1
+  Reg: 002203: 01 : MAX_DOWNSPREAD: 0.5% down, NO_AUX_HANDSHAKE_LINK_TRAINING: 0
+  Reg: 002204: 01 : NORP: 1
+  Reg: 002205: 15 : DOWNSTREAMPORT_PRESENT: DWN_STRM_PORT_PRESENT: 1, DWN_STRM_PORT_TYPE: [2] DVI/HDMI, FORMAT_CONVERSION: 0, DETAILED_CAP_INFO_AVAILABLE: 1
+  Reg: 002206: 01 : MAIN_LINK_CHANNEL_CODING_SET: ANSI 8B/10B
+  Reg: 002207: 83 : DOWN_STREAM_PORT_COUNT: DWN_STRM_PORT_COUNT: 3, MSA_TIMING_PAR_IGNORED: 0, OUI: 1
+  Reg: 002208: 2a : RECEIVE_PORT0_CAP_0: LOCAL_EDID_PRESENT: 1, ASSOCIATED_TO_PRECEDING_PORT: 0
+  Reg: 002209: 3f : RECEIVE_PORT0_CAP_1: BUFFER_SIZE: 2048
+  Reg: 00220a: 04 : RECEIVE_PORT1_CAP_0:
+  Reg: 00220b: 00 : RECEIVE_PORT1_CAP_1:
+  Reg: 00220c: 00 : I2C Speed: 
+  Reg: 00220d: 00 : eDP_CONFIGURATION_CAP_SET: ALTERNATE_SCRAMBLER_RESET_CAPABLE: 0, FRAMING_CHANGE_CAPABLE: 0
+  Reg: 00220e: 84 : TRAINING_AUX_RD_INTERVAL: 0 RESERVED, EXTENDED_RECEIVER_CAPABILITY_FIELD_PRESENT: YES
+  Reg: 00220f: 00 : ADAPTER_CAP: FORCE_LOAD_SENSE_CAP: 0, ALTERNATE_I2C_PATTERN_CAP: 0
+068028: 0x03
+  Reg: 068028: 03 : HDCP_CAPABLE: 1, REPEATER: 1
+06921d: 0x02 0x00 0x03
+  Reg: 06921d: 02 : VERSION: 2 
+  Reg: 06921f: 03 : HDCP_CAPABLE: 1, REPEATER: 1
+069493: 0x00
+  Reg: 069493: 00 : Ready: 0 , H' Available: 0, Pairing_available: 0 , Reauth_req: 0, Link Integrity: 0 
+## Register Dump Port 2 - End ## 
+## EDID Dump Port 2 - Start ## 
+// EDID Dump: device, 256 bytes, OK
+uint8_t EDID_HEC_20a3_30[] = {
+  /* 000: */  0x00, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0x00, 
+  /* 008: */  0x20, 0xa3, 0x30, 0x00, 0x01, 0x00, 0x00, 0x00, 
+  /* 010: */  0x0c, 0x1d, 0x01, 0x03, 0x80, 0x73, 0x41, 0x78, 
+  /* 018: */  0x0a, 0xcf, 0x74, 0xa3, 0x57, 0x4c, 0xb0, 0x23, 
+  /* 020: */  0x09, 0x48, 0x4c, 0x21, 0x08, 0x00, 0x81, 0xc0, 
+  /* 028: */  0x81, 0x40, 0x81, 0x80, 0x01, 0x01, 0x01, 0x01, 
+  /* 030: */  0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0xb8, 0xce, 
+  /* 038: */  0x00, 0x50, 0xf0, 0x70, 0x5a, 0x80, 0x18, 0x10, 
+  /* 040: */  0x8a, 0x00, 0xba, 0x88, 0x21, 0x00, 0x00, 0x1e, 
+  /* 048: */  0x02, 0x3a, 0x80, 0x18, 0x71, 0x38, 0x2d, 0x40, 
+  /* 050: */  0x58, 0x2c, 0x45, 0x00, 0x50, 0x1d, 0x74, 0x00, 
+  /* 058: */  0x00, 0x1e, 0x00, 0x00, 0x00, 0xfc, 0x00, 0x48, 
+  /* 060: */  0x49, 0x53, 0x45, 0x4e, 0x53, 0x45, 0x0a, 0x20, 
+  /* 068: */  0x20, 0x20, 0x20, 0x20, 0x00, 0x00, 0x00, 0xfd, 
+  /* 070: */  0x00, 0x18, 0x4b, 0x0f, 0x88, 0x3c, 0x00, 0x0a, 
+  /* 078: */  0x20, 0x20, 0x20, 0x20, 0x20, 0x20, 0x01, 0x58, 
+  /* 080: */  0x02, 0x03, 0x77, 0x70, 0x5a, 0x61, 0x5e, 0x5f, 
+  /* 088: */  0x60, 0x5d, 0x6a, 0x6b, 0x01, 0x02, 0x04, 0x05, 
+  /* 090: */  0x10, 0x11, 0x13, 0x14, 0x1f, 0x20, 0x21, 0x22, 
+  /* 098: */  0x12, 0x03, 0x65, 0x66, 0x62, 0x63, 0x64, 0x32, 
+  /* 0a0: */  0x09, 0x07, 0x07, 0x15, 0x07, 0x50, 0x57, 0x06, 
+  /* 0a8: */  0x01, 0x3d, 0x07, 0xc0, 0x67, 0x04, 0x03, 0x5f, 
+  /* 0b0: */  0x7e, 0x01, 0x83, 0x01, 0x00, 0x00, 0xe2, 0x00, 
+  /* 0b8: */  0xf9, 0xe3, 0x05, 0xff, 0x01, 0x6e, 0x03, 0x0c, 
+  /* 0c0: */  0x00, 0x20, 0x00, 0x18, 0x3c, 0x20, 0x00, 0x80, 
+  /* 0c8: */  0x01, 0x02, 0x03, 0x04, 0x68, 0xd8, 0x5d, 0xc4, 
+  /* 0d0: */  0x01, 0x78, 0x80, 0x01, 0x02, 0xe6, 0x11, 0x46, 
+  /* 0d8: */  0xd0, 0x00, 0x70, 0x80, 0xe3, 0x06, 0x0d, 0x01, 
+  /* 0e0: */  0xeb, 0x01, 0x46, 0xd0, 0x00, 0x44, 0x63, 0x72, 
+  /* 0e8: */  0x7c, 0x6c, 0x6f, 0x7c, 0xe5, 0x01, 0x8b, 0x84, 
+  /* 0f0: */  0x90, 0x01, 0xe4, 0x0f, 0x69, 0x00, 0x60, 0x00, 
+  /* 0f8: */  0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x65
+};
+## EDID Dump Port 2 - End ## 
+## Display Connection Stats Dump Port 2 - End ## 
+  Display mfgName: HEC, productID: 0x30
+  Time to EDID read: 240971
+  Time to link train: 617022
+  Link training duration: 42665
+  Link training status: 1
+  Link training count: 14
+  HDCP status: 0
+  HDCP retry count: 1
+  EFI w/a data: 0x0
+## Display Connection Stats Dump Port 2 - End ## 
+### End: AGDC[5] 0x10000060e (took 0.401 sec) ################################
+
+### Start: AGDC[6] 0x100000629 ###############################################
+IOService:/AppleACPIPlatformExpert/PCI0@0/AppleACPIPCI/IGPU@2/AppleIntelFramebufferController/IntelFBClientControl
+Vendor: AppleIntelFramebufferController [0000106b]: IntegratedGPU [1 10000] (0)
+FBs: 1, Ports: 0x2 mst:0 ddc:0 aux:0x2, Streams: dp:0 dvi:0 mst:2 max:3
+Framebuffers:
+* 0: Address:  1.0 Stream: Not Associated Group: 0   Online                     Fixed    
+Port Capabilities:
+* 1: AUX
+Connections:
+* 1: 
+## EDID Dump Port 1 - Start ## 
+// EDID Dump: device, 0 bytes, Invalid
+uint8_t EDID_@@@_0_0[] = {
+};
+## EDID Dump Port 1 - End ## 
+### End: AGDC[6] 0x100000629 (took 0.126 sec) ################################
+
+### End: Ports (took 0.402 sec) ##############################################
+
+### Start: Metrics ###########################################################
+Display Metric Tool Version: 1.2 
+Display Metric Plugin Version: 1.2 AGDC Version: 5.2.7
+Dumping Metric Logs: currentlog(1320) logsize(32768) numberlogs(819)
+Total lines: 819 
+2021-03-14 11:56:07.349841-0500: kAGDCPluginMetricsRepeaterAuthentication(410e) GPU:0x9ff5 Port: 2 Status:0 (OK) Depth 2 Device count 10
+2021-03-13 09:16:41.801321-0600:            kAGDCPluginMetricsDisplayInfo(4108) GPU:0x9ff5 Port: 2 dpcd_rev:0x14 max_link_rate:0x14 max_lane_count:0xc2 max_downspread:0x1 downstreamport_present:0x15 mstm_cap:0 number_of_audio_endpoints:0x1
+2021-03-13 09:16:41.801963-0600:            kAGDCPluginMetricsMonitorInfo(4109) GPU:0x9ff5 Port: 2 mfgName:HEC mfgID:0x20a3 productID:0x30
+2021-03-13 09:16:57.447214-0600:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Will
+2021-03-13 09:26:12.350458-0600:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:0
+2021-03-13 09:26:12.350685-0600:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:1
+2021-03-13 09:26:12.350801-0600:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:2
+2021-03-13 09:26:12.350907-0600:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:3
+2021-03-13 09:26:12.367566-0600:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:4
+2021-03-13 09:41:15.362119-0600:                kAGDCPluginMetricsPowerOn(411f) GPU:0x9ff5 Port: 0 Will	 FB:0
+2021-03-13 09:41:15.606949-0600:                kAGDCPluginMetricsPowerOn(411f) GPU:0x9ff5 Port: 0 Will	 FB:1
+2021-03-13 09:41:15.660110-0600:                kAGDCPluginMetricsPowerOn(411f) GPU:0x9ff5 Port: 0 Will	 FB:2
+2021-03-13 09:41:15.668920-0600:                kAGDCPluginMetricsPowerOn(411f) GPU:0x9ff5 Port: 0 Will	 FB:3
+2021-03-13 09:41:15.677396-0600:                kAGDCPluginMetricsPowerOn(411f) GPU:0x9ff5 Port: 0 Will	 FB:4
+2021-03-13 09:42:07.933143-0600:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:0
+2021-03-13 09:42:07.933329-0600:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:1
+2021-03-13 09:42:07.933420-0600:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:2
+2021-03-13 09:42:07.933498-0600:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:3
+2021-03-13 09:42:07.977532-0600:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:4
+2021-03-13 10:19:28.238018-0600:                kAGDCPluginMetricsPowerOn(411f) GPU:0x9ff5 Port: 0 Will	 FB:0
+2021-03-13 10:19:28.479910-0600:                kAGDCPluginMetricsPowerOn(411f) GPU:0x9ff5 Port: 0 Will	 FB:1
+2021-03-13 10:19:28.533142-0600:                kAGDCPluginMetricsPowerOn(411f) GPU:0x9ff5 Port: 0 Will	 FB:2
+2021-03-13 10:19:28.541692-0600:                kAGDCPluginMetricsPowerOn(411f) GPU:0x9ff5 Port: 0 Will	 FB:3
+2021-03-13 10:19:28.550530-0600:                kAGDCPluginMetricsPowerOn(411f) GPU:0x9ff5 Port: 0 Will	 FB:4
+2021-03-13 10:20:21.124942-0600:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:0
+2021-03-13 10:20:21.125136-0600:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:1
+2021-03-13 10:20:21.125222-0600:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:2
+2021-03-13 10:20:21.125328-0600:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:3
+2021-03-13 10:20:21.149482-0600:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:4
+2021-03-13 12:20:21.396387-0600:                kAGDCPluginMetricsPowerOn(411f) GPU:0x9ff5 Port: 0 Will	 FB:0
+2021-03-13 12:20:21.635149-0600:                kAGDCPluginMetricsPowerOn(411f) GPU:0x9ff5 Port: 0 Will	 FB:1
+2021-03-13 12:20:21.688529-0600:                kAGDCPluginMetricsPowerOn(411f) GPU:0x9ff5 Port: 0 Will	 FB:2
+2021-03-13 12:20:21.696368-0600:                kAGDCPluginMetricsPowerOn(411f) GPU:0x9ff5 Port: 0 Will	 FB:3
+2021-03-13 12:20:21.704360-0600:                kAGDCPluginMetricsPowerOn(411f) GPU:0x9ff5 Port: 0 Will	 FB:4
+2021-03-13 12:22:34.820166-0600:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:0
+2021-03-13 12:22:34.820359-0600:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:1
+2021-03-13 12:22:34.820453-0600:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:2
+2021-03-13 12:22:34.820573-0600:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:3
+2021-03-13 12:22:34.839068-0600:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:4
+2021-03-13 14:22:35.452220-0600:                kAGDCPluginMetricsPowerOn(411f) GPU:0x9ff5 Port: 0 Will	 FB:0
+2021-03-13 14:22:35.688991-0600:                kAGDCPluginMetricsPowerOn(411f) GPU:0x9ff5 Port: 0 Will	 FB:1
+2021-03-13 14:22:35.742239-0600:                kAGDCPluginMetricsPowerOn(411f) GPU:0x9ff5 Port: 0 Will	 FB:2
+2021-03-13 14:22:35.751013-0600:                kAGDCPluginMetricsPowerOn(411f) GPU:0x9ff5 Port: 0 Will	 FB:3
+2021-03-13 14:22:35.759425-0600:                kAGDCPluginMetricsPowerOn(411f) GPU:0x9ff5 Port: 0 Will	 FB:4
+2021-03-13 14:24:05.368583-0600:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:0
+2021-03-13 14:24:05.368776-0600:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:1
+2021-03-13 14:24:05.368882-0600:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:2
+2021-03-13 14:24:05.368999-0600:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:3
+2021-03-13 14:24:05.392161-0600:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:4
+2021-03-13 14:39:07.520844-0600:                kAGDCPluginMetricsPowerOn(411f) GPU:0x9ff5 Port: 0 Will	 FB:0
+2021-03-13 14:39:07.758546-0600:                kAGDCPluginMetricsPowerOn(411f) GPU:0x9ff5 Port: 0 Will	 FB:1
+2021-03-13 14:39:07.811808-0600:                kAGDCPluginMetricsPowerOn(411f) GPU:0x9ff5 Port: 0 Will	 FB:2
+2021-03-13 14:39:07.820551-0600:                kAGDCPluginMetricsPowerOn(411f) GPU:0x9ff5 Port: 0 Will	 FB:3
+2021-03-13 14:39:07.828912-0600:                kAGDCPluginMetricsPowerOn(411f) GPU:0x9ff5 Port: 0 Will	 FB:4
+2021-03-13 14:39:59.742839-0600:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:0
+2021-03-13 14:39:59.743049-0600:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:1
+2021-03-13 14:39:59.743154-0600:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:2
+2021-03-13 14:39:59.743295-0600:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:3
+2021-03-13 14:39:59.762154-0600:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:4
+2021-03-13 15:38:13.989541-0600:                kAGDCPluginMetricsPowerOn(411f) GPU:0x9ff5 Port: 0 Will	 FB:0
+2021-03-13 15:38:14.230686-0600:                kAGDCPluginMetricsPowerOn(411f) GPU:0x9ff5 Port: 0 Will	 FB:1
+2021-03-13 15:38:14.294231-0600:                kAGDCPluginMetricsLTBegin(4106) GPU:0x9ff5 Port: 2 
+2021-03-13 15:38:14.336587-0600:                  kAGDCPluginMetricsLTEnd(4107) GPU:0x9ff5 Port: 2 link_rate:0x14 lane_count:0x82 LT Status:0x1 (OK)
+2021-03-13 15:38:14.398400-0600:              kAGDCPluginMetricsLightUpDp(410a) GPU:0x9ff5 Port: 2 
+2021-03-13 15:38:14.419544-0600:                kAGDCPluginMetricsPowerOn(411f) GPU:0x9ff5 Port: 0 Will	 FB:2
+2021-03-13 15:38:14.427700-0600:                kAGDCPluginMetricsPowerOn(411f) GPU:0x9ff5 Port: 0 Will	 FB:3
+2021-03-13 15:38:14.435702-0600:                kAGDCPluginMetricsPowerOn(411f) GPU:0x9ff5 Port: 0 Will	 FB:4
+2021-03-13 15:38:14.665066-0600:              kAGDCPluginMetricsLightUpDp(410a) GPU:0x9ff5 Port: 2 
+2021-03-13 15:38:15.651922-0600:                kAGDCPluginMetricsPowerOn(411f) GPU:0x9ff5 Port: 0 Did
+2021-03-13 15:38:15.673022-0600:            kAGDCPluginMetricsDisplayInfo(4108) GPU:0x9ff5 Port: 2 dpcd_rev:0x14 max_link_rate:0x14 max_lane_count:0xc2 max_downspread:0x1 downstreamport_present:0x15 mstm_cap:0 number_of_audio_endpoints:0x1
+2021-03-13 15:38:15.673649-0600:            kAGDCPluginMetricsMonitorInfo(4109) GPU:0x9ff5 Port: 2 mfgName:HEC mfgID:0x20a3 productID:0x30
+2021-03-13 15:38:24.638857-0600:              kAGDCPluginMetricsHDCPStart(410b) GPU:0x9ff5 Port: 2 HDCP version:0x2.0x2 Authenticated Version:0x2 Bcaps:0x3
+2021-03-13 15:38:25.813985-0600:                kAGDCPluginMetricsSPIData(4120) GPU:0x9ff5 Port: 2 2002h-2005h: 0x1 0x4 0x0 0x0	 200Ch-200Fh: 0x77 0x0 0x1 0x3
+2021-03-13 15:38:25.813987-0600:                    kAGDCPluginMetricsSPI(4103) GPU:0x9ff5 Port: 2 Latency(in microsecond) 319
+2021-03-13 15:38:25.819782-0600:     kAGDCPluginMetricsFirstPhaseComplete(410c) GPU:0x9ff5 Port: 2 Status:0 (OK) Stored Km:0x1
+2021-03-13 15:38:25.837725-0600:          kAGDCPluginMetricsLocalityCheck(410d) GPU:0x9ff5 Port: 2 Status:0 (OK)
+2021-03-13 15:38:25.846679-0600:          kAGDCPluginMetricsLocalityCheck(410d) GPU:0x9ff5 Port: 2 Status:0 (OK)
+2021-03-13 15:38:26.207954-0600:                kAGDCPluginMetricsSPIData(4120) GPU:0x9ff5 Port: 2 2002h-2005h: 0x1 0x4 0x0 0x0	 200Ch-200Fh: 0x77 0x0 0x1 0x3
+2021-03-13 15:38:26.207957-0600:                    kAGDCPluginMetricsSPI(4103) GPU:0x9ff5 Port: 2 Latency(in microsecond) 454
+2021-03-13 15:38:26.232031-0600: kAGDCPluginMetricsRepeaterAuthentication(410e) GPU:0x9ff5 Port: 2 Status:0 (OK) Depth 2 Device count 10
+2021-03-13 15:38:26.245746-0600: kAGDCPluginMetricsRepeaterAuthentication(410e) GPU:0x9ff5 Port: 2 Status:0 (OK) Depth 2 Device count 10
+2021-03-13 15:38:26.452326-0600: kAGDCPluginMetricsRepeaterAuthentication(410e) GPU:0x9ff5 Port: 2 Status:0 (OK) Depth 2 Device count 10
+2021-03-13 15:39:01.721003-0600:                    kAGDCPluginMetricsHPD(4102) GPU:0x9ff5 Port: 2 Latency(in microsecond) 5216658891863
+2021-03-13 15:39:01.725991-0600:                 kAGDCPluginMetricsUnPlug(4101) GPU:0x9ff5 Port: 2 
+2021-03-13 15:39:02.078721-0600:                kAGDCPluginMetricsLTBegin(4106) GPU:0x9ff5 Port: 1 
+2021-03-13 15:39:02.083931-0600:                  kAGDCPluginMetricsLTEnd(4107) GPU:0x9ff5 Port: 1 link_rate:0xc lane_count:0x84 LT Status:0x1 (OK)
+2021-03-13 15:39:02.105131-0600:              kAGDCPluginMetricsLightUpDp(410a) GPU:0x9ff5 Port: 1 
+2021-03-13 15:39:02.194355-0600:              kAGDCPluginMetricsLightUpDp(410a) GPU:0x9ff5 Port: 1 
+2021-03-13 15:39:02.280089-0600:              kAGDCPluginMetricsLightUpDp(410a) GPU:0x9ff5 Port: 1 
+2021-03-13 15:39:02.311015-0600:              kAGDCPluginMetricsLightUpDp(410a) GPU:0x9ff5 Port: 1 
+2021-03-13 15:39:02.479804-0600:              kAGDCPluginMetricsLightUpDp(410a) GPU:0x9ff5 Port: 1 
+2021-03-13 15:39:02.511016-0600:              kAGDCPluginMetricsLightUpDp(410a) GPU:0x9ff5 Port: 1 
+2021-03-13 15:39:02.579980-0600:              kAGDCPluginMetricsLightUpDp(410a) GPU:0x9ff5 Port: 1 
+2021-03-13 15:39:02.611010-0600:              kAGDCPluginMetricsLightUpDp(410a) GPU:0x9ff5 Port: 1 
+2021-03-13 15:39:08.734554-0600:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Will
+2021-03-13 15:39:09.157154-0600:                kAGDCPluginMetricsPowerOn(411f) GPU:0x9ff5 Port: 0 Did
+2021-03-13 15:39:09.157240-0600:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Will
+2021-03-13 15:39:09.638997-0600:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:0
+2021-03-13 15:39:09.639016-0600:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:1
+2021-03-13 15:39:09.639034-0600:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:2
+2021-03-13 15:39:09.639050-0600:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:3
+2021-03-13 15:39:09.639063-0600:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:4
+2021-03-13 15:39:41.655127-0600:                kAGDCPluginMetricsLTBegin(4106) GPU:0x9ff5 Port: 1 
+2021-03-13 15:39:41.656886-0600:                  kAGDCPluginMetricsLTEnd(4107) GPU:0x9ff5 Port: 1 link_rate:0 lane_count:0 LT Status:0 (FAIL)
+2021-03-13 15:39:41.656918-0600:              kAGDCPluginMetricsLightUpDp(410a) GPU:0x9ff5 Port: 1 
+2021-03-13 15:39:41.682752-0600:              kAGDCPluginMetricsLightUpDp(410a) GPU:0x9ff5 Port: 1 
+2021-03-13 15:39:41.986221-0600:                   kAGDCPluginMetricsPlug(4100) GPU:0x9ff5 Port: 2 
+2021-03-13 15:39:42.149338-0600:                kAGDCPluginMetricsPowerOn(411f) GPU:0x9ff5 Port: 0 Did
+2021-03-13 15:39:42.362339-0600:            kAGDCPluginMetricsDisplayInfo(4108) GPU:0x9ff5 Port: 2 dpcd_rev:0x14 max_link_rate:0x14 max_lane_count:0xc2 max_downspread:0x1 downstreamport_present:0x15 mstm_cap:0 number_of_audio_endpoints:0x1
+2021-03-13 15:39:42.363042-0600:            kAGDCPluginMetricsMonitorInfo(4109) GPU:0x9ff5 Port: 2 mfgName:HEC mfgID:0x20a3 productID:0x30
+2021-03-13 15:39:42.380174-0600:            kAGDCPluginMetricsDisplayInfo(4108) GPU:0x9ff5 Port: 2 dpcd_rev:0x14 max_link_rate:0x14 max_lane_count:0xc2 max_downspread:0x1 downstreamport_present:0x15 mstm_cap:0 number_of_audio_endpoints:0x1
+2021-03-13 15:39:42.380864-0600:            kAGDCPluginMetricsMonitorInfo(4109) GPU:0x9ff5 Port: 2 mfgName:HEC mfgID:0x20a3 productID:0x30
+2021-03-13 15:39:42.416036-0600:                 kAGDCPluginMetricsSyncLT(4104) GPU:0x9ff5 Port: 2 
+2021-03-13 15:39:42.416858-0600:                kAGDCPluginMetricsLTBegin(4106) GPU:0x9ff5 Port: 2 
+2021-03-13 15:39:42.462768-0600:                  kAGDCPluginMetricsLTEnd(4107) GPU:0x9ff5 Port: 2 link_rate:0x14 lane_count:0x82 LT Status:0x1 (OK)
+2021-03-13 15:39:42.486410-0600:              kAGDCPluginMetricsSyncLTEnd(4105) GPU:0x9ff5 Port: 2 link_rate:0x14 lane_count:0x2 LT Status:0x1 (OK)
+2021-03-13 15:39:42.619725-0600:                kAGDCPluginMetricsLTBegin(4106) GPU:0x9ff5 Port: 2 
+2021-03-13 15:39:42.662520-0600:                  kAGDCPluginMetricsLTEnd(4107) GPU:0x9ff5 Port: 2 link_rate:0x14 lane_count:0x82 LT Status:0x1 (OK)
+2021-03-13 15:39:42.673290-0600:              kAGDCPluginMetricsLightUpDp(410a) GPU:0x9ff5 Port: 2 
+2021-03-13 15:39:42.806615-0600:              kAGDCPluginMetricsLightUpDp(410a) GPU:0x9ff5 Port: 2 
+2021-03-13 15:39:44.206625-0600:              kAGDCPluginMetricsLightUpDp(410a) GPU:0x9ff5 Port: 2 
+2021-03-13 15:39:44.236006-0600:                    kAGDCPluginMetricsHPD(4102) GPU:0x9ff5 Port: 1 Latency(in microsecond) 42502458035
+2021-03-13 15:39:44.406621-0600:              kAGDCPluginMetricsLightUpDp(410a) GPU:0x9ff5 Port: 2 
+2021-03-13 15:39:54.381609-0600:              kAGDCPluginMetricsHDCPStart(410b) GPU:0x9ff5 Port: 2 HDCP version:0x2.0x2 Authenticated Version:0x2 Bcaps:0x3
+2021-03-13 15:39:55.558221-0600:                kAGDCPluginMetricsSPIData(4120) GPU:0x9ff5 Port: 2 2002h-2005h: 0x1 0x4 0x0 0x0	 200Ch-200Fh: 0x77 0x0 0x1 0x3
+2021-03-13 15:39:55.558223-0600:                    kAGDCPluginMetricsSPI(4103) GPU:0x9ff5 Port: 2 Latency(in microsecond) 246
+2021-03-13 15:39:55.561579-0600:     kAGDCPluginMetricsFirstPhaseComplete(410c) GPU:0x9ff5 Port: 2 Status:0 (OK) Stored Km:0x1
+2021-03-13 15:39:55.579318-0600:          kAGDCPluginMetricsLocalityCheck(410d) GPU:0x9ff5 Port: 2 Status:0 (OK)
+2021-03-13 15:39:55.588044-0600:          kAGDCPluginMetricsLocalityCheck(410d) GPU:0x9ff5 Port: 2 Status:0 (OK)
+2021-03-13 15:39:55.948317-0600:                kAGDCPluginMetricsSPIData(4120) GPU:0x9ff5 Port: 2 2002h-2005h: 0x1 0x4 0x0 0x0	 200Ch-200Fh: 0x77 0x0 0x1 0x3
+2021-03-13 15:39:55.948319-0600:                    kAGDCPluginMetricsSPI(4103) GPU:0x9ff5 Port: 2 Latency(in microsecond) 261
+2021-03-13 15:39:55.973697-0600: kAGDCPluginMetricsRepeaterAuthentication(410e) GPU:0x9ff5 Port: 2 Status:0 (OK) Depth 2 Device count 10
+2021-03-13 15:39:55.986326-0600: kAGDCPluginMetricsRepeaterAuthentication(410e) GPU:0x9ff5 Port: 2 Status:0 (OK) Depth 2 Device count 10
+2021-03-13 15:39:56.195382-0600: kAGDCPluginMetricsRepeaterAuthentication(410e) GPU:0x9ff5 Port: 2 Status:0 (OK) Depth 2 Device count 10
+2021-03-13 15:40:33.339973-0600:              kAGDCPluginMetricsLightUpDp(410a) GPU:0x9ff5 Port: 2 
+2021-03-13 15:40:33.378109-0600:                kAGDCPluginMetricsSPIData(4120) GPU:0x9ff5 Port: 2 2002h-2005h: 0x1 0x4 0x0 0x0	 200Ch-200Fh: 0x77 0x0 0x1 0x3
+2021-03-13 15:40:33.378111-0600:                    kAGDCPluginMetricsSPI(4103) GPU:0x9ff5 Port: 2 Latency(in microsecond) 273
+2021-03-13 15:40:33.519258-0600:                kAGDCPluginMetricsSPIData(4120) GPU:0x9ff5 Port: 2 2002h-2005h: 0x1 0x4 0x0 0x0	 200Ch-200Fh: 0x77 0x0 0x1 0x0
+2021-03-13 15:40:33.519260-0600:                    kAGDCPluginMetricsSPI(4103) GPU:0x9ff5 Port: 2 Latency(in microsecond) 437
+2021-03-13 15:40:43.322675-0600:              kAGDCPluginMetricsHDCPStart(410b) GPU:0x9ff5 Port: 2 HDCP version:0x2.0x2 Authenticated Version:0x2 Bcaps:0x3
+2021-03-13 15:40:44.495345-0600:                kAGDCPluginMetricsSPIData(4120) GPU:0x9ff5 Port: 2 2002h-2005h: 0x1 0x4 0x0 0x0	 200Ch-200Fh: 0x77 0x0 0x1 0x3
+2021-03-13 15:40:44.495348-0600:                    kAGDCPluginMetricsSPI(4103) GPU:0x9ff5 Port: 2 Latency(in microsecond) 432
+2021-03-13 15:40:44.501663-0600:     kAGDCPluginMetricsFirstPhaseComplete(410c) GPU:0x9ff5 Port: 2 Status:0 (OK) Stored Km:0x1
+2021-03-13 15:40:44.519389-0600:          kAGDCPluginMetricsLocalityCheck(410d) GPU:0x9ff5 Port: 2 Status:0 (OK)
+2021-03-13 15:40:44.527733-0600:          kAGDCPluginMetricsLocalityCheck(410d) GPU:0x9ff5 Port: 2 Status:0 (OK)
+2021-03-13 15:40:44.891608-0600:                kAGDCPluginMetricsSPIData(4120) GPU:0x9ff5 Port: 2 2002h-2005h: 0x1 0x4 0x0 0x0	 200Ch-200Fh: 0x77 0x0 0x1 0x3
+2021-03-13 15:40:44.891610-0600:                    kAGDCPluginMetricsSPI(4103) GPU:0x9ff5 Port: 2 Latency(in microsecond) 454
+2021-03-13 15:40:44.913701-0600: kAGDCPluginMetricsRepeaterAuthentication(410e) GPU:0x9ff5 Port: 2 Status:0 (OK) Depth 2 Device count 10
+2021-03-13 15:40:44.926273-0600: kAGDCPluginMetricsRepeaterAuthentication(410e) GPU:0x9ff5 Port: 2 Status:0 (OK) Depth 2 Device count 10
+2021-03-13 15:40:45.373311-0600:              kAGDCPluginMetricsLightUpDp(410a) GPU:0x9ff5 Port: 2 
+2021-03-13 15:40:45.412322-0600:                kAGDCPluginMetricsSPIData(4120) GPU:0x9ff5 Port: 2 2002h-2005h: 0x1 0x4 0x0 0x0	 200Ch-200Fh: 0x0 0x0 0x0 0x0
+2021-03-13 15:40:45.412323-0600:                    kAGDCPluginMetricsSPI(4103) GPU:0x9ff5 Port: 2 Latency(in microsecond) 289
+2021-03-13 15:40:45.970259-0600:                kAGDCPluginMetricsLTBegin(4106) GPU:0x9ff5 Port: 2 
+2021-03-13 15:40:45.994576-0600:                  kAGDCPluginMetricsLTEnd(4107) GPU:0x9ff5 Port: 2 link_rate:0x14 lane_count:0x82 LT Status:0x1 (OK)
+2021-03-13 15:40:45.995802-0600:              kAGDCPluginMetricsLightUpDp(410a) GPU:0x9ff5 Port: 2 
+2021-03-13 15:40:46.909203-0600:                 kAGDCPluginMetricsSyncLT(4104) GPU:0x9ff5 Port: 2 
+2021-03-13 15:40:46.909808-0600:                kAGDCPluginMetricsLTBegin(4106) GPU:0x9ff5 Port: 2 
+2021-03-13 15:40:46.933699-0600:                  kAGDCPluginMetricsLTEnd(4107) GPU:0x9ff5 Port: 2 link_rate:0x14 lane_count:0x82 LT Status:0x1 (OK)
+2021-03-13 15:40:46.959897-0600:              kAGDCPluginMetricsSyncLTEnd(4105) GPU:0x9ff5 Port: 2 link_rate:0x14 lane_count:0x2 LT Status:0x1 (OK)
+2021-03-13 15:40:47.181231-0600:                kAGDCPluginMetricsLTBegin(4106) GPU:0x9ff5 Port: 2 
+2021-03-13 15:40:47.204269-0600:                  kAGDCPluginMetricsLTEnd(4107) GPU:0x9ff5 Port: 2 link_rate:0x14 lane_count:0x82 LT Status:0x1 (OK)
+2021-03-13 15:40:47.235313-0600:              kAGDCPluginMetricsLightUpDp(410a) GPU:0x9ff5 Port: 2 
+2021-03-13 15:40:47.368645-0600:              kAGDCPluginMetricsLightUpDp(410a) GPU:0x9ff5 Port: 2 
+2021-03-13 15:40:57.343117-0600:              kAGDCPluginMetricsHDCPStart(410b) GPU:0x9ff5 Port: 2 HDCP version:0x2.0x2 Authenticated Version:0x2 Bcaps:0x3
+2021-03-13 15:40:58.515446-0600:                kAGDCPluginMetricsSPIData(4120) GPU:0x9ff5 Port: 2 2002h-2005h: 0x1 0x4 0x0 0x0	 200Ch-200Fh: 0x77 0x0 0x1 0x3
+2021-03-13 15:40:58.515447-0600:                    kAGDCPluginMetricsSPI(4103) GPU:0x9ff5 Port: 2 Latency(in microsecond) 308
+2021-03-13 15:40:58.518079-0600:     kAGDCPluginMetricsFirstPhaseComplete(410c) GPU:0x9ff5 Port: 2 Status:0 (OK) Stored Km:0x1
+2021-03-13 15:40:58.535076-0600:          kAGDCPluginMetricsLocalityCheck(410d) GPU:0x9ff5 Port: 2 Status:0 (OK)
+2021-03-13 15:40:58.543881-0600:          kAGDCPluginMetricsLocalityCheck(410d) GPU:0x9ff5 Port: 2 Status:0 (OK)
+2021-03-13 15:40:58.904006-0600:                kAGDCPluginMetricsSPIData(4120) GPU:0x9ff5 Port: 2 2002h-2005h: 0x1 0x4 0x0 0x0	 200Ch-200Fh: 0x77 0x0 0x1 0x3
+2021-03-13 15:40:58.904008-0600:                    kAGDCPluginMetricsSPI(4103) GPU:0x9ff5 Port: 2 Latency(in microsecond) 372
+2021-03-13 15:40:58.928904-0600: kAGDCPluginMetricsRepeaterAuthentication(410e) GPU:0x9ff5 Port: 2 Status:0 (OK) Depth 2 Device count 10
+2021-03-13 15:40:58.943114-0600: kAGDCPluginMetricsRepeaterAuthentication(410e) GPU:0x9ff5 Port: 2 Status:0 (OK) Depth 2 Device count 10
+2021-03-13 15:40:59.152384-0600: kAGDCPluginMetricsRepeaterAuthentication(410e) GPU:0x9ff5 Port: 2 Status:0 (OK) Depth 2 Device count 10
+2021-03-13 15:41:07.916856-0600:                    kAGDCPluginMetricsHPD(4102) GPU:0x9ff5 Port: 2 Latency(in microsecond) 83599542694
+2021-03-13 15:41:07.921576-0600:                 kAGDCPluginMetricsUnPlug(4101) GPU:0x9ff5 Port: 2 
+2021-03-13 15:41:08.282168-0600:                kAGDCPluginMetricsLTBegin(4106) GPU:0x9ff5 Port: 1 
+2021-03-13 15:41:08.287363-0600:                  kAGDCPluginMetricsLTEnd(4107) GPU:0x9ff5 Port: 1 link_rate:0xc lane_count:0x84 LT Status:0x1 (OK)
+2021-03-13 15:41:08.307662-0600:              kAGDCPluginMetricsLightUpDp(410a) GPU:0x9ff5 Port: 1 
+2021-03-13 15:41:08.381576-0600:              kAGDCPluginMetricsLightUpDp(410a) GPU:0x9ff5 Port: 1 
+2021-03-13 15:41:08.450622-0600:              kAGDCPluginMetricsLightUpDp(410a) GPU:0x9ff5 Port: 1 
+2021-03-13 15:41:08.481573-0600:              kAGDCPluginMetricsLightUpDp(410a) GPU:0x9ff5 Port: 1 
+2021-03-13 15:41:08.667158-0600:              kAGDCPluginMetricsLightUpDp(410a) GPU:0x9ff5 Port: 1 
+2021-03-13 15:41:08.698234-0600:              kAGDCPluginMetricsLightUpDp(410a) GPU:0x9ff5 Port: 1 
+2021-03-13 15:41:08.767120-0600:              kAGDCPluginMetricsLightUpDp(410a) GPU:0x9ff5 Port: 1 
+2021-03-13 15:41:08.798250-0600:              kAGDCPluginMetricsLightUpDp(410a) GPU:0x9ff5 Port: 1 
+2021-03-13 15:41:10.073490-0600:                    kAGDCPluginMetricsHPD(4102) GPU:0x9ff5 Port: 2 Latency(in microsecond) 2144588003
+2021-03-13 15:41:10.073558-0600:                   kAGDCPluginMetricsPlug(4100) GPU:0x9ff5 Port: 2 
+2021-03-13 15:41:10.378339-0600:            kAGDCPluginMetricsDisplayInfo(4108) GPU:0x9ff5 Port: 2 dpcd_rev:0x14 max_link_rate:0x14 max_lane_count:0xc2 max_downspread:0x1 downstreamport_present:0x15 mstm_cap:0 number_of_audio_endpoints:0x1
+2021-03-13 15:41:10.378991-0600:            kAGDCPluginMetricsMonitorInfo(4109) GPU:0x9ff5 Port: 2 mfgName:HEC mfgID:0x20a3 productID:0x2f
+2021-03-13 15:41:10.682856-0600:                 kAGDCPluginMetricsSyncLT(4104) GPU:0x9ff5 Port: 2 
+2021-03-13 15:41:10.701184-0600:                kAGDCPluginMetricsLTBegin(4106) GPU:0x9ff5 Port: 2 
+2021-03-13 15:41:10.757679-0600:                  kAGDCPluginMetricsLTEnd(4107) GPU:0x9ff5 Port: 2 link_rate:0x14 lane_count:0x82 LT Status:0x1 (OK)
+2021-03-13 15:41:10.780964-0600:              kAGDCPluginMetricsSyncLTEnd(4105) GPU:0x9ff5 Port: 2 link_rate:0x14 lane_count:0x2 LT Status:0x1 (OK)
+2021-03-13 15:41:10.930605-0600:                kAGDCPluginMetricsLTBegin(4106) GPU:0x9ff5 Port: 2 
+2021-03-13 15:41:10.971570-0600:                  kAGDCPluginMetricsLTEnd(4107) GPU:0x9ff5 Port: 2 link_rate:0x14 lane_count:0x82 LT Status:0x1 (OK)
+2021-03-13 15:41:10.984793-0600:              kAGDCPluginMetricsLightUpDp(410a) GPU:0x9ff5 Port: 2 
+2021-03-13 15:41:11.084793-0600:              kAGDCPluginMetricsLightUpDp(410a) GPU:0x9ff5 Port: 2 
+2021-03-13 15:41:12.518172-0600:              kAGDCPluginMetricsLightUpDp(410a) GPU:0x9ff5 Port: 2 
+2021-03-13 15:41:12.618127-0600:              kAGDCPluginMetricsLightUpDp(410a) GPU:0x9ff5 Port: 2 
+2021-03-13 15:41:22.609547-0600:              kAGDCPluginMetricsHDCPStart(410b) GPU:0x9ff5 Port: 2 HDCP version:0x2.0x2 Authenticated Version:0x2 Bcaps:0x3
+2021-03-13 15:41:23.788056-0600:                kAGDCPluginMetricsSPIData(4120) GPU:0x9ff5 Port: 2 2002h-2005h: 0x1 0x4 0x0 0x0	 200Ch-200Fh: 0x77 0x0 0x1 0x3
+2021-03-13 15:41:23.788058-0600:                    kAGDCPluginMetricsSPI(4103) GPU:0x9ff5 Port: 2 Latency(in microsecond) 516
+2021-03-13 15:41:23.794268-0600:     kAGDCPluginMetricsFirstPhaseComplete(410c) GPU:0x9ff5 Port: 2 Status:0 (OK) Stored Km:0x1
+2021-03-13 15:41:23.811844-0600:          kAGDCPluginMetricsLocalityCheck(410d) GPU:0x9ff5 Port: 2 Status:0 (OK)
+2021-03-13 15:41:23.820664-0600:          kAGDCPluginMetricsLocalityCheck(410d) GPU:0x9ff5 Port: 2 Status:0 (OK)
+2021-03-13 15:41:24.188984-0600:                kAGDCPluginMetricsSPIData(4120) GPU:0x9ff5 Port: 2 2002h-2005h: 0x1 0x4 0x0 0x0	 200Ch-200Fh: 0x77 0x0 0x1 0x3
+2021-03-13 15:41:24.188986-0600:                    kAGDCPluginMetricsSPI(4103) GPU:0x9ff5 Port: 2 Latency(in microsecond) 417
+2021-03-13 15:41:24.201665-0600: kAGDCPluginMetricsRepeaterAuthentication(410e) GPU:0x9ff5 Port: 2 Status:0 (OK) Depth 2 Device count 10
+2021-03-13 15:41:24.215053-0600: kAGDCPluginMetricsRepeaterAuthentication(410e) GPU:0x9ff5 Port: 2 Status:0 (OK) Depth 2 Device count 10
+2021-03-13 15:41:24.420143-0600: kAGDCPluginMetricsRepeaterAuthentication(410e) GPU:0x9ff5 Port: 2 Status:0 (OK) Depth 2 Device count 10
+2021-03-13 15:41:48.923978-0600:                    kAGDCPluginMetricsHPD(4102) GPU:0x9ff5 Port: 2 Latency(in microsecond) 38771733912
+2021-03-13 15:41:48.928610-0600:                 kAGDCPluginMetricsUnPlug(4101) GPU:0x9ff5 Port: 2 
+2021-03-13 15:41:49.267909-0600:                kAGDCPluginMetricsLTBegin(4106) GPU:0x9ff5 Port: 1 
+2021-03-13 15:41:49.274560-0600:                  kAGDCPluginMetricsLTEnd(4107) GPU:0x9ff5 Port: 1 link_rate:0xc lane_count:0x84 LT Status:0x1 (OK)
+2021-03-13 15:41:49.295642-0600:              kAGDCPluginMetricsLightUpDp(410a) GPU:0x9ff5 Port: 1 
+2021-03-13 15:41:49.377581-0600:              kAGDCPluginMetricsLightUpDp(410a) GPU:0x9ff5 Port: 1 
+2021-03-13 15:41:49.446709-0600:              kAGDCPluginMetricsLightUpDp(410a) GPU:0x9ff5 Port: 1 
+2021-03-13 15:41:49.477571-0600:              kAGDCPluginMetricsLightUpDp(410a) GPU:0x9ff5 Port: 1 
+2021-03-13 15:41:49.679816-0600:              kAGDCPluginMetricsLightUpDp(410a) GPU:0x9ff5 Port: 1 
+2021-03-13 15:41:49.710901-0600:              kAGDCPluginMetricsLightUpDp(410a) GPU:0x9ff5 Port: 1 
+2021-03-13 15:41:49.779818-0600:              kAGDCPluginMetricsLightUpDp(410a) GPU:0x9ff5 Port: 1 
+2021-03-13 15:41:49.810897-0600:              kAGDCPluginMetricsLightUpDp(410a) GPU:0x9ff5 Port: 1 
+2021-03-13 15:41:51.106945-0600:                    kAGDCPluginMetricsHPD(4102) GPU:0x9ff5 Port: 2 Latency(in microsecond) 2170738911
+2021-03-13 15:41:51.106998-0600:                   kAGDCPluginMetricsPlug(4100) GPU:0x9ff5 Port: 2 
+2021-03-13 15:41:51.408832-0600:            kAGDCPluginMetricsDisplayInfo(4108) GPU:0x9ff5 Port: 2 dpcd_rev:0x14 max_link_rate:0x14 max_lane_count:0xc2 max_downspread:0x1 downstreamport_present:0x15 mstm_cap:0 number_of_audio_endpoints:0x1
+2021-03-13 15:41:51.409503-0600:            kAGDCPluginMetricsMonitorInfo(4109) GPU:0x9ff5 Port: 2 mfgName:HEC mfgID:0x20a3 productID:0x30
+2021-03-13 15:41:51.688874-0600:                 kAGDCPluginMetricsSyncLT(4104) GPU:0x9ff5 Port: 2 
+2021-03-13 15:41:51.689470-0600:                kAGDCPluginMetricsLTBegin(4106) GPU:0x9ff5 Port: 2 
+2021-03-13 15:41:51.733128-0600:                  kAGDCPluginMetricsLTEnd(4107) GPU:0x9ff5 Port: 2 link_rate:0x14 lane_count:0x82 LT Status:0x1 (OK)
+2021-03-13 15:41:51.757184-0600:              kAGDCPluginMetricsSyncLTEnd(4105) GPU:0x9ff5 Port: 2 link_rate:0x14 lane_count:0x2 LT Status:0x1 (OK)
+2021-03-13 15:41:51.890310-0600:                kAGDCPluginMetricsLTBegin(4106) GPU:0x9ff5 Port: 2 
+2021-03-13 15:41:51.931700-0600:                  kAGDCPluginMetricsLTEnd(4107) GPU:0x9ff5 Port: 2 link_rate:0x14 lane_count:0x82 LT Status:0x1 (OK)
+2021-03-13 15:41:51.943358-0600:              kAGDCPluginMetricsLightUpDp(410a) GPU:0x9ff5 Port: 2 
+2021-03-13 15:41:52.076700-0600:              kAGDCPluginMetricsLightUpDp(410a) GPU:0x9ff5 Port: 2 
+2021-03-13 15:41:53.643374-0600:              kAGDCPluginMetricsLightUpDp(410a) GPU:0x9ff5 Port: 2 
+2021-03-13 15:41:53.776693-0600:              kAGDCPluginMetricsLightUpDp(410a) GPU:0x9ff5 Port: 2 
+2021-03-13 15:42:03.751625-0600:              kAGDCPluginMetricsHDCPStart(410b) GPU:0x9ff5 Port: 2 HDCP version:0x2.0x2 Authenticated Version:0x2 Bcaps:0x3
+2021-03-13 15:42:04.927936-0600:                kAGDCPluginMetricsSPIData(4120) GPU:0x9ff5 Port: 2 2002h-2005h: 0x1 0x4 0x0 0x0	 200Ch-200Fh: 0x77 0x0 0x1 0x3
+2021-03-13 15:42:04.927938-0600:                    kAGDCPluginMetricsSPI(4103) GPU:0x9ff5 Port: 2 Latency(in microsecond) 583
+2021-03-13 15:42:04.933942-0600:     kAGDCPluginMetricsFirstPhaseComplete(410c) GPU:0x9ff5 Port: 2 Status:0 (OK) Stored Km:0x1
+2021-03-13 15:42:04.951537-0600:          kAGDCPluginMetricsLocalityCheck(410d) GPU:0x9ff5 Port: 2 Status:0 (OK)
+2021-03-13 15:42:04.960397-0600:          kAGDCPluginMetricsLocalityCheck(410d) GPU:0x9ff5 Port: 2 Status:0 (OK)
+2021-03-13 15:42:05.322448-0600:                kAGDCPluginMetricsSPIData(4120) GPU:0x9ff5 Port: 2 2002h-2005h: 0x1 0x4 0x0 0x0	 200Ch-200Fh: 0x77 0x0 0x1 0x3
+2021-03-13 15:42:05.322450-0600:                    kAGDCPluginMetricsSPI(4103) GPU:0x9ff5 Port: 2 Latency(in microsecond) 466
+2021-03-13 15:42:05.348089-0600: kAGDCPluginMetricsRepeaterAuthentication(410e) GPU:0x9ff5 Port: 2 Status:0 (OK) Depth 2 Device count 10
+2021-03-13 15:42:05.361780-0600: kAGDCPluginMetricsRepeaterAuthentication(410e) GPU:0x9ff5 Port: 2 Status:0 (OK) Depth 2 Device count 10
+2021-03-13 15:42:05.570813-0600: kAGDCPluginMetricsRepeaterAuthentication(410e) GPU:0x9ff5 Port: 2 Status:0 (OK) Depth 2 Device count 10
+2021-03-13 15:42:23.318612-0600:                kAGDCPluginMetricsSPIData(4120) GPU:0x9ff5 Port: 2 2002h-2005h: 0x1 0x4 0x0 0x0	 200Ch-200Fh: 0x77 0x0 0x1 0x3
+2021-03-13 15:42:23.318614-0600:                    kAGDCPluginMetricsSPI(4103) GPU:0x9ff5 Port: 2 Latency(in microsecond) 382
+2021-03-13 15:42:23.592193-0600:                kAGDCPluginMetricsLTBegin(4106) GPU:0x9ff5 Port: 1 
+2021-03-13 15:42:23.596847-0600:                  kAGDCPluginMetricsLTEnd(4107) GPU:0x9ff5 Port: 1 link_rate:0xc lane_count:0x84 LT Status:0x1 (OK)
+2021-03-13 15:42:23.616903-0600:              kAGDCPluginMetricsLightUpDp(410a) GPU:0x9ff5 Port: 1 
+2021-03-13 15:42:23.693323-0600:              kAGDCPluginMetricsLightUpDp(410a) GPU:0x9ff5 Port: 1 
+2021-03-13 15:42:23.810030-0600:              kAGDCPluginMetricsLightUpDp(410a) GPU:0x9ff5 Port: 2 
+2021-03-13 15:42:23.878715-0600:              kAGDCPluginMetricsLightUpDp(410a) GPU:0x9ff5 Port: 1 
+2021-03-13 15:42:23.909993-0600:              kAGDCPluginMetricsLightUpDp(410a) GPU:0x9ff5 Port: 1 
+2021-03-13 15:42:24.043364-0600:              kAGDCPluginMetricsLightUpDp(410a) GPU:0x9ff5 Port: 2 
+2021-03-13 15:42:25.676699-0600:              kAGDCPluginMetricsLightUpDp(410a) GPU:0x9ff5 Port: 2 
+2021-03-13 15:42:25.762267-0600:              kAGDCPluginMetricsLightUpDp(410a) GPU:0x9ff5 Port: 1 
+2021-03-13 15:42:25.793292-0600:              kAGDCPluginMetricsLightUpDp(410a) GPU:0x9ff5 Port: 1 
+2021-03-13 15:42:35.651439-0600:              kAGDCPluginMetricsHDCPStart(410b) GPU:0x9ff5 Port: 2 HDCP version:0x2.0x2 Authenticated Version:0x2 Bcaps:0x3
+2021-03-13 15:42:36.818638-0600:                kAGDCPluginMetricsSPIData(4120) GPU:0x9ff5 Port: 2 2002h-2005h: 0x1 0x4 0x0 0x0	 200Ch-200Fh: 0x77 0x0 0x1 0x3
+2021-03-13 15:42:36.818640-0600:                    kAGDCPluginMetricsSPI(4103) GPU:0x9ff5 Port: 2 Latency(in microsecond) 348
+2021-03-13 15:42:36.823939-0600:     kAGDCPluginMetricsFirstPhaseComplete(410c) GPU:0x9ff5 Port: 2 Status:0 (OK) Stored Km:0x1
+2021-03-13 15:42:36.841564-0600:          kAGDCPluginMetricsLocalityCheck(410d) GPU:0x9ff5 Port: 2 Status:0 (OK)
+2021-03-13 15:42:36.850577-0600:          kAGDCPluginMetricsLocalityCheck(410d) GPU:0x9ff5 Port: 2 Status:0 (OK)
+2021-03-13 15:42:37.210104-0600:                kAGDCPluginMetricsSPIData(4120) GPU:0x9ff5 Port: 2 2002h-2005h: 0x1 0x4 0x0 0x0	 200Ch-200Fh: 0x77 0x0 0x1 0x3
+2021-03-13 15:42:37.210106-0600:                    kAGDCPluginMetricsSPI(4103) GPU:0x9ff5 Port: 2 Latency(in microsecond) 342
+2021-03-13 15:42:37.235125-0600: kAGDCPluginMetricsRepeaterAuthentication(410e) GPU:0x9ff5 Port: 2 Status:0 (OK) Depth 2 Device count 10
+2021-03-13 15:42:37.248858-0600: kAGDCPluginMetricsRepeaterAuthentication(410e) GPU:0x9ff5 Port: 2 Status:0 (OK) Depth 2 Device count 10
+2021-03-13 15:42:37.451278-0600: kAGDCPluginMetricsRepeaterAuthentication(410e) GPU:0x9ff5 Port: 2 Status:0 (OK) Depth 2 Device count 10
+2021-03-13 15:42:48.479682-0600:                    kAGDCPluginMetricsHPD(4102) GPU:0x9ff5 Port: 2 Latency(in microsecond) 57292984601
+2021-03-13 15:42:48.482254-0600:                 kAGDCPluginMetricsUnPlug(4101) GPU:0x9ff5 Port: 2 
+2021-03-13 15:42:48.711883-0600:              kAGDCPluginMetricsLightUpDp(410a) GPU:0x9ff5 Port: 1 
+2021-03-13 15:42:48.742973-0600:              kAGDCPluginMetricsLightUpDp(410a) GPU:0x9ff5 Port: 1 
+2021-03-13 15:42:48.828519-0600:              kAGDCPluginMetricsLightUpDp(410a) GPU:0x9ff5 Port: 1 
+2021-03-13 15:42:48.859633-0600:              kAGDCPluginMetricsLightUpDp(410a) GPU:0x9ff5 Port: 1 
+2021-03-13 15:42:48.962011-0600:              kAGDCPluginMetricsLightUpDp(410a) GPU:0x9ff5 Port: 1 
+2021-03-13 15:42:48.992971-0600:              kAGDCPluginMetricsLightUpDp(410a) GPU:0x9ff5 Port: 1 
+2021-03-13 15:42:49.127562-0600:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Will
+2021-03-13 15:42:49.432834-0600:                kAGDCPluginMetricsPowerOn(411f) GPU:0x9ff5 Port: 0 Did
+2021-03-13 15:42:49.432904-0600:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Will
+2021-03-13 15:42:49.896126-0600:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:0
+2021-03-13 15:42:49.896138-0600:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:1
+2021-03-13 15:42:49.896147-0600:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:2
+2021-03-13 15:42:49.896156-0600:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:3
+2021-03-13 15:42:49.896165-0600:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:4
+2021-03-13 15:42:50.437541-0600:                kAGDCPluginMetricsPowerOn(411f) GPU:0x9ff5 Port: 0 Did
+2021-03-13 15:42:57.602052-0600:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Will
+2021-03-13 15:42:58.023623-0600:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:0
+2021-03-13 15:42:58.023635-0600:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:1
+2021-03-13 15:42:58.023647-0600:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:2
+2021-03-13 15:42:58.023655-0600:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:3
+2021-03-13 15:42:58.023664-0600:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:4
+2021-03-13 15:43:03.148195-0600:                kAGDCPluginMetricsLTBegin(4106) GPU:0x9ff5 Port: 1 
+2021-03-13 15:43:03.149902-0600:                  kAGDCPluginMetricsLTEnd(4107) GPU:0x9ff5 Port: 1 link_rate:0 lane_count:0 LT Status:0 (FAIL)
+2021-03-13 15:43:03.149927-0600:              kAGDCPluginMetricsLightUpDp(410a) GPU:0x9ff5 Port: 1 
+2021-03-13 15:43:03.176465-0600:              kAGDCPluginMetricsLightUpDp(410a) GPU:0x9ff5 Port: 1 
+2021-03-13 15:43:03.427911-0600:                   kAGDCPluginMetricsPlug(4100) GPU:0x9ff5 Port: 2 
+2021-03-13 15:43:03.749106-0600:                kAGDCPluginMetricsPowerOn(411f) GPU:0x9ff5 Port: 0 Did
+2021-03-13 15:43:03.758656-0600:            kAGDCPluginMetricsDisplayInfo(4108) GPU:0x9ff5 Port: 2 dpcd_rev:0x14 max_link_rate:0x14 max_lane_count:0xc4 max_downspread:0x1 downstreamport_present:0x1d mstm_cap:0 number_of_audio_endpoints:0
+2021-03-13 15:43:03.759309-0600:            kAGDCPluginMetricsMonitorInfo(4109) GPU:0x9ff5 Port: 2 mfgName:RTK mfgID:0x4a8b productID:0x1d1a
+2021-03-13 15:43:03.774271-0600:                 kAGDCPluginMetricsSyncLT(4104) GPU:0x9ff5 Port: 2 
+2021-03-13 15:43:03.774791-0600:                kAGDCPluginMetricsLTBegin(4106) GPU:0x9ff5 Port: 2 
+2021-03-13 15:43:03.832706-0600:                  kAGDCPluginMetricsLTEnd(4107) GPU:0x9ff5 Port: 2 link_rate:0x14 lane_count:0x84 LT Status:0x1 (OK)
+2021-03-13 15:43:03.866336-0600:              kAGDCPluginMetricsSyncLTEnd(4105) GPU:0x9ff5 Port: 2 link_rate:0x14 lane_count:0x4 LT Status:0x1 (OK)
+2021-03-13 15:43:03.995524-0600:              kAGDCPluginMetricsLightUpDp(410a) GPU:0x9ff5 Port: 1 
+2021-03-13 15:43:04.026449-0600:              kAGDCPluginMetricsLightUpDp(410a) GPU:0x9ff5 Port: 1 
+2021-03-13 15:43:04.158211-0600:                kAGDCPluginMetricsLTBegin(4106) GPU:0x9ff5 Port: 2 
+2021-03-13 15:43:04.219009-0600:                  kAGDCPluginMetricsLTEnd(4107) GPU:0x9ff5 Port: 2 link_rate:0x14 lane_count:0x84 LT Status:0x1 (OK)
+2021-03-13 15:43:04.226450-0600:              kAGDCPluginMetricsLightUpDp(410a) GPU:0x9ff5 Port: 2 
+2021-03-13 15:43:04.271088-0600:            kAGDCPluginMetricsDisplayInfo(4108) GPU:0x9ff5 Port: 2 dpcd_rev:0x14 max_link_rate:0x14 max_lane_count:0xc4 max_downspread:0x1 downstreamport_present:0x1d mstm_cap:0 number_of_audio_endpoints:0
+2021-03-13 15:43:04.271775-0600:            kAGDCPluginMetricsMonitorInfo(4109) GPU:0x9ff5 Port: 2 mfgName:RTK mfgID:0x4a8b productID:0x1d1a
+2021-03-13 15:43:04.312057-0600:              kAGDCPluginMetricsLightUpDp(410a) GPU:0x9ff5 Port: 1 
+2021-03-13 15:43:04.343118-0600:              kAGDCPluginMetricsLightUpDp(410a) GPU:0x9ff5 Port: 1 
+2021-03-13 15:43:04.382649-0600:            kAGDCPluginMetricsDisplayInfo(4108) GPU:0x9ff5 Port: 2 dpcd_rev:0x14 max_link_rate:0x14 max_lane_count:0xc4 max_downspread:0x1 downstreamport_present:0x1d mstm_cap:0 number_of_audio_endpoints:0
+2021-03-13 15:43:04.383313-0600:            kAGDCPluginMetricsMonitorInfo(4109) GPU:0x9ff5 Port: 2 mfgName:RTK mfgID:0x4a8b productID:0x1d1a
+2021-03-13 15:43:04.426454-0600:              kAGDCPluginMetricsLightUpDp(410a) GPU:0x9ff5 Port: 2 
+2021-03-13 15:43:06.626451-0600:              kAGDCPluginMetricsLightUpDp(410a) GPU:0x9ff5 Port: 2 
+2021-03-13 15:43:06.712018-0600:              kAGDCPluginMetricsLightUpDp(410a) GPU:0x9ff5 Port: 1 
+2021-03-13 15:43:06.743079-0600:              kAGDCPluginMetricsLightUpDp(410a) GPU:0x9ff5 Port: 1 
+2021-03-13 15:43:16.616571-0600:              kAGDCPluginMetricsHDCPStart(410b) GPU:0x9ff5 Port: 2 HDCP version:0x2.0x2 Authenticated Version:0x2 Bcaps:0x3
+2021-03-13 15:43:17.826585-0600:     kAGDCPluginMetricsFirstPhaseComplete(410c) GPU:0x9ff5 Port: 2 Status:0 (OK) Stored Km:0x1
+2021-03-13 15:43:17.844076-0600:          kAGDCPluginMetricsLocalityCheck(410d) GPU:0x9ff5 Port: 2 Status:0 (OK)
+2021-03-13 15:43:17.851837-0600:                kAGDCPluginMetricsSPIData(4120) GPU:0x9ff5 Port: 2 2002h-2005h: 0x41 0x4 0x0 0x0	 200Ch-200Fh: 0x77 0x77 0x1 0x3
+2021-03-13 15:43:17.851839-0600:                    kAGDCPluginMetricsSPI(4103) GPU:0x9ff5 Port: 2 Latency(in microsecond) 428
+2021-03-13 15:43:17.854876-0600:          kAGDCPluginMetricsLocalityCheck(410d) GPU:0x9ff5 Port: 2 Status:0 (OK)
+2021-03-13 15:43:17.886070-0600:                kAGDCPluginMetricsSPIData(4120) GPU:0x9ff5 Port: 2 2002h-2005h: 0x41 0x0 0x0 0x0	 200Ch-200Fh: 0x77 0x77 0x1 0x3
+2021-03-13 15:43:17.886072-0600:                    kAGDCPluginMetricsSPI(4103) GPU:0x9ff5 Port: 2 Latency(in microsecond) 481
+2021-03-13 15:43:17.922662-0600:                kAGDCPluginMetricsSPIData(4120) GPU:0x9ff5 Port: 2 2002h-2005h: 0x41 0x4 0x0 0x0	 200Ch-200Fh: 0x77 0x77 0x1 0x3
+2021-03-13 15:43:17.922664-0600:                    kAGDCPluginMetricsSPI(4103) GPU:0x9ff5 Port: 2 Latency(in microsecond) 465
+2021-03-13 15:43:18.079159-0600: kAGDCPluginMetricsRepeaterAuthentication(410e) GPU:0x9ff5 Port: 2 Status:0 (OK) Depth 2 Device count 10
+2021-03-13 15:43:18.097322-0600: kAGDCPluginMetricsRepeaterAuthentication(410e) GPU:0x9ff5 Port: 2 Status:0 (OK) Depth 2 Device count 10
+2021-03-13 15:43:18.305018-0600: kAGDCPluginMetricsRepeaterAuthentication(410e) GPU:0x9ff5 Port: 2 Status:0 (OK) Depth 2 Device count 10
+2021-03-13 15:44:25.914655-0600:                kAGDCPluginMetricsLTBegin(4106) GPU:0x9ff5 Port: 1 
+2021-03-13 15:44:25.919833-0600:                  kAGDCPluginMetricsLTEnd(4107) GPU:0x9ff5 Port: 1 link_rate:0xc lane_count:0x84 LT Status:0x1 (OK)
+2021-03-13 15:44:25.942014-0600:              kAGDCPluginMetricsLightUpDp(410a) GPU:0x9ff5 Port: 1 
+2021-03-13 15:44:26.025265-0600:              kAGDCPluginMetricsLightUpDp(410a) GPU:0x9ff5 Port: 1 
+2021-03-13 15:44:26.647588-0600:                kAGDCPluginMetricsLTBegin(4106) GPU:0x9ff5 Port: 2 
+2021-03-13 15:44:26.707891-0600:                  kAGDCPluginMetricsLTEnd(4107) GPU:0x9ff5 Port: 2 link_rate:0x14 lane_count:0x84 LT Status:0x1 (OK)
+2021-03-13 15:44:26.709785-0600:              kAGDCPluginMetricsLightUpDp(410a) GPU:0x9ff5 Port: 2 
+2021-03-13 15:44:26.909774-0600:              kAGDCPluginMetricsLightUpDp(410a) GPU:0x9ff5 Port: 1 
+2021-03-13 15:44:26.941912-0600:              kAGDCPluginMetricsLightUpDp(410a) GPU:0x9ff5 Port: 1 
+2021-03-13 15:44:27.026454-0600:              kAGDCPluginMetricsLightUpDp(410a) GPU:0x9ff5 Port: 2 
+2021-03-13 15:44:27.409796-0600:              kAGDCPluginMetricsLightUpDp(410a) GPU:0x9ff5 Port: 2 
+2021-03-13 15:44:27.493147-0600:              kAGDCPluginMetricsLightUpDp(410a) GPU:0x9ff5 Port: 2 
+2021-03-13 15:44:37.483839-0600:              kAGDCPluginMetricsHDCPStart(410b) GPU:0x9ff5 Port: 2 HDCP version:0x2.0x2 Authenticated Version:0x2 Bcaps:0x3
+2021-03-13 15:44:38.658857-0600:     kAGDCPluginMetricsFirstPhaseComplete(410c) GPU:0x9ff5 Port: 2 Status:0 (OK) Stored Km:0x1
+2021-03-13 15:44:38.675452-0600:          kAGDCPluginMetricsLocalityCheck(410d) GPU:0x9ff5 Port: 2 Status:0 (OK)
+2021-03-13 15:44:38.684483-0600:          kAGDCPluginMetricsLocalityCheck(410d) GPU:0x9ff5 Port: 2 Status:0 (OK)
+2021-03-13 15:44:38.690256-0600:                kAGDCPluginMetricsSPIData(4120) GPU:0x9ff5 Port: 2 2002h-2005h: 0x41 0x4 0x0 0x0	 200Ch-200Fh: 0x77 0x77 0x1 0x3
+2021-03-13 15:44:38.690258-0600:                    kAGDCPluginMetricsSPI(4103) GPU:0x9ff5 Port: 2 Latency(in microsecond) 267
+2021-03-13 15:44:38.726263-0600:                kAGDCPluginMetricsSPIData(4120) GPU:0x9ff5 Port: 2 2002h-2005h: 0x41 0x4 0x0 0x0	 200Ch-200Fh: 0x77 0x77 0x1 0x3
+2021-03-13 15:44:38.726266-0600:                    kAGDCPluginMetricsSPI(4103) GPU:0x9ff5 Port: 2 Latency(in microsecond) 434
+2021-03-13 15:44:38.908965-0600: kAGDCPluginMetricsRepeaterAuthentication(410e) GPU:0x9ff5 Port: 2 Status:0 (OK) Depth 2 Device count 10
+2021-03-13 15:44:38.930659-0600: kAGDCPluginMetricsRepeaterAuthentication(410e) GPU:0x9ff5 Port: 2 Status:0 (OK) Depth 2 Device count 10
+2021-03-13 15:44:39.140087-0600: kAGDCPluginMetricsRepeaterAuthentication(410e) GPU:0x9ff5 Port: 2 Status:0 (OK) Depth 2 Device count 10
+2021-03-13 15:44:45.432822-0600:                kAGDCPluginMetricsLTBegin(4106) GPU:0x9ff5 Port: 2 
+2021-03-13 15:44:45.492610-0600:                  kAGDCPluginMetricsLTEnd(4107) GPU:0x9ff5 Port: 2 link_rate:0x14 lane_count:0x84 LT Status:0x1 (OK)
+2021-03-13 15:44:45.509804-0600:              kAGDCPluginMetricsLightUpDp(410a) GPU:0x9ff5 Port: 2 
+2021-03-13 15:44:45.643122-0600:              kAGDCPluginMetricsLightUpDp(410a) GPU:0x9ff5 Port: 2 
+2021-03-13 15:44:48.757773-0600:                kAGDCPluginMetricsLTBegin(4106) GPU:0x9ff5 Port: 2 
+2021-03-13 15:44:48.819060-0600:                  kAGDCPluginMetricsLTEnd(4107) GPU:0x9ff5 Port: 2 link_rate:0x14 lane_count:0x84 LT Status:0x1 (OK)
+2021-03-13 15:44:48.826451-0600:              kAGDCPluginMetricsLightUpDp(410a) GPU:0x9ff5 Port: 2 
+2021-03-13 15:44:49.408862-0600:                kAGDCPluginMetricsLTBegin(4106) GPU:0x9ff5 Port: 2 
+2021-03-13 15:44:49.467639-0600:                  kAGDCPluginMetricsLTEnd(4107) GPU:0x9ff5 Port: 2 link_rate:0x14 lane_count:0x84 LT Status:0x1 (OK)
+2021-03-13 15:44:49.476459-0600:              kAGDCPluginMetricsLightUpDp(410a) GPU:0x9ff5 Port: 2 
+2021-03-13 15:44:49.593120-0600:              kAGDCPluginMetricsLightUpDp(410a) GPU:0x9ff5 Port: 2 
+2021-03-13 15:44:52.346421-0600:                kAGDCPluginMetricsLTBegin(4106) GPU:0x9ff5 Port: 2 
+2021-03-13 15:44:52.406236-0600:                  kAGDCPluginMetricsLTEnd(4107) GPU:0x9ff5 Port: 2 link_rate:0x14 lane_count:0x84 LT Status:0x1 (OK)
+2021-03-13 15:44:52.409791-0600:              kAGDCPluginMetricsLightUpDp(410a) GPU:0x9ff5 Port: 2 
+2021-03-13 15:44:55.559798-0600:              kAGDCPluginMetricsLightUpDp(410a) GPU:0x9ff5 Port: 2 
+2021-03-13 15:44:55.726453-0600:              kAGDCPluginMetricsLightUpDp(410a) GPU:0x9ff5 Port: 2 
+2021-03-13 15:44:59.058630-0600:                kAGDCPluginMetricsLTBegin(4106) GPU:0x9ff5 Port: 2 
+2021-03-13 15:44:59.116971-0600:                  kAGDCPluginMetricsLTEnd(4107) GPU:0x9ff5 Port: 2 link_rate:0x14 lane_count:0x84 LT Status:0x1 (OK)
+2021-03-13 15:44:59.126461-0600:              kAGDCPluginMetricsLightUpDp(410a) GPU:0x9ff5 Port: 2 
+2021-03-13 15:44:59.293123-0600:              kAGDCPluginMetricsLightUpDp(410a) GPU:0x9ff5 Port: 2 
+2021-03-13 15:44:59.681989-0600:                kAGDCPluginMetricsLTBegin(4106) GPU:0x9ff5 Port: 1 
+2021-03-13 15:44:59.686940-0600:                  kAGDCPluginMetricsLTEnd(4107) GPU:0x9ff5 Port: 1 link_rate:0xc lane_count:0x84 LT Status:0x1 (OK)
+2021-03-13 15:44:59.707145-0600:              kAGDCPluginMetricsLightUpDp(410a) GPU:0x9ff5 Port: 1 
+2021-03-13 15:44:59.793055-0600:              kAGDCPluginMetricsLightUpDp(410a) GPU:0x9ff5 Port: 1 
+2021-03-13 15:44:59.876454-0600:              kAGDCPluginMetricsLightUpDp(410a) GPU:0x9ff5 Port: 2 
+2021-03-13 15:44:59.945436-0600:              kAGDCPluginMetricsLightUpDp(410a) GPU:0x9ff5 Port: 1 
+2021-03-13 15:44:59.976357-0600:              kAGDCPluginMetricsLightUpDp(410a) GPU:0x9ff5 Port: 1 
+2021-03-13 15:45:00.059789-0600:              kAGDCPluginMetricsLightUpDp(410a) GPU:0x9ff5 Port: 2 
+2021-03-13 15:45:00.411920-0600:              kAGDCPluginMetricsLightUpDp(410a) GPU:0x9ff5 Port: 1 
+2021-03-13 15:45:00.443013-0600:              kAGDCPluginMetricsLightUpDp(410a) GPU:0x9ff5 Port: 1 
+2021-03-13 15:45:00.979467-0600:                    kAGDCPluginMetricsHPD(4102) GPU:0x9ff5 Port: 2 Latency(in microsecond) 132490006165
+2021-03-13 15:45:00.982081-0600:                 kAGDCPluginMetricsUnPlug(4101) GPU:0x9ff5 Port: 2 
+2021-03-13 15:45:10.282902-0600:                kAGDCPluginMetricsLTBegin(4106) GPU:0x9ff5 Port: 1 
+2021-03-13 15:45:10.288566-0600:                  kAGDCPluginMetricsLTEnd(4107) GPU:0x9ff5 Port: 1 link_rate:0xc lane_count:0x84 LT Status:0x1 (OK)
+2021-03-13 15:45:10.308719-0600:              kAGDCPluginMetricsLightUpDp(410a) GPU:0x9ff5 Port: 1 
+2021-03-13 15:45:10.392874-0600:              kAGDCPluginMetricsLightUpDp(410a) GPU:0x9ff5 Port: 1 
+2021-03-13 15:45:11.060668-0600:              kAGDCPluginMetricsLightUpDp(410a) GPU:0x9ff5 Port: 1 
+2021-03-13 15:45:11.092856-0600:              kAGDCPluginMetricsLightUpDp(410a) GPU:0x9ff5 Port: 1 
+2021-03-13 15:45:12.045271-0600:              kAGDCPluginMetricsLightUpDp(410a) GPU:0x9ff5 Port: 1 
+2021-03-13 15:45:12.076200-0600:              kAGDCPluginMetricsLightUpDp(410a) GPU:0x9ff5 Port: 1 
+2021-03-13 15:45:12.145201-0600:              kAGDCPluginMetricsLightUpDp(410a) GPU:0x9ff5 Port: 1 
+2021-03-13 15:45:12.176184-0600:              kAGDCPluginMetricsLightUpDp(410a) GPU:0x9ff5 Port: 1 
+2021-03-13 15:45:12.294953-0600:              kAGDCPluginMetricsLightUpDp(410a) GPU:0x9ff5 Port: 1 
+2021-03-13 15:45:12.326171-0600:              kAGDCPluginMetricsLightUpDp(410a) GPU:0x9ff5 Port: 1 
+2021-03-13 15:45:12.861071-0600:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Will
+2021-03-13 15:45:13.172701-0600:                kAGDCPluginMetricsPowerOn(411f) GPU:0x9ff5 Port: 0 Did
+2021-03-13 15:45:13.172763-0600:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Will
+2021-03-13 15:45:13.637582-0600:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:0
+2021-03-13 15:45:13.637598-0600:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:1
+2021-03-13 15:45:13.637610-0600:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:2
+2021-03-13 15:45:13.637623-0600:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:3
+2021-03-13 15:45:13.637633-0600:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:4
+2021-03-13 15:45:14.206064-0600:                kAGDCPluginMetricsPowerOn(411f) GPU:0x9ff5 Port: 0 Did
+2021-03-13 15:45:21.471990-0600:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Will
+2021-03-13 15:45:21.894008-0600:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:0
+2021-03-13 15:45:21.894034-0600:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:1
+2021-03-13 15:45:21.894042-0600:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:2
+2021-03-13 15:45:21.894050-0600:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:3
+2021-03-13 15:45:21.894057-0600:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:4
+2021-03-13 15:46:22.497452-0600:                kAGDCPluginMetricsPowerOn(411f) GPU:0x9ff5 Port: 0 Did
+2021-03-13 15:46:25.039269-0600:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Will
+2021-03-13 15:46:25.223119-0600:                kAGDCPluginMetricsLTBegin(4106) GPU:0x9ff5 Port: 1 
+2021-03-13 15:46:25.224771-0600:                  kAGDCPluginMetricsLTEnd(4107) GPU:0x9ff5 Port: 1 link_rate:0 lane_count:0 LT Status:0 (FAIL)
+2021-03-13 15:46:25.224794-0600:              kAGDCPluginMetricsLightUpDp(410a) GPU:0x9ff5 Port: 1 
+2021-03-13 15:46:25.251035-0600:              kAGDCPluginMetricsLightUpDp(410a) GPU:0x9ff5 Port: 1 
+2021-03-13 15:46:25.514635-0600:                   kAGDCPluginMetricsPlug(4100) GPU:0x9ff5 Port: 2 
+2021-03-13 15:46:25.745420-0600:                kAGDCPluginMetricsPowerOn(411f) GPU:0x9ff5 Port: 0 Did
+2021-03-13 15:46:25.754992-0600:            kAGDCPluginMetricsDisplayInfo(4108) GPU:0x9ff5 Port: 2 dpcd_rev:0x14 max_link_rate:0x14 max_lane_count:0xc2 max_downspread:0x1 downstreamport_present:0x15 mstm_cap:0 number_of_audio_endpoints:0x1
+2021-03-13 15:46:25.755606-0600:            kAGDCPluginMetricsMonitorInfo(4109) GPU:0x9ff5 Port: 2 mfgName:HEC mfgID:0x20a3 productID:0x30
+2021-03-13 15:46:25.770104-0600:                 kAGDCPluginMetricsSyncLT(4104) GPU:0x9ff5 Port: 2 
+2021-03-13 15:46:25.771104-0600:                kAGDCPluginMetricsLTBegin(4106) GPU:0x9ff5 Port: 2 
+2021-03-13 15:46:25.813769-0600:                  kAGDCPluginMetricsLTEnd(4107) GPU:0x9ff5 Port: 2 link_rate:0x14 lane_count:0x82 LT Status:0x1 (OK)
+2021-03-13 15:46:25.838431-0600:              kAGDCPluginMetricsSyncLTEnd(4105) GPU:0x9ff5 Port: 2 link_rate:0x14 lane_count:0x2 LT Status:0x1 (OK)
+2021-03-13 15:46:25.936746-0600:              kAGDCPluginMetricsLightUpDp(410a) GPU:0x9ff5 Port: 1 
+2021-03-13 15:46:25.967691-0600:              kAGDCPluginMetricsLightUpDp(410a) GPU:0x9ff5 Port: 1 
+2021-03-13 15:46:26.131658-0600:                kAGDCPluginMetricsLTBegin(4106) GPU:0x9ff5 Port: 2 
+2021-03-13 15:46:26.174006-0600:                  kAGDCPluginMetricsLTEnd(4107) GPU:0x9ff5 Port: 2 link_rate:0x14 lane_count:0x82 LT Status:0x1 (OK)
+2021-03-13 15:46:26.184344-0600:              kAGDCPluginMetricsLightUpDp(410a) GPU:0x9ff5 Port: 2 
+2021-03-13 15:46:26.224697-0600:            kAGDCPluginMetricsDisplayInfo(4108) GPU:0x9ff5 Port: 2 dpcd_rev:0x14 max_link_rate:0x14 max_lane_count:0xc2 max_downspread:0x1 downstreamport_present:0x15 mstm_cap:0 number_of_audio_endpoints:0x1
+2021-03-13 15:46:26.225376-0600:            kAGDCPluginMetricsMonitorInfo(4109) GPU:0x9ff5 Port: 2 mfgName:HEC mfgID:0x20a3 productID:0x30
+2021-03-13 15:46:26.236191-0600:            kAGDCPluginMetricsDisplayInfo(4108) GPU:0x9ff5 Port: 2 dpcd_rev:0x14 max_link_rate:0x14 max_lane_count:0xc2 max_downspread:0x1 downstreamport_present:0x15 mstm_cap:0 number_of_audio_endpoints:0x1
+2021-03-13 15:46:26.236915-0600:            kAGDCPluginMetricsMonitorInfo(4109) GPU:0x9ff5 Port: 2 mfgName:HEC mfgID:0x20a3 productID:0x30
+2021-03-13 15:46:26.286934-0600:              kAGDCPluginMetricsLightUpDp(410a) GPU:0x9ff5 Port: 1 
+2021-03-13 15:46:26.317691-0600:              kAGDCPluginMetricsLightUpDp(410a) GPU:0x9ff5 Port: 1 
+2021-03-13 15:46:26.451019-0600:              kAGDCPluginMetricsLightUpDp(410a) GPU:0x9ff5 Port: 2 
+2021-03-13 15:46:28.417685-0600:              kAGDCPluginMetricsLightUpDp(410a) GPU:0x9ff5 Port: 2 
+2021-03-13 15:46:28.519966-0600:              kAGDCPluginMetricsLightUpDp(410a) GPU:0x9ff5 Port: 1 
+2021-03-13 15:46:28.550983-0600:              kAGDCPluginMetricsLightUpDp(410a) GPU:0x9ff5 Port: 1 
+2021-03-13 15:46:38.392182-0600:              kAGDCPluginMetricsHDCPStart(410b) GPU:0x9ff5 Port: 2 HDCP version:0x2.0x2 Authenticated Version:0x2 Bcaps:0x3
+2021-03-13 15:46:39.560533-0600:                kAGDCPluginMetricsSPIData(4120) GPU:0x9ff5 Port: 2 2002h-2005h: 0x1 0x4 0x0 0x0	 200Ch-200Fh: 0x77 0x0 0x1 0x3
+2021-03-13 15:46:39.560535-0600:                    kAGDCPluginMetricsSPI(4103) GPU:0x9ff5 Port: 2 Latency(in microsecond) 418
+2021-03-13 15:46:39.566138-0600:     kAGDCPluginMetricsFirstPhaseComplete(410c) GPU:0x9ff5 Port: 2 Status:0 (OK) Stored Km:0x1
+2021-03-13 15:46:39.583733-0600:          kAGDCPluginMetricsLocalityCheck(410d) GPU:0x9ff5 Port: 2 Status:0 (OK)
+2021-03-13 15:46:39.592590-0600:          kAGDCPluginMetricsLocalityCheck(410d) GPU:0x9ff5 Port: 2 Status:0 (OK)
+2021-03-13 15:46:39.955021-0600:                kAGDCPluginMetricsSPIData(4120) GPU:0x9ff5 Port: 2 2002h-2005h: 0x1 0x4 0x0 0x0	 200Ch-200Fh: 0x77 0x0 0x1 0x3
+2021-03-13 15:46:39.955023-0600:                    kAGDCPluginMetricsSPI(4103) GPU:0x9ff5 Port: 2 Latency(in microsecond) 481
+2021-03-13 15:46:39.979340-0600: kAGDCPluginMetricsRepeaterAuthentication(410e) GPU:0x9ff5 Port: 2 Status:0 (OK) Depth 2 Device count 10
+2021-03-13 15:46:39.993040-0600: kAGDCPluginMetricsRepeaterAuthentication(410e) GPU:0x9ff5 Port: 2 Status:0 (OK) Depth 2 Device count 10
+2021-03-13 15:46:40.199858-0600: kAGDCPluginMetricsRepeaterAuthentication(410e) GPU:0x9ff5 Port: 2 Status:0 (OK) Depth 2 Device count 10
+2021-03-13 15:47:01.817689-0600:              kAGDCPluginMetricsLightUpDp(410a) GPU:0x9ff5 Port: 2 
+2021-03-13 15:47:01.951018-0600:              kAGDCPluginMetricsLightUpDp(410a) GPU:0x9ff5 Port: 2 
+2021-03-13 15:47:02.139693-0600:                kAGDCPluginMetricsSPIData(4120) GPU:0x9ff5 Port: 2 2002h-2005h: 0x1 0x4 0x0 0x0	 200Ch-200Fh: 0x77 0x0 0x1 0x3
+2021-03-13 15:47:02.139694-0600:                    kAGDCPluginMetricsSPI(4103) GPU:0x9ff5 Port: 2 Latency(in microsecond) 324
+2021-03-13 15:47:11.925454-0600:              kAGDCPluginMetricsHDCPStart(410b) GPU:0x9ff5 Port: 2 HDCP version:0x2.0x2 Authenticated Version:0x2 Bcaps:0x3
+2021-03-13 15:47:13.101567-0600:                kAGDCPluginMetricsSPIData(4120) GPU:0x9ff5 Port: 2 2002h-2005h: 0x1 0x4 0x0 0x0	 200Ch-200Fh: 0x77 0x0 0x1 0x3
+2021-03-13 15:47:13.101569-0600:                    kAGDCPluginMetricsSPI(4103) GPU:0x9ff5 Port: 2 Latency(in microsecond) 366
+2021-03-13 15:47:13.105556-0600:     kAGDCPluginMetricsFirstPhaseComplete(410c) GPU:0x9ff5 Port: 2 Status:0 (OK) Stored Km:0x1
+2021-03-13 15:47:13.123348-0600:          kAGDCPluginMetricsLocalityCheck(410d) GPU:0x9ff5 Port: 2 Status:0 (OK)
+2021-03-13 15:47:13.131962-0600:          kAGDCPluginMetricsLocalityCheck(410d) GPU:0x9ff5 Port: 2 Status:0 (OK)
+2021-03-13 15:47:13.495204-0600:                kAGDCPluginMetricsSPIData(4120) GPU:0x9ff5 Port: 2 2002h-2005h: 0x1 0x4 0x0 0x0	 200Ch-200Fh: 0x77 0x0 0x1 0x3
+2021-03-13 15:47:13.495207-0600:                    kAGDCPluginMetricsSPI(4103) GPU:0x9ff5 Port: 2 Latency(in microsecond) 451
+2021-03-13 15:47:13.519587-0600: kAGDCPluginMetricsRepeaterAuthentication(410e) GPU:0x9ff5 Port: 2 Status:0 (OK) Depth 2 Device count 10
+2021-03-13 15:47:13.533611-0600: kAGDCPluginMetricsRepeaterAuthentication(410e) GPU:0x9ff5 Port: 2 Status:0 (OK) Depth 2 Device count 10
+2021-03-13 15:47:13.741592-0600: kAGDCPluginMetricsRepeaterAuthentication(410e) GPU:0x9ff5 Port: 2 Status:0 (OK) Depth 2 Device count 10
+2021-03-13 16:47:41.553052-0600:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Will
+2021-03-13 16:47:49.386876-0600:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:0
+2021-03-13 16:47:49.387067-0600:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:1
+2021-03-13 16:47:49.387173-0600:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:2
+2021-03-13 16:47:49.387303-0600:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:3
+2021-03-13 16:47:49.418223-0600:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:4
+2021-03-13 17:02:52.575872-0600:                kAGDCPluginMetricsPowerOn(411f) GPU:0x9ff5 Port: 0 Will	 FB:0
+2021-03-13 17:02:52.817436-0600:                kAGDCPluginMetricsPowerOn(411f) GPU:0x9ff5 Port: 0 Will	 FB:1
+2021-03-13 17:02:52.869225-0600:                kAGDCPluginMetricsPowerOn(411f) GPU:0x9ff5 Port: 0 Will	 FB:2
+2021-03-13 17:02:52.877470-0600:                kAGDCPluginMetricsPowerOn(411f) GPU:0x9ff5 Port: 0 Will	 FB:3
+2021-03-13 17:02:52.886048-0600:                kAGDCPluginMetricsPowerOn(411f) GPU:0x9ff5 Port: 0 Will	 FB:4
+2021-03-13 17:03:45.381261-0600:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:0
+2021-03-13 17:03:45.381452-0600:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:1
+2021-03-13 17:03:45.381555-0600:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:2
+2021-03-13 17:03:45.381673-0600:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:3
+2021-03-13 17:03:45.420042-0600:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:4
+2021-03-13 17:36:01.148442-0600:                kAGDCPluginMetricsPowerOn(411f) GPU:0x9ff5 Port: 0 Will	 FB:0
+2021-03-13 17:36:01.389267-0600:                kAGDCPluginMetricsPowerOn(411f) GPU:0x9ff5 Port: 0 Will	 FB:1
+2021-03-13 17:36:01.442003-0600:                kAGDCPluginMetricsPowerOn(411f) GPU:0x9ff5 Port: 0 Will	 FB:2
+2021-03-13 17:36:01.450386-0600:                kAGDCPluginMetricsPowerOn(411f) GPU:0x9ff5 Port: 0 Will	 FB:3
+2021-03-13 17:36:01.458653-0600:                kAGDCPluginMetricsPowerOn(411f) GPU:0x9ff5 Port: 0 Will	 FB:4
+2021-03-13 17:36:53.397856-0600:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:0
+2021-03-13 17:36:53.398049-0600:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:1
+2021-03-13 17:36:53.398195-0600:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:2
+2021-03-13 17:36:53.398452-0600:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:3
+2021-03-13 17:36:53.425878-0600:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:4
+2021-03-13 19:36:54.096134-0600:                kAGDCPluginMetricsPowerOn(411f) GPU:0x9ff5 Port: 0 Will	 FB:0
+2021-03-13 19:36:54.333462-0600:                kAGDCPluginMetricsPowerOn(411f) GPU:0x9ff5 Port: 0 Will	 FB:1
+2021-03-13 19:36:54.386341-0600:                kAGDCPluginMetricsPowerOn(411f) GPU:0x9ff5 Port: 0 Will	 FB:2
+2021-03-13 19:36:54.394960-0600:                kAGDCPluginMetricsPowerOn(411f) GPU:0x9ff5 Port: 0 Will	 FB:3
+2021-03-13 19:36:54.403591-0600:                kAGDCPluginMetricsPowerOn(411f) GPU:0x9ff5 Port: 0 Will	 FB:4
+2021-03-13 19:38:07.072973-0600:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:0
+2021-03-13 19:38:07.073167-0600:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:1
+2021-03-13 19:38:07.073267-0600:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:2
+2021-03-13 19:38:07.073401-0600:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:3
+2021-03-13 19:38:07.102812-0600:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:4
+2021-03-13 19:53:10.968642-0600:                kAGDCPluginMetricsPowerOn(411f) GPU:0x9ff5 Port: 0 Will	 FB:0
+2021-03-13 19:53:11.209584-0600:                kAGDCPluginMetricsPowerOn(411f) GPU:0x9ff5 Port: 0 Will	 FB:1
+2021-03-13 19:53:11.262252-0600:                kAGDCPluginMetricsPowerOn(411f) GPU:0x9ff5 Port: 0 Will	 FB:2
+2021-03-13 19:53:11.270398-0600:                kAGDCPluginMetricsPowerOn(411f) GPU:0x9ff5 Port: 0 Will	 FB:3
+2021-03-13 19:53:11.278454-0600:                kAGDCPluginMetricsPowerOn(411f) GPU:0x9ff5 Port: 0 Will	 FB:4
+2021-03-13 19:54:03.589537-0600:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:0
+2021-03-13 19:54:03.589732-0600:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:1
+2021-03-13 19:54:03.589840-0600:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:2
+2021-03-13 19:54:03.589986-0600:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:3
+2021-03-13 19:54:03.613152-0600:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:4
+2021-03-13 20:45:08.765580-0600:                kAGDCPluginMetricsPowerOn(411f) GPU:0x9ff5 Port: 0 Will	 FB:0
+2021-03-13 20:45:09.005525-0600:                kAGDCPluginMetricsPowerOn(411f) GPU:0x9ff5 Port: 0 Will	 FB:1
+2021-03-13 20:45:09.058207-0600:                kAGDCPluginMetricsPowerOn(411f) GPU:0x9ff5 Port: 0 Will	 FB:2
+2021-03-13 20:45:09.066274-0600:                kAGDCPluginMetricsPowerOn(411f) GPU:0x9ff5 Port: 0 Will	 FB:3
+2021-03-13 20:45:09.074620-0600:                kAGDCPluginMetricsPowerOn(411f) GPU:0x9ff5 Port: 0 Will	 FB:4
+2021-03-13 20:46:24.553095-0600:                kAGDCPluginMetricsLTBegin(4106) GPU:0x9ff5 Port: 2 
+2021-03-13 20:46:24.593933-0600:                  kAGDCPluginMetricsLTEnd(4107) GPU:0x9ff5 Port: 2 link_rate:0x14 lane_count:0x82 LT Status:0x1 (OK)
+2021-03-13 20:46:24.639709-0600:              kAGDCPluginMetricsLightUpDp(410a) GPU:0x9ff5 Port: 2 
+2021-03-13 20:46:24.873041-0600:              kAGDCPluginMetricsLightUpDp(410a) GPU:0x9ff5 Port: 2 
+2021-03-13 20:46:24.960608-0600:                kAGDCPluginMetricsPowerOn(411f) GPU:0x9ff5 Port: 0 Did
+2021-03-13 20:46:24.982363-0600:            kAGDCPluginMetricsDisplayInfo(4108) GPU:0x9ff5 Port: 2 dpcd_rev:0x14 max_link_rate:0x14 max_lane_count:0xc2 max_downspread:0x1 downstreamport_present:0x15 mstm_cap:0 number_of_audio_endpoints:0x1
+2021-03-13 20:46:24.982960-0600:            kAGDCPluginMetricsMonitorInfo(4109) GPU:0x9ff5 Port: 2 mfgName:HEC mfgID:0x20a3 productID:0x30
+2021-03-13 20:46:40.414660-0600:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Will
+2021-03-13 20:59:36.734721-0600:                kAGDCPluginMetricsLTBegin(4106) GPU:0x9ff5 Port: 2 
+2021-03-13 20:59:36.776192-0600:                  kAGDCPluginMetricsLTEnd(4107) GPU:0x9ff5 Port: 2 link_rate:0x14 lane_count:0x82 LT Status:0x1 (OK)
+2021-03-13 20:59:36.806321-0600:              kAGDCPluginMetricsLightUpDp(410a) GPU:0x9ff5 Port: 2 
+2021-03-13 20:59:37.039665-0600:              kAGDCPluginMetricsLightUpDp(410a) GPU:0x9ff5 Port: 2 
+2021-03-13 20:59:37.147680-0600:                kAGDCPluginMetricsPowerOn(411f) GPU:0x9ff5 Port: 0 Did
+2021-03-13 20:59:37.171815-0600:            kAGDCPluginMetricsDisplayInfo(4108) GPU:0x9ff5 Port: 2 dpcd_rev:0x14 max_link_rate:0x14 max_lane_count:0xc2 max_downspread:0x1 downstreamport_present:0x15 mstm_cap:0 number_of_audio_endpoints:0x1
+2021-03-13 20:59:37.172480-0600:            kAGDCPluginMetricsMonitorInfo(4109) GPU:0x9ff5 Port: 2 mfgName:HEC mfgID:0x20a3 productID:0x30
+2021-03-13 20:59:47.012473-0600:              kAGDCPluginMetricsHDCPStart(410b) GPU:0x9ff5 Port: 2 HDCP version:0x2.0x2 Authenticated Version:0x2 Bcaps:0x3
+2021-03-13 20:59:52.881468-0600:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Will
+2021-03-13 21:29:36.739328-0600:                kAGDCPluginMetricsLTBegin(4106) GPU:0x9ff5 Port: 2 
+2021-03-13 21:29:36.780270-0600:                  kAGDCPluginMetricsLTEnd(4107) GPU:0x9ff5 Port: 2 link_rate:0x14 lane_count:0x82 LT Status:0x1 (OK)
+2021-03-13 21:29:36.805978-0600:              kAGDCPluginMetricsLightUpDp(410a) GPU:0x9ff5 Port: 2 
+2021-03-13 21:29:37.039313-0600:              kAGDCPluginMetricsLightUpDp(410a) GPU:0x9ff5 Port: 2 
+2021-03-13 21:29:37.152492-0600:                kAGDCPluginMetricsPowerOn(411f) GPU:0x9ff5 Port: 0 Did
+2021-03-13 21:29:37.176174-0600:            kAGDCPluginMetricsDisplayInfo(4108) GPU:0x9ff5 Port: 2 dpcd_rev:0x14 max_link_rate:0x14 max_lane_count:0xc2 max_downspread:0x1 downstreamport_present:0x15 mstm_cap:0 number_of_audio_endpoints:0x1
+2021-03-13 21:29:37.177047-0600:            kAGDCPluginMetricsMonitorInfo(4109) GPU:0x9ff5 Port: 2 mfgName:HEC mfgID:0x20a3 productID:0x30
+2021-03-13 21:29:52.914066-0600:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Will
+2021-03-13 21:45:13.640764-0600:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:0
+2021-03-13 21:45:13.640954-0600:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:1
+2021-03-13 21:45:13.641070-0600:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:2
+2021-03-13 21:45:13.641184-0600:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:3
+2021-03-13 21:45:13.675337-0600:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:4
+2021-03-13 22:00:14.667491-0600:                kAGDCPluginMetricsPowerOn(411f) GPU:0x9ff5 Port: 0 Will	 FB:0
+2021-03-13 22:00:14.916000-0600:                kAGDCPluginMetricsPowerOn(411f) GPU:0x9ff5 Port: 0 Will	 FB:1
+2021-03-13 22:00:14.979934-0600:                kAGDCPluginMetricsLTBegin(4106) GPU:0x9ff5 Port: 2 
+2021-03-13 22:00:15.024306-0600:                  kAGDCPluginMetricsLTEnd(4107) GPU:0x9ff5 Port: 2 link_rate:0x14 lane_count:0x82 LT Status:0x1 (OK)
+2021-03-13 22:00:15.083547-0600:              kAGDCPluginMetricsLightUpDp(410a) GPU:0x9ff5 Port: 2 
+2021-03-13 22:00:15.105897-0600:                kAGDCPluginMetricsPowerOn(411f) GPU:0x9ff5 Port: 0 Will	 FB:2
+2021-03-13 22:00:15.114327-0600:                kAGDCPluginMetricsPowerOn(411f) GPU:0x9ff5 Port: 0 Will	 FB:3
+2021-03-13 22:00:15.123272-0600:                kAGDCPluginMetricsPowerOn(411f) GPU:0x9ff5 Port: 0 Will	 FB:4
+2021-03-13 22:00:15.350224-0600:              kAGDCPluginMetricsLightUpDp(410a) GPU:0x9ff5 Port: 2 
+2021-03-13 22:00:16.367415-0600:                kAGDCPluginMetricsPowerOn(411f) GPU:0x9ff5 Port: 0 Did
+2021-03-13 22:00:16.387356-0600:            kAGDCPluginMetricsDisplayInfo(4108) GPU:0x9ff5 Port: 2 dpcd_rev:0x14 max_link_rate:0x14 max_lane_count:0xc2 max_downspread:0x1 downstreamport_present:0x15 mstm_cap:0 number_of_audio_endpoints:0x1
+2021-03-13 22:00:16.388060-0600:            kAGDCPluginMetricsMonitorInfo(4109) GPU:0x9ff5 Port: 2 mfgName:HEC mfgID:0x20a3 productID:0x30
+2021-03-13 22:00:30.250132-0600:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Will
+2021-03-13 22:01:24.218089-0600:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:0
+2021-03-13 22:01:24.218309-0600:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:1
+2021-03-13 22:01:24.218454-0600:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:2
+2021-03-13 22:01:24.218575-0600:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:3
+2021-03-13 22:01:24.252789-0600:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:4
+2021-03-14 00:01:09.567290-0600:                kAGDCPluginMetricsPowerOn(411f) GPU:0x9ff5 Port: 0 Will	 FB:0
+2021-03-14 00:01:09.816163-0600:                kAGDCPluginMetricsPowerOn(411f) GPU:0x9ff5 Port: 0 Will	 FB:1
+2021-03-14 00:01:09.866176-0600:                kAGDCPluginMetricsPowerOn(411f) GPU:0x9ff5 Port: 0 Will	 FB:2
+2021-03-14 00:01:09.873044-0600:                kAGDCPluginMetricsPowerOn(411f) GPU:0x9ff5 Port: 0 Will	 FB:3
+2021-03-14 00:01:09.879846-0600:                kAGDCPluginMetricsPowerOn(411f) GPU:0x9ff5 Port: 0 Will	 FB:4
+2021-03-14 00:02:24.151100-0600:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:0
+2021-03-14 00:02:24.151296-0600:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:1
+2021-03-14 00:02:24.151395-0600:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:2
+2021-03-14 00:02:24.151528-0600:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:3
+2021-03-14 00:02:24.185711-0600:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:4
+2021-03-14 00:17:27.355416-0600:                kAGDCPluginMetricsPowerOn(411f) GPU:0x9ff5 Port: 0 Will	 FB:0
+2021-03-14 00:17:27.594116-0600:                kAGDCPluginMetricsPowerOn(411f) GPU:0x9ff5 Port: 0 Will	 FB:1
+2021-03-14 00:17:27.647462-0600:                kAGDCPluginMetricsPowerOn(411f) GPU:0x9ff5 Port: 0 Will	 FB:2
+2021-03-14 00:17:27.655912-0600:                kAGDCPluginMetricsPowerOn(411f) GPU:0x9ff5 Port: 0 Will	 FB:3
+2021-03-14 00:17:27.664320-0600:                kAGDCPluginMetricsPowerOn(411f) GPU:0x9ff5 Port: 0 Will	 FB:4
+2021-03-14 00:18:19.851292-0600:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:0
+2021-03-14 00:18:19.851481-0600:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:1
+2021-03-14 00:18:19.851580-0600:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:2
+2021-03-14 00:18:19.851716-0600:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:3
+2021-03-14 00:18:19.896804-0600:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:4
+2021-03-14 00:56:11.396150-0600:                kAGDCPluginMetricsPowerOn(411f) GPU:0x9ff5 Port: 0 Will	 FB:0
+2021-03-14 00:56:11.633790-0600:                kAGDCPluginMetricsPowerOn(411f) GPU:0x9ff5 Port: 0 Will	 FB:1
+2021-03-14 00:56:11.686813-0600:                kAGDCPluginMetricsPowerOn(411f) GPU:0x9ff5 Port: 0 Will	 FB:2
+2021-03-14 00:56:11.695569-0600:                kAGDCPluginMetricsPowerOn(411f) GPU:0x9ff5 Port: 0 Will	 FB:3
+2021-03-14 00:56:11.704348-0600:                kAGDCPluginMetricsPowerOn(411f) GPU:0x9ff5 Port: 0 Will	 FB:4
+2021-03-14 00:57:19.017292-0600:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:0
+2021-03-14 00:57:19.017484-0600:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:1
+2021-03-14 00:57:19.017577-0600:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:2
+2021-03-14 00:57:19.017665-0600:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:3
+2021-03-14 00:57:19.037747-0600:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:4
+2021-03-14 01:03:21.332917-0600:                kAGDCPluginMetricsPowerOn(411f) GPU:0x9ff5 Port: 0 Will	 FB:0
+2021-03-14 01:03:21.576709-0600:                kAGDCPluginMetricsPowerOn(411f) GPU:0x9ff5 Port: 0 Will	 FB:1
+2021-03-14 01:03:21.639261-0600:                kAGDCPluginMetricsLTBegin(4106) GPU:0x9ff5 Port: 2 
+2021-03-14 01:03:21.681908-0600:                  kAGDCPluginMetricsLTEnd(4107) GPU:0x9ff5 Port: 2 link_rate:0x14 lane_count:0x82 LT Status:0x1 (OK)
+2021-03-14 01:03:21.744143-0600:              kAGDCPluginMetricsLightUpDp(410a) GPU:0x9ff5 Port: 2 
+2021-03-14 01:03:21.766125-0600:                kAGDCPluginMetricsPowerOn(411f) GPU:0x9ff5 Port: 0 Will	 FB:2
+2021-03-14 01:03:21.774472-0600:                kAGDCPluginMetricsPowerOn(411f) GPU:0x9ff5 Port: 0 Will	 FB:3
+2021-03-14 01:03:21.782612-0600:                kAGDCPluginMetricsPowerOn(411f) GPU:0x9ff5 Port: 0 Will	 FB:4
+2021-03-14 01:03:22.044147-0600:              kAGDCPluginMetricsLightUpDp(410a) GPU:0x9ff5 Port: 2 
+2021-03-14 01:03:23.003747-0600:                kAGDCPluginMetricsPowerOn(411f) GPU:0x9ff5 Port: 0 Did
+2021-03-14 01:03:23.025359-0600:            kAGDCPluginMetricsDisplayInfo(4108) GPU:0x9ff5 Port: 2 dpcd_rev:0x14 max_link_rate:0x14 max_lane_count:0xc2 max_downspread:0x1 downstreamport_present:0x15 mstm_cap:0 number_of_audio_endpoints:0x1
+2021-03-14 01:03:23.026061-0600:            kAGDCPluginMetricsMonitorInfo(4109) GPU:0x9ff5 Port: 2 mfgName:HEC mfgID:0x20a3 productID:0x30
+2021-03-14 01:03:32.017875-0600:              kAGDCPluginMetricsHDCPStart(410b) GPU:0x9ff5 Port: 2 HDCP version:0x2.0x2 Authenticated Version:0x2 Bcaps:0x3
+2021-03-14 01:03:33.188771-0600:                kAGDCPluginMetricsSPIData(4120) GPU:0x9ff5 Port: 2 2002h-2005h: 0x1 0x4 0x0 0x0	 200Ch-200Fh: 0x77 0x0 0x1 0x3
+2021-03-14 01:03:33.188773-0600:                    kAGDCPluginMetricsSPI(4103) GPU:0x9ff5 Port: 2 Latency(in microsecond) 428
+2021-03-14 01:03:33.194144-0600:     kAGDCPluginMetricsFirstPhaseComplete(410c) GPU:0x9ff5 Port: 2 Status:0 (OK) Stored Km:0x1
+2021-03-14 01:03:33.212906-0600:          kAGDCPluginMetricsLocalityCheck(410d) GPU:0x9ff5 Port: 2 Status:0 (OK)
+2021-03-14 01:03:33.222045-0600:          kAGDCPluginMetricsLocalityCheck(410d) GPU:0x9ff5 Port: 2 Status:0 (OK)
+2021-03-14 01:03:33.582585-0600:                kAGDCPluginMetricsSPIData(4120) GPU:0x9ff5 Port: 2 2002h-2005h: 0x1 0x4 0x0 0x0	 200Ch-200Fh: 0x77 0x0 0x1 0x3
+2021-03-14 01:03:33.582587-0600:                    kAGDCPluginMetricsSPI(4103) GPU:0x9ff5 Port: 2 Latency(in microsecond) 427
+2021-03-14 01:03:33.606732-0600: kAGDCPluginMetricsRepeaterAuthentication(410e) GPU:0x9ff5 Port: 2 Status:0 (OK) Depth 2 Device count 10
+2021-03-14 01:03:33.620969-0600: kAGDCPluginMetricsRepeaterAuthentication(410e) GPU:0x9ff5 Port: 2 Status:0 (OK) Depth 2 Device count 10
+2021-03-14 01:03:33.827868-0600: kAGDCPluginMetricsRepeaterAuthentication(410e) GPU:0x9ff5 Port: 2 Status:0 (OK) Depth 2 Device count 10
+2021-03-14 01:29:33.583172-0600:                kAGDCPluginMetricsLTBegin(4106) GPU:0x9ff5 Port: 2 
+2021-03-14 01:29:33.625121-0600:                  kAGDCPluginMetricsLTEnd(4107) GPU:0x9ff5 Port: 2 link_rate:0x14 lane_count:0x82 LT Status:0x1 (OK)
+2021-03-14 01:29:33.644155-0600:              kAGDCPluginMetricsLightUpDp(410a) GPU:0x9ff5 Port: 2 
+2021-03-14 01:29:33.877485-0600:              kAGDCPluginMetricsLightUpDp(410a) GPU:0x9ff5 Port: 2 
+2021-03-14 01:35:58.053210-0600:                kAGDCPluginMetricsLTBegin(4106) GPU:0x9ff5 Port: 2 
+2021-03-14 01:35:58.094256-0600:                  kAGDCPluginMetricsLTEnd(4107) GPU:0x9ff5 Port: 2 link_rate:0x14 lane_count:0x82 LT Status:0x1 (OK)
+2021-03-14 01:35:58.144116-0600:              kAGDCPluginMetricsLightUpDp(410a) GPU:0x9ff5 Port: 2 
+2021-03-14 01:35:58.410775-0600:              kAGDCPluginMetricsLightUpDp(410a) GPU:0x9ff5 Port: 2 
+2021-03-14 01:36:08.384622-0600:              kAGDCPluginMetricsHDCPStart(410b) GPU:0x9ff5 Port: 2 HDCP version:0x2.0x2 Authenticated Version:0x2 Bcaps:0x3
+2021-03-14 01:36:09.563686-0600:                kAGDCPluginMetricsSPIData(4120) GPU:0x9ff5 Port: 2 2002h-2005h: 0x1 0x4 0x0 0x0	 200Ch-200Fh: 0x77 0x0 0x1 0x3
+2021-03-14 01:36:09.563688-0600:                    kAGDCPluginMetricsSPI(4103) GPU:0x9ff5 Port: 2 Latency(in microsecond) 454
+2021-03-14 01:36:09.569385-0600:     kAGDCPluginMetricsFirstPhaseComplete(410c) GPU:0x9ff5 Port: 2 Status:0 (OK) Stored Km:0x1
+2021-03-14 01:36:09.587155-0600:          kAGDCPluginMetricsLocalityCheck(410d) GPU:0x9ff5 Port: 2 Status:0 (OK)
+2021-03-14 01:36:09.596356-0600:          kAGDCPluginMetricsLocalityCheck(410d) GPU:0x9ff5 Port: 2 Status:0 (OK)
+2021-03-14 01:36:09.958417-0600:                kAGDCPluginMetricsSPIData(4120) GPU:0x9ff5 Port: 2 2002h-2005h: 0x1 0x4 0x0 0x0	 200Ch-200Fh: 0x77 0x0 0x1 0x3
+2021-03-14 01:36:09.958419-0600:                    kAGDCPluginMetricsSPI(4103) GPU:0x9ff5 Port: 2 Latency(in microsecond) 349
+2021-03-14 01:36:09.982160-0600: kAGDCPluginMetricsRepeaterAuthentication(410e) GPU:0x9ff5 Port: 2 Status:0 (OK) Depth 2 Device count 10
+2021-03-14 01:36:09.996174-0600: kAGDCPluginMetricsRepeaterAuthentication(410e) GPU:0x9ff5 Port: 2 Status:0 (OK) Depth 2 Device count 10
+2021-03-14 01:36:10.202073-0600: kAGDCPluginMetricsRepeaterAuthentication(410e) GPU:0x9ff5 Port: 2 Status:0 (OK) Depth 2 Device count 10
+2021-03-14 01:36:30.396446-0600:                kAGDCPluginMetricsLTBegin(4106) GPU:0x9ff5 Port: 2 
+2021-03-14 01:36:30.438940-0600:                  kAGDCPluginMetricsLTEnd(4107) GPU:0x9ff5 Port: 2 link_rate:0x14 lane_count:0x82 LT Status:0x1 (OK)
+2021-03-14 01:36:30.444103-0600:              kAGDCPluginMetricsLightUpDp(410a) GPU:0x9ff5 Port: 2 
+2021-03-14 01:36:30.677448-0600:              kAGDCPluginMetricsLightUpDp(410a) GPU:0x9ff5 Port: 2 
+2021-03-14 01:36:40.650958-0600:              kAGDCPluginMetricsHDCPStart(410b) GPU:0x9ff5 Port: 2 HDCP version:0x2.0x2 Authenticated Version:0x2 Bcaps:0x3
+2021-03-14 03:44:00.391399-0500:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Will
+2021-03-14 03:44:16.819453-0500:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:0
+2021-03-14 03:44:16.819677-0500:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:1
+2021-03-14 03:44:16.819804-0500:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:2
+2021-03-14 03:44:16.819918-0500:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:3
+2021-03-14 03:44:16.846421-0500:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:4
+2021-03-14 03:59:19.770158-0500:                kAGDCPluginMetricsPowerOn(411f) GPU:0x9ff5 Port: 0 Will	 FB:0
+2021-03-14 03:59:20.015576-0500:                kAGDCPluginMetricsPowerOn(411f) GPU:0x9ff5 Port: 0 Will	 FB:1
+2021-03-14 03:59:20.068289-0500:                kAGDCPluginMetricsPowerOn(411f) GPU:0x9ff5 Port: 0 Will	 FB:2
+2021-03-14 03:59:20.076567-0500:                kAGDCPluginMetricsPowerOn(411f) GPU:0x9ff5 Port: 0 Will	 FB:3
+2021-03-14 03:59:20.084718-0500:                kAGDCPluginMetricsPowerOn(411f) GPU:0x9ff5 Port: 0 Will	 FB:4
+2021-03-14 04:00:12.279320-0500:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:0
+2021-03-14 04:00:12.279517-0500:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:1
+2021-03-14 04:00:12.279623-0500:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:2
+2021-03-14 04:00:12.279729-0500:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:3
+2021-03-14 04:00:12.319139-0500:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:4
+2021-03-14 04:34:21.741527-0500:                kAGDCPluginMetricsPowerOn(411f) GPU:0x9ff5 Port: 0 Will	 FB:0
+2021-03-14 04:34:21.981786-0500:                kAGDCPluginMetricsPowerOn(411f) GPU:0x9ff5 Port: 0 Will	 FB:1
+2021-03-14 04:34:22.034314-0500:                kAGDCPluginMetricsPowerOn(411f) GPU:0x9ff5 Port: 0 Will	 FB:2
+2021-03-14 04:34:22.042850-0500:                kAGDCPluginMetricsPowerOn(411f) GPU:0x9ff5 Port: 0 Will	 FB:3
+2021-03-14 04:34:22.050983-0500:                kAGDCPluginMetricsPowerOn(411f) GPU:0x9ff5 Port: 0 Will	 FB:4
+2021-03-14 04:35:13.879334-0500:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:0
+2021-03-14 04:35:13.879530-0500:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:1
+2021-03-14 04:35:13.879616-0500:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:2
+2021-03-14 04:35:13.879722-0500:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:3
+2021-03-14 04:35:13.917266-0500:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:4
+2021-03-14 05:37:06.591471-0500:                kAGDCPluginMetricsPowerOn(411f) GPU:0x9ff5 Port: 0 Will	 FB:0
+2021-03-14 05:37:06.843073-0500:                kAGDCPluginMetricsPowerOn(411f) GPU:0x9ff5 Port: 0 Will	 FB:1
+2021-03-14 05:37:06.908280-0500:                kAGDCPluginMetricsLTBegin(4106) GPU:0x9ff5 Port: 2 
+2021-03-14 05:37:06.948958-0500:                  kAGDCPluginMetricsLTEnd(4107) GPU:0x9ff5 Port: 2 link_rate:0x14 lane_count:0x82 LT Status:0x1 (OK)
+2021-03-14 05:37:07.010931-0500:              kAGDCPluginMetricsLightUpDp(410a) GPU:0x9ff5 Port: 2 
+2021-03-14 05:37:07.032906-0500:                kAGDCPluginMetricsPowerOn(411f) GPU:0x9ff5 Port: 0 Will	 FB:2
+2021-03-14 05:37:07.040556-0500:                kAGDCPluginMetricsPowerOn(411f) GPU:0x9ff5 Port: 0 Will	 FB:3
+2021-03-14 05:37:07.048391-0500:                kAGDCPluginMetricsPowerOn(411f) GPU:0x9ff5 Port: 0 Will	 FB:4
+2021-03-14 05:37:07.277623-0500:              kAGDCPluginMetricsLightUpDp(410a) GPU:0x9ff5 Port: 2 
+2021-03-14 05:37:08.267846-0500:                kAGDCPluginMetricsPowerOn(411f) GPU:0x9ff5 Port: 0 Did
+2021-03-14 05:37:08.288481-0500:            kAGDCPluginMetricsDisplayInfo(4108) GPU:0x9ff5 Port: 2 dpcd_rev:0x14 max_link_rate:0x14 max_lane_count:0xc2 max_downspread:0x1 downstreamport_present:0x15 mstm_cap:0 number_of_audio_endpoints:0x1
+2021-03-14 05:37:08.289127-0500:            kAGDCPluginMetricsMonitorInfo(4109) GPU:0x9ff5 Port: 2 mfgName:HEC mfgID:0x20a3 productID:0x30
+2021-03-14 05:37:17.251413-0500:              kAGDCPluginMetricsHDCPStart(410b) GPU:0x9ff5 Port: 2 HDCP version:0x2.0x2 Authenticated Version:0x2 Bcaps:0x3
+2021-03-14 05:37:18.433115-0500:                kAGDCPluginMetricsSPIData(4120) GPU:0x9ff5 Port: 2 2002h-2005h: 0x1 0x4 0x0 0x0	 200Ch-200Fh: 0x77 0x0 0x1 0x3
+2021-03-14 05:37:18.433117-0500:                    kAGDCPluginMetricsSPI(4103) GPU:0x9ff5 Port: 2 Latency(in microsecond) 438
+2021-03-14 05:37:18.438835-0500:     kAGDCPluginMetricsFirstPhaseComplete(410c) GPU:0x9ff5 Port: 2 Status:0 (OK) Stored Km:0x1
+2021-03-14 05:37:18.457764-0500:          kAGDCPluginMetricsLocalityCheck(410d) GPU:0x9ff5 Port: 2 Status:0 (OK)
+2021-03-14 05:37:18.466840-0500:          kAGDCPluginMetricsLocalityCheck(410d) GPU:0x9ff5 Port: 2 Status:0 (OK)
+2021-03-14 05:37:18.827359-0500:                kAGDCPluginMetricsSPIData(4120) GPU:0x9ff5 Port: 2 2002h-2005h: 0x1 0x4 0x0 0x0	 200Ch-200Fh: 0x77 0x0 0x1 0x3
+2021-03-14 05:37:18.827361-0500:                    kAGDCPluginMetricsSPI(4103) GPU:0x9ff5 Port: 2 Latency(in microsecond) 437
+2021-03-14 05:37:18.852449-0500: kAGDCPluginMetricsRepeaterAuthentication(410e) GPU:0x9ff5 Port: 2 Status:0 (OK) Depth 2 Device count 10
+2021-03-14 05:37:18.866777-0500: kAGDCPluginMetricsRepeaterAuthentication(410e) GPU:0x9ff5 Port: 2 Status:0 (OK) Depth 2 Device count 10
+2021-03-14 05:37:19.072280-0500: kAGDCPluginMetricsRepeaterAuthentication(410e) GPU:0x9ff5 Port: 2 Status:0 (OK) Depth 2 Device count 10
+2021-03-14 05:40:02.276266-0500:                kAGDCPluginMetricsLTBegin(4106) GPU:0x9ff5 Port: 2 
+2021-03-14 05:40:02.316977-0500:                  kAGDCPluginMetricsLTEnd(4107) GPU:0x9ff5 Port: 2 link_rate:0x14 lane_count:0x82 LT Status:0x1 (OK)
+2021-03-14 05:40:02.344285-0500:              kAGDCPluginMetricsLightUpDp(410a) GPU:0x9ff5 Port: 2 
+2021-03-14 05:40:02.610954-0500:              kAGDCPluginMetricsLightUpDp(410a) GPU:0x9ff5 Port: 2 
+2021-03-14 05:40:12.584746-0500:              kAGDCPluginMetricsHDCPStart(410b) GPU:0x9ff5 Port: 2 HDCP version:0x2.0x2 Authenticated Version:0x2 Bcaps:0x3
+2021-03-14 05:40:13.764651-0500:                kAGDCPluginMetricsSPIData(4120) GPU:0x9ff5 Port: 2 2002h-2005h: 0x1 0x4 0x0 0x0	 200Ch-200Fh: 0x77 0x0 0x1 0x3
+2021-03-14 05:40:13.764653-0500:                    kAGDCPluginMetricsSPI(4103) GPU:0x9ff5 Port: 2 Latency(in microsecond) 422
+2021-03-14 05:40:13.770990-0500:     kAGDCPluginMetricsFirstPhaseComplete(410c) GPU:0x9ff5 Port: 2 Status:0 (OK) Stored Km:0x1
+2021-03-14 05:40:13.789742-0500:          kAGDCPluginMetricsLocalityCheck(410d) GPU:0x9ff5 Port: 2 Status:0 (OK)
+2021-03-14 05:40:13.798990-0500:          kAGDCPluginMetricsLocalityCheck(410d) GPU:0x9ff5 Port: 2 Status:0 (OK)
+2021-03-14 05:40:14.160880-0500:                kAGDCPluginMetricsSPIData(4120) GPU:0x9ff5 Port: 2 2002h-2005h: 0x1 0x4 0x0 0x0	 200Ch-200Fh: 0x77 0x0 0x1 0x3
+2021-03-14 05:40:14.160882-0500:                    kAGDCPluginMetricsSPI(4103) GPU:0x9ff5 Port: 2 Latency(in microsecond) 433
+2021-03-14 05:40:14.186166-0500: kAGDCPluginMetricsRepeaterAuthentication(410e) GPU:0x9ff5 Port: 2 Status:0 (OK) Depth 2 Device count 10
+2021-03-14 05:40:14.199793-0500: kAGDCPluginMetricsRepeaterAuthentication(410e) GPU:0x9ff5 Port: 2 Status:0 (OK) Depth 2 Device count 10
+2021-03-14 05:40:14.408959-0500: kAGDCPluginMetricsRepeaterAuthentication(410e) GPU:0x9ff5 Port: 2 Status:0 (OK) Depth 2 Device count 10
+2021-03-14 06:40:31.691661-0500:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Will
+2021-03-14 06:40:48.164863-0500:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:0
+2021-03-14 06:40:48.165050-0500:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:1
+2021-03-14 06:40:48.165148-0500:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:2
+2021-03-14 06:40:48.165250-0500:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:3
+2021-03-14 06:40:48.179180-0500:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:4
+2021-03-14 06:55:52.887336-0500:                kAGDCPluginMetricsPowerOn(411f) GPU:0x9ff5 Port: 0 Will	 FB:0
+2021-03-14 06:55:53.124899-0500:                kAGDCPluginMetricsPowerOn(411f) GPU:0x9ff5 Port: 0 Will	 FB:1
+2021-03-14 06:55:53.177750-0500:                kAGDCPluginMetricsPowerOn(411f) GPU:0x9ff5 Port: 0 Will	 FB:2
+2021-03-14 06:55:53.185977-0500:                kAGDCPluginMetricsPowerOn(411f) GPU:0x9ff5 Port: 0 Will	 FB:3
+2021-03-14 06:55:53.194605-0500:                kAGDCPluginMetricsPowerOn(411f) GPU:0x9ff5 Port: 0 Will	 FB:4
+2021-03-14 06:56:45.239908-0500:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:0
+2021-03-14 06:56:45.240101-0500:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:1
+2021-03-14 06:56:45.240203-0500:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:2
+2021-03-14 06:56:45.240348-0500:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:3
+2021-03-14 06:56:45.261530-0500:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:4
+2021-03-14 07:28:21.889612-0500:                kAGDCPluginMetricsPowerOn(411f) GPU:0x9ff5 Port: 0 Will	 FB:0
+2021-03-14 07:28:22.129839-0500:                kAGDCPluginMetricsPowerOn(411f) GPU:0x9ff5 Port: 0 Will	 FB:1
+2021-03-14 07:28:22.193613-0500:                kAGDCPluginMetricsLTBegin(4106) GPU:0x9ff5 Port: 2 
+2021-03-14 07:28:22.236016-0500:                  kAGDCPluginMetricsLTEnd(4107) GPU:0x9ff5 Port: 2 link_rate:0x14 lane_count:0x82 LT Status:0x1 (OK)
+2021-03-14 07:28:22.297370-0500:              kAGDCPluginMetricsLightUpDp(410a) GPU:0x9ff5 Port: 2 
+2021-03-14 07:28:22.318913-0500:                kAGDCPluginMetricsPowerOn(411f) GPU:0x9ff5 Port: 0 Will	 FB:2
+2021-03-14 07:28:22.325947-0500:                kAGDCPluginMetricsPowerOn(411f) GPU:0x9ff5 Port: 0 Will	 FB:3
+2021-03-14 07:28:22.333131-0500:                kAGDCPluginMetricsPowerOn(411f) GPU:0x9ff5 Port: 0 Will	 FB:4
+2021-03-14 07:28:22.564035-0500:              kAGDCPluginMetricsLightUpDp(410a) GPU:0x9ff5 Port: 2 
+2021-03-14 07:28:23.548054-0500:                kAGDCPluginMetricsPowerOn(411f) GPU:0x9ff5 Port: 0 Did
+2021-03-14 07:28:23.569804-0500:            kAGDCPluginMetricsDisplayInfo(4108) GPU:0x9ff5 Port: 2 dpcd_rev:0x14 max_link_rate:0x14 max_lane_count:0xc2 max_downspread:0x1 downstreamport_present:0x15 mstm_cap:0 number_of_audio_endpoints:0x1
+2021-03-14 07:28:23.570482-0500:            kAGDCPluginMetricsMonitorInfo(4109) GPU:0x9ff5 Port: 2 mfgName:HEC mfgID:0x20a3 productID:0x30
+2021-03-14 07:28:32.537852-0500:              kAGDCPluginMetricsHDCPStart(410b) GPU:0x9ff5 Port: 2 HDCP version:0x2.0x2 Authenticated Version:0x2 Bcaps:0x3
+2021-03-14 07:28:33.710335-0500:                kAGDCPluginMetricsSPIData(4120) GPU:0x9ff5 Port: 2 2002h-2005h: 0x1 0x4 0x0 0x0	 200Ch-200Fh: 0x77 0x0 0x1 0x3
+2021-03-14 07:28:33.710337-0500:                    kAGDCPluginMetricsSPI(4103) GPU:0x9ff5 Port: 2 Latency(in microsecond) 441
+2021-03-14 07:28:33.712995-0500:     kAGDCPluginMetricsFirstPhaseComplete(410c) GPU:0x9ff5 Port: 2 Status:0 (OK) Stored Km:0x1
+2021-03-14 07:28:33.730760-0500:          kAGDCPluginMetricsLocalityCheck(410d) GPU:0x9ff5 Port: 2 Status:0 (OK)
+2021-03-14 07:28:33.739026-0500:          kAGDCPluginMetricsLocalityCheck(410d) GPU:0x9ff5 Port: 2 Status:0 (OK)
+2021-03-14 07:28:34.105854-0500:                kAGDCPluginMetricsSPIData(4120) GPU:0x9ff5 Port: 2 2002h-2005h: 0x1 0x4 0x0 0x0	 200Ch-200Fh: 0x77 0x0 0x1 0x3
+2021-03-14 07:28:34.105856-0500:                    kAGDCPluginMetricsSPI(4103) GPU:0x9ff5 Port: 2 Latency(in microsecond) 514
+2021-03-14 07:28:34.120196-0500: kAGDCPluginMetricsRepeaterAuthentication(410e) GPU:0x9ff5 Port: 2 Status:0 (OK) Depth 2 Device count 10
+2021-03-14 07:28:34.132838-0500: kAGDCPluginMetricsRepeaterAuthentication(410e) GPU:0x9ff5 Port: 2 Status:0 (OK) Depth 2 Device count 10
+2021-03-14 07:28:34.336330-0500: kAGDCPluginMetricsRepeaterAuthentication(410e) GPU:0x9ff5 Port: 2 Status:0 (OK) Depth 2 Device count 10
+2021-03-14 08:28:59.940730-0500:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Will
+2021-03-14 08:29:15.799707-0500:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:0
+2021-03-14 08:29:15.799878-0500:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:1
+2021-03-14 08:29:15.799974-0500:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:2
+2021-03-14 08:29:15.800119-0500:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:3
+2021-03-14 08:29:15.832711-0500:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:4
+2021-03-14 08:44:19.122124-0500:                kAGDCPluginMetricsPowerOn(411f) GPU:0x9ff5 Port: 0 Will	 FB:0
+2021-03-14 08:44:19.360533-0500:                kAGDCPluginMetricsPowerOn(411f) GPU:0x9ff5 Port: 0 Will	 FB:1
+2021-03-14 08:44:19.413800-0500:                kAGDCPluginMetricsPowerOn(411f) GPU:0x9ff5 Port: 0 Will	 FB:2
+2021-03-14 08:44:19.422527-0500:                kAGDCPluginMetricsPowerOn(411f) GPU:0x9ff5 Port: 0 Will	 FB:3
+2021-03-14 08:44:19.431111-0500:                kAGDCPluginMetricsPowerOn(411f) GPU:0x9ff5 Port: 0 Will	 FB:4
+2021-03-14 08:45:11.507727-0500:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:0
+2021-03-14 08:45:11.507917-0500:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:1
+2021-03-14 08:45:11.508024-0500:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:2
+2021-03-14 08:45:11.508144-0500:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:3
+2021-03-14 08:45:11.531122-0500:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:4
+2021-03-14 09:16:06.940560-0500:                kAGDCPluginMetricsPowerOn(411f) GPU:0x9ff5 Port: 0 Will	 FB:0
+2021-03-14 09:16:07.180324-0500:                kAGDCPluginMetricsPowerOn(411f) GPU:0x9ff5 Port: 0 Will	 FB:1
+2021-03-14 09:16:07.233558-0500:                kAGDCPluginMetricsPowerOn(411f) GPU:0x9ff5 Port: 0 Will	 FB:2
+2021-03-14 09:16:07.241963-0500:                kAGDCPluginMetricsPowerOn(411f) GPU:0x9ff5 Port: 0 Will	 FB:3
+2021-03-14 09:16:07.250757-0500:                kAGDCPluginMetricsPowerOn(411f) GPU:0x9ff5 Port: 0 Will	 FB:4
+2021-03-14 09:16:59.514909-0500:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:0
+2021-03-14 09:16:59.515126-0500:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:1
+2021-03-14 09:16:59.515244-0500:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:2
+2021-03-14 09:16:59.515347-0500:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:3
+2021-03-14 09:16:59.549940-0500:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:4
+2021-03-14 11:17:00.388422-0500:                kAGDCPluginMetricsPowerOn(411f) GPU:0x9ff5 Port: 0 Will	 FB:0
+2021-03-14 11:17:00.628278-0500:                kAGDCPluginMetricsPowerOn(411f) GPU:0x9ff5 Port: 0 Will	 FB:1
+2021-03-14 11:17:00.679350-0500:                kAGDCPluginMetricsPowerOn(411f) GPU:0x9ff5 Port: 0 Will	 FB:2
+2021-03-14 11:17:00.687398-0500:                kAGDCPluginMetricsPowerOn(411f) GPU:0x9ff5 Port: 0 Will	 FB:3
+2021-03-14 11:17:00.695179-0500:                kAGDCPluginMetricsPowerOn(411f) GPU:0x9ff5 Port: 0 Will	 FB:4
+2021-03-14 11:18:14.738243-0500:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:0
+2021-03-14 11:18:14.738437-0500:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:1
+2021-03-14 11:18:14.738529-0500:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:2
+2021-03-14 11:18:14.738636-0500:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:3
+2021-03-14 11:18:14.764781-0500:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:4
+2021-03-14 11:33:18.331914-0500:                kAGDCPluginMetricsPowerOn(411f) GPU:0x9ff5 Port: 0 Will	 FB:0
+2021-03-14 11:33:18.577531-0500:                kAGDCPluginMetricsPowerOn(411f) GPU:0x9ff5 Port: 0 Will	 FB:1
+2021-03-14 11:33:18.630232-0500:                kAGDCPluginMetricsPowerOn(411f) GPU:0x9ff5 Port: 0 Will	 FB:2
+2021-03-14 11:33:18.638592-0500:                kAGDCPluginMetricsPowerOn(411f) GPU:0x9ff5 Port: 0 Will	 FB:3
+2021-03-14 11:33:18.646904-0500:                kAGDCPluginMetricsPowerOn(411f) GPU:0x9ff5 Port: 0 Will	 FB:4
+2021-03-14 11:34:11.048588-0500:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:0
+2021-03-14 11:34:11.181760-0500:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:1
+2021-03-14 11:34:11.181962-0500:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:2
+2021-03-14 11:34:11.182086-0500:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:3
+2021-03-14 11:34:11.213170-0500:               kAGDCPluginMetricsPowerOff(411e) GPU:0x9ff5 Port: 0 Did	 FB:4
+2021-03-14 11:55:54.869320-0500:                kAGDCPluginMetricsPowerOn(411f) GPU:0x9ff5 Port: 0 Will	 FB:0
+2021-03-14 11:55:55.113776-0500:                kAGDCPluginMetricsPowerOn(411f) GPU:0x9ff5 Port: 0 Will	 FB:1
+2021-03-14 11:55:55.177165-0500:                kAGDCPluginMetricsLTBegin(4106) GPU:0x9ff5 Port: 2 
+2021-03-14 11:55:55.218993-0500:                  kAGDCPluginMetricsLTEnd(4107) GPU:0x9ff5 Port: 2 link_rate:0x14 lane_count:0x82 LT Status:0x1 (OK)
+2021-03-14 11:55:55.281638-0500:              kAGDCPluginMetricsLightUpDp(410a) GPU:0x9ff5 Port: 2 
+2021-03-14 11:55:55.303408-0500:                kAGDCPluginMetricsPowerOn(411f) GPU:0x9ff5 Port: 0 Will	 FB:2
+2021-03-14 11:55:55.310958-0500:                kAGDCPluginMetricsPowerOn(411f) GPU:0x9ff5 Port: 0 Will	 FB:3
+2021-03-14 11:55:55.318957-0500:                kAGDCPluginMetricsPowerOn(411f) GPU:0x9ff5 Port: 0 Will	 FB:4
+2021-03-14 11:55:55.548307-0500:              kAGDCPluginMetricsLightUpDp(410a) GPU:0x9ff5 Port: 2 
+2021-03-14 11:55:56.545844-0500:                kAGDCPluginMetricsPowerOn(411f) GPU:0x9ff5 Port: 0 Did
+2021-03-14 11:55:56.565279-0500:            kAGDCPluginMetricsDisplayInfo(4108) GPU:0x9ff5 Port: 2 dpcd_rev:0x14 max_link_rate:0x14 max_lane_count:0xc2 max_downspread:0x1 downstreamport_present:0x15 mstm_cap:0 number_of_audio_endpoints:0x1
+2021-03-14 11:55:56.565936-0500:            kAGDCPluginMetricsMonitorInfo(4109) GPU:0x9ff5 Port: 2 mfgName:HEC mfgID:0x20a3 productID:0x30
+2021-03-14 11:56:05.522226-0500:              kAGDCPluginMetricsHDCPStart(410b) GPU:0x9ff5 Port: 2 HDCP version:0x2.0x2 Authenticated Version:0x2 Bcaps:0x3
+2021-03-14 11:56:06.703521-0500:                kAGDCPluginMetricsSPIData(4120) GPU:0x9ff5 Port: 2 2002h-2005h: 0x1 0x4 0x0 0x0	 200Ch-200Fh: 0x77 0x0 0x1 0x3
+2021-03-14 11:56:06.703523-0500:                    kAGDCPluginMetricsSPI(4103) GPU:0x9ff5 Port: 2 Latency(in microsecond) 425
+2021-03-14 11:56:06.709537-0500:     kAGDCPluginMetricsFirstPhaseComplete(410c) GPU:0x9ff5 Port: 2 Status:0 (OK) Stored Km:0x1
+2021-03-14 11:56:06.728356-0500:          kAGDCPluginMetricsLocalityCheck(410d) GPU:0x9ff5 Port: 2 Status:0 (OK)
+2021-03-14 11:56:06.737039-0500:          kAGDCPluginMetricsLocalityCheck(410d) GPU:0x9ff5 Port: 2 Status:0 (OK)
+2021-03-14 11:56:07.098572-0500:                kAGDCPluginMetricsSPIData(4120) GPU:0x9ff5 Port: 2 2002h-2005h: 0x1 0x4 0x0 0x0	 200Ch-200Fh: 0x77 0x0 0x1 0x3
+2021-03-14 11:56:07.098574-0500:                    kAGDCPluginMetricsSPI(4103) GPU:0x9ff5 Port: 2 Latency(in microsecond) 434
+2021-03-14 11:56:07.126862-0500: kAGDCPluginMetricsRepeaterAuthentication(410e) GPU:0x9ff5 Port: 2 Status:0 (OK) Depth 2 Device count 10
+### End: Metrics (took 0.005 sec) ############################################
+
+### Start: displaypolicyd ####################################################
+running 123813 sec (started Sat Mar 13 00:38:03 2021, now Sun Mar 14 12:01:36 2021)
+boardID: Mac-551B86E5744E2388
+featureMask: 0x2000
+platformFlags: 0
+extraSupportFlags: 0
+wranglerFlags: 0x44
+launcher[0]: name '1:0:0', state 1, managerState 1, vendor class/id/version 0x5 0x106b 0x10000
+gpu[0]: index=0 state=0x5 (Published) events=() dispPolicyState=0x6 (WaitingForAGDP) dispPolicyLaunchIndex=-1
+gpu 0x314a flags 0xb2000010 (IG,published,quiet,pubSched,pubArmed)
+gpu 0x314a        pci 0x100000293 IOService:/AppleACPIPlatformExpert/PCI0@0/AppleACPIPCI/IGPU@2
+gpu 0x314a       agdc 0x100000629     /AppleIntelFramebufferController/IntelFBClientControl
+gpu 0x314a       gpuc 0x000000000 
+gpu 0x314a agdpclient 0x000000000 
+gpu 0x314a      accel 0x1000005d1     /IntelAccelerator
+gpu 0x314a      fb0:0 0x1000005d5     /AppleIntelFramebuffer@0
+gpu[1]: index=1 state=0x5 (Published) events=() dispPolicyState=0x1 (Managed) dispPolicyLaunchIndex=0
+gpu 0x9ff5 flags 0xbe000020 (DG,published,driversStarted,hasGPUC,quiet,pubSched,pubArmed)
+gpu 0x9ff5        pci 0x100000216 IOService:/AppleACPIPlatformExpert/PCI0@0/AppleACPIPCI/PEG0@1/IOPP/GFX0@0
+gpu 0x9ff5       agdc 0x10000060c     /AtiDeviceControl
+gpu 0x9ff5       gpuc 0x100000593     /AMD9500ControllerWrangler
+gpu 0x9ff5 agdpclient 0x10000060e     /AtiDeviceControl/AppleGraphicsDevicePolicy/AGDPClientControl
+gpu 0x9ff5      accel 0x1000005d8     /AMDRadeonX4000_AMDBaffinGraphicsAccelerator
+gpu 0x9ff5      fb0:0 0x1000005ee     /ATY,Longavi@0/AMDFramebufferVIB
+gpu 0x9ff5      fb1:1 0x1000005f4     /ATY,Longavi@1/AMDFramebufferVIB
+gpu 0x9ff5      fb2:2 0x1000005fa     /ATY,Longavi@2/AMDFramebufferVIB
+gpu 0x9ff5      fb3:3 0x100000600     /ATY,Longavi@3/AMDFramebufferVIB
+gpu 0x9ff5      fb4:4 0x100000606     /ATY,Longavi@4/AMDFramebufferVIB
+gpu[2]: index=2 state=0x5 (Published) events=() dispPolicyState=0x6 (WaitingForAGDP) dispPolicyLaunchIndex=-1
+gpu 0x8000 flags 0xb2000040 (NG,published,quiet,pubSched,pubArmed)
+gpu 0x8000        pci 0x000000000 
+gpu 0x8000       agdc 0x000000000 
+gpu 0x8000       gpuc 0x000000000 
+gpu 0x8000 agdpclient 0x000000000 
+gpu 0x8000      accel 0x000000000 
+gpu 0x8000      fb0:0 0x1000005e4 IOService:/IOResources/DisplayLinkVirtualDevice/DisplayLinkParent0@0/DisplayLinkFramebuffer@0
+gpu 0x8000     fb1:-1 0x100000614 IOService:/IOResources/DisplayLinkVirtualDevice/DisplayLinkParent1@1/DisplayLinkFramebuffer@1
+Version: 5.2.7, Max: 512, counter: 3974, calendar sync: 0x5bd8201c37447/0x1cc01e161b
+Wraparound detected; older entries expired [3974/512]
+GTRACEDATASTREAM traceData = {
+    { 0x67547261, 0x63654461, 0x74614475, 0x6d700000, 0x102, 512, 3974, 5, 2, 7, 7, 56, 1615740956537927, 123482281499 },
+    {
+        { 11694745274922, 0x10000060e, 544, 36, 59, 70, 0x2, 0x0, 0x1 },
+        { 11694745312183, 0x10000060e, 5210, 76, 46, 0, 0x1000000, 0x300000000, 0x0 },
+        { 11694745312309, 0x10000060e, 544, 36, 59, 70, 0x3, 0x0, 0x0 },
+        { 11694745327833, 0x10000060e, 5210, 76, 46, 0, 0x1000000, 0x400000000, 0x0 },
+        { 11694745327882, 0x10000060e, 544, 36, 59, 70, 0x4, 0x0, 0x0 },
+        { 11694745355821, 0x10000060e, 5210, 76, 46, 0, 0x1000000, 0x500000000, 0x0 },
+        { 11694745355875, 0x10000060e, 544, 36, 59, 70, 0x5, 0x0, 0x0 },
+        { 11694745361174, 0x10000060e, 336, 15, 54, 0, 0x0, 0x0, 0x0 },
+        { 11694971468639, 0x0, 46, 39, 0, 0, 0x0, 0x0, 0x0 },
+        { 11694971469521, 0x10000060e, 155, 42, 53, 0, 0x0, 0x7, 0x0 },
+        { 11694971539648, 0x10000060e, 336, 15, 54, 0, 0x0, 0x0, 0x0 },
+        { 11695229007650, 0x0, 46, 39, 0, 0, 0x0, 0x0, 0x0 },
+        { 11695229008679, 0x10000060e, 155, 42, 53, 0, 0x0, 0x7, 0x0 },
+        { 11695229041654, 0x10000060e, 336, 15, 54, 0, 0x0, 0x0, 0x0 },
+        { 11695479298354, 0x0, 46, 39, 0, 0, 0x0, 0x0, 0x0 },
+        { 11695479299628, 0x10000060e, 155, 42, 53, 0, 0x0, 0x7, 0x0 },
+        { 11695479330679, 0x10000060e, 336, 15, 54, 0, 0x0, 0x0, 0x0 },
+        { 11695732196830, 0x0, 46, 39, 0, 0, 0x0, 0x0, 0x0 },
+        { 11695732198617, 0x10000060e, 155, 42, 53, 0, 0x0, 0x7, 0x0 },
+        { 11695732235608, 0x10000060e, 336, 15, 54, 0, 0x0, 0x0, 0x0 },
+        { 11695988443487, 0x0, 46, 39, 0, 0, 0x0, 0x0, 0x0 },
+        { 11695988445450, 0x10000060e, 155, 42, 53, 0, 0x0, 0x7, 0x0 },
+        { 11695988484946, 0x10000060e, 336, 15, 54, 0, 0x0, 0x0, 0x0 },
+        { 11696244624172, 0x0, 46, 39, 0, 0, 0x0, 0x0, 0x0 },
+        { 11696244626128, 0x10000060e, 155, 42, 53, 0, 0x0, 0x7, 0x0 },
+        { 11696244647215, 0x10000060e, 155, 42, 53, 0, 0x0, 0x8, 0x0 },
+        { 11696244670151, 0x10000060e, 435, 40, 60, 49, 0x1, 0x0, 0x10000 },
+        { 11696244670498, 0x10000060e, 435, 40, 60, 49, 0x2, 0x0, 0x10001 },
+        { 11696244670751, 0x10000060e, 435, 40, 60, 49, 0x3, 0x0, 0x0 },
+        { 11696244671085, 0x10000060e, 435, 40, 60, 49, 0x4, 0x0, 0x0 },
+        { 11696244671293, 0x10000060e, 435, 40, 60, 49, 0x5, 0x0, 0x0 },
+        { 11696244672529, 0x10000060e, 336, 15, 54, 0, 0x0, 0x0, 0x0 },
+        { 11699300262388, 0x0, 662, 84, 84, 0, 0x20, 0x20, 0x0 },
+        { 11704285230611, 0x0, 662, 84, 84, 0, 0x0, 0x0, 0x0 },
+        { 11704285593360, 0x0, 685, 88, 56, 53, 0x1, 0x1, 0xe0000210 },
+        { 11704286298383, 0x0, 685, 88, 56, 53, 0x1, 0x0, 0xe0000210 },
+        { 11704300018649, 0x0, 646, 75, 62, 0, 0xe0000280, 0x0, 0x0 },
+        { 11710454259525, 0x10000060e, 1610, 14, 53, 0, 0x0, 0x2, 0x0 },
+        { 11710454274391, 0x10000060e, 155, 42, 53, 0, 0x0, 0x5, 0x0 },
+        { 11710454274839, 0x10000060e, 190, 41, 61, 61, 0x0, 0x1, 0x0 },
+        { 11710454274992, 0x10000060e, 1642, 25, 58, 0, 0x1, 0x0, 0x0 },
+        { 13494294257517, 0x0, 662, 84, 84, 0, 0x20, 0x20, 0x0 },
+        { 13494294388475, 0x0, 646, 75, 62, 0, 0xe0000320, 0x0, 0x0 },
+        { 13494294910332, 0x0, 685, 88, 56, 53, 0x0, 0x4, 0xe0000230 },
+        { 13494301565001, 0x0, 662, 84, 84, 0, 0x30, 0x10, 0x0 },
+        { 13494723362875, 0x0, 646, 75, 62, 0, 0xe0000300, 0x0, 0x0 },
+        { 13494725267502, 0x10000060e, 1610, 14, 53, 0, 0x0, 0x2, 0x0 },
+        { 13494725279068, 0x10000060e, 155, 42, 53, 0, 0x0, 0x5, 0x0 },
+        { 13494725279533, 0x10000060e, 190, 41, 61, 61, 0x0, 0x0, 0x1 },
+        { 13494725279649, 0x10000060e, 1642, 25, 58, 0, 0x0, 0x1, 0x0 },
+        { 13494725333457, 0x0, 228, 1, 43, 0, 0x2, 0xa, 0x0 },
+        { 13494725350499, 0x0, 228, 1, 43, 0, 0x1, 0xfa, 0x0 },
+        { 13494725354495, 0x10000060e, 336, 15, 54, 0, 0x0, 0x0, 0x0 },
+        { 13494739238866, 0x0, 46, 39, 0, 0, 0x1, 0x0, 0x0 },
+        { 13494739239580, 0x10000060e, 155, 42, 53, 0, 0x0, 0x6, 0x0 },
+        { 13494739317633, 0x10000060e, 5210, 76, 46, 0, 0x1000001, 0x200000000, 0x0 },
+        { 13494739317809, 0x10000060e, 431, 40, 60, 49, 0x2, 0x1, 0x100000001 },
+        { 13494739865093, 0x10000060e, 2012, 2, 44, 62, 0x200000000, 0x100000000, 0x0 },
+        { 13494739865214, 0x10000060e, 1975, 35, 50, 69, 0x2, 0x200000002, 0x1 },
+        { 13494740120278, 0x10000060e, 2012, 2, 44, 62, 0x200000000, 0x200000100, 0x0 },
+        { 13494740402817, 0x10000060e, 2012, 2, 44, 62, 0x200000000, 0x200000202, 0x0 },
+        { 13494740403214, 0x10000060e, 2209, 12, 46, 56, 0x0, 0x200000000, 0x14000200007700 },
+        { 13494742091101, 0x10000060e, 431, 40, 60, 49, 0x2, 0x1, 0x100000001 },
+        { 13494742718656, 0x10000060e, 2012, 2, 44, 62, 0x200000000, 0x100000000, 0x0 },
+        { 13494742718793, 0x10000060e, 1975, 35, 50, 69, 0x2, 0x200000002, 0x1 },
+        { 13494743293506, 0x10000060e, 2012, 2, 44, 62, 0x200000000, 0x100000000, 0x0 },
+        { 13494743293640, 0x10000060e, 1975, 35, 50, 69, 0x2, 0x200000002, 0x1 },
+        { 13494743888712, 0x10000060e, 2012, 2, 44, 62, 0x200000000, 0x600000000, 0x0 },
+        { 13494744515324, 0x10000060e, 2012, 2, 44, 62, 0x200000000, 0x10000000e, 0x0 },
+        { 13494745072359, 0x10000060e, 2012, 2, 44, 62, 0x200000000, 0x400000020, 0x0 },
+        { 13494745742026, 0x10000060e, 2012, 2, 44, 62, 0x200000000, 0x1000000060, 0x0 },
+        { 13494746329221, 0x10000060e, 2012, 2, 44, 62, 0x200000000, 0x100000090, 0x0 },
+        { 13494747112865, 0x10000060e, 2012, 2, 44, 62, 0x200000000, 0x1000002200, 0x0 },
+        { 13494747747153, 0x10000060e, 2012, 2, 44, 62, 0x200000000, 0xc00000500, 0x0 },
+        { 13494749836204, 0x10000060e, 5368, 5, 46, 0, 0x1, 0x200000000, 0x0 },
+        { 13494749913294, 0x10000060e, 544, 36, 59, 70, 0x2, 0x0, 0x1 },
+        { 13494750036785, 0x10000060e, 5210, 76, 46, 0, 0x1000000, 0x300000000, 0x0 },
+        { 13494750036975, 0x10000060e, 544, 36, 59, 70, 0x3, 0x0, 0x0 },
+        { 13494750060202, 0x10000060e, 5210, 76, 46, 0, 0x1000000, 0x400000000, 0x0 },
+        { 13494750060270, 0x10000060e, 544, 36, 59, 70, 0x4, 0x0, 0x0 },
+        { 13494750075818, 0x10000060e, 5210, 76, 46, 0, 0x1000000, 0x500000000, 0x0 },
+        { 13494750075873, 0x10000060e, 544, 36, 59, 70, 0x5, 0x0, 0x0 },
+        { 13494750080312, 0x10000060e, 336, 15, 54, 0, 0x0, 0x0, 0x0 },
+        { 13494975848954, 0x0, 46, 39, 0, 0, 0x0, 0x0, 0x0 },
+        { 13494975849679, 0x10000060e, 155, 42, 53, 0, 0x0, 0x7, 0x0 },
+        { 13494975877742, 0x10000060e, 336, 15, 54, 0, 0x0, 0x0, 0x0 },
+        { 13495229937376, 0x0, 46, 39, 0, 0, 0x0, 0x0, 0x0 },
+        { 13495229938388, 0x10000060e, 155, 42, 53, 0, 0x0, 0x7, 0x0 },
+        { 13495229951668, 0x10000060e, 336, 15, 54, 0, 0x0, 0x0, 0x0 },
+        { 13495485375659, 0x0, 46, 39, 0, 0, 0x0, 0x0, 0x0 },
+        { 13495485376805, 0x10000060e, 155, 42, 53, 0, 0x0, 0x7, 0x0 },
+        { 13495485391847, 0x10000060e, 336, 15, 54, 0, 0x0, 0x0, 0x0 },
+        { 13495737792567, 0x0, 46, 39, 0, 0, 0x0, 0x0, 0x0 },
+        { 13495737794358, 0x10000060e, 155, 42, 53, 0, 0x0, 0x7, 0x0 },
+        { 13495737841547, 0x10000060e, 336, 15, 54, 0, 0x0, 0x0, 0x0 },
+        { 13495989872172, 0x0, 46, 39, 0, 0, 0x0, 0x0, 0x0 },
+        { 13495989873875, 0x10000060e, 155, 42, 53, 0, 0x0, 0x7, 0x0 },
+        { 13495989911014, 0x10000060e, 336, 15, 54, 0, 0x0, 0x0, 0x0 },
+        { 13496240019250, 0x0, 46, 39, 0, 0, 0x0, 0x0, 0x0 },
+        { 13496240020706, 0x10000060e, 155, 42, 53, 0, 0x0, 0x7, 0x0 },
+        { 13496240038759, 0x10000060e, 155, 42, 53, 0, 0x0, 0x8, 0x0 },
+        { 13496240059872, 0x10000060e, 435, 40, 60, 49, 0x1, 0x0, 0x10000 },
+        { 13496240060428, 0x10000060e, 435, 40, 60, 49, 0x2, 0x0, 0x10001 },
+        { 13496240060676, 0x10000060e, 435, 40, 60, 49, 0x3, 0x0, 0x0 },
+        { 13496240060959, 0x10000060e, 435, 40, 60, 49, 0x4, 0x0, 0x0 },
+        { 13496240061155, 0x10000060e, 435, 40, 60, 49, 0x5, 0x0, 0x0 },
+        { 13496240062465, 0x10000060e, 336, 15, 54, 0, 0x0, 0x0, 0x0 },
+        { 13499306238335, 0x0, 662, 84, 84, 0, 0x20, 0x20, 0x0 },
+        { 13504289650537, 0x0, 662, 84, 84, 0, 0x0, 0x0, 0x0 },
+        { 13504289971128, 0x0, 685, 88, 56, 53, 0x1, 0x1, 0xe0000210 },
+        { 13504303477594, 0x0, 685, 88, 56, 53, 0x1, 0x0, 0xe0000210 },
+        { 13504303547902, 0x0, 646, 75, 62, 0, 0xe0000280, 0x0, 0x0 },
+        { 13510486867323, 0x10000060e, 1610, 14, 53, 0, 0x0, 0x2, 0x0 },
+        { 13510486882023, 0x10000060e, 155, 42, 53, 0, 0x0, 0x5, 0x0 },
+        { 13510486882469, 0x10000060e, 190, 41, 61, 61, 0x0, 0x1, 0x0 },
+        { 13510486882623, 0x10000060e, 1642, 25, 58, 0, 0x1, 0x0, 0x0 },
+        { 14431881616075, 0x0, 662, 84, 84, 0, 0x20, 0x20, 0x0 },
+        { 14431973539347, 0x0, 646, 75, 62, 0, 0xe0000320, 0x0, 0x0 },
+        { 14431973787319, 0x0, 685, 88, 56, 53, 0x0, 0x4, 0xe0000230 },
+        { 14431977390274, 0x0, 662, 84, 84, 0, 0x30, 0x10, 0x0 },
+        { 14434192414360, 0x10000060e, 1610, 14, 53, 0, 0x0, 0x2, 0x0 },
+        { 14434192424989, 0x10000060e, 155, 42, 53, 0, 0x0, 0x5, 0x0 },
+        { 14434192425422, 0x10000060e, 190, 41, 61, 61, 0x0, 0x0, 0x1 },
+        { 14434192425552, 0x10000060e, 1642, 25, 58, 0, 0x0, 0x1, 0x0 },
+        { 14434192482394, 0x0, 228, 1, 43, 0, 0x2, 0xa, 0x0 },
+        { 14434192506526, 0x0, 228, 1, 43, 0, 0x1, 0xfa, 0x0 },
+        { 14434192514888, 0x10000060e, 336, 15, 54, 0, 0x0, 0x0, 0x0 },
+        { 14434202434410, 0x0, 46, 39, 0, 0, 0x1, 0x0, 0x0 },
+        { 14434202435205, 0x10000060e, 155, 42, 53, 0, 0x0, 0x6, 0x0 },
+        { 14434202542515, 0x10000060e, 5210, 76, 46, 0, 0x1000001, 0x200000000, 0x0 },
+        { 14434202542727, 0x10000060e, 431, 40, 60, 49, 0x2, 0x1, 0x100000001 },
+        { 14434203108632, 0x10000060e, 2012, 2, 44, 62, 0x200000000, 0x100000000, 0x0 },
+        { 14434203108767, 0x10000060e, 1975, 35, 50, 69, 0x2, 0x200000002, 0x1 },
+        { 14434203404121, 0x10000060e, 2012, 2, 44, 62, 0x200000000, 0x200000100, 0x0 },
+        { 14434203721316, 0x10000060e, 2012, 2, 44, 62, 0x200000000, 0x200000202, 0x0 },
+        { 14434203721806, 0x10000060e, 2209, 12, 46, 56, 0x0, 0x200000000, 0x14000200007700 },
+        { 14434205479683, 0x10000060e, 431, 40, 60, 49, 0x2, 0x1, 0x100000001 },
+        { 14434206057891, 0x10000060e, 2012, 2, 44, 62, 0x200000000, 0x100000000, 0x0 },
+        { 14434206058031, 0x10000060e, 1975, 35, 50, 69, 0x2, 0x200000002, 0x1 },
+        { 14434206659003, 0x10000060e, 2012, 2, 44, 62, 0x200000000, 0x100000000, 0x0 },
+        { 14434206659151, 0x10000060e, 1975, 35, 50, 69, 0x2, 0x200000002, 0x1 },
+        { 14434207271663, 0x10000060e, 2012, 2, 44, 62, 0x200000000, 0x600000000, 0x0 },
+        { 14434207824099, 0x10000060e, 2012, 2, 44, 62, 0x200000000, 0x10000000e, 0x0 },
+        { 14434208379897, 0x10000060e, 2012, 2, 44, 62, 0x200000000, 0x400000020, 0x0 },
+        { 14434209095947, 0x10000060e, 2012, 2, 44, 62, 0x200000000, 0x1000000060, 0x0 },
+        { 14434209630300, 0x10000060e, 2012, 2, 44, 62, 0x200000000, 0x100000090, 0x0 },
+        { 14434210332377, 0x10000060e, 2012, 2, 44, 62, 0x200000000, 0x1000002200, 0x0 },
+        { 14434210956234, 0x10000060e, 2012, 2, 44, 62, 0x200000000, 0xc00000500, 0x0 },
+        { 14434213008654, 0x10000060e, 5368, 5, 46, 0, 0x1, 0x200000000, 0x0 },
+        { 14434213036787, 0x10000060e, 544, 36, 59, 70, 0x2, 0x0, 0x1 },
+        { 14434213121640, 0x10000060e, 5210, 76, 46, 0, 0x1000000, 0x300000000, 0x0 },
+        { 14434213121830, 0x10000060e, 544, 36, 59, 70, 0x3, 0x0, 0x0 },
+        { 14434213158476, 0x10000060e, 5210, 76, 46, 0, 0x1000000, 0x400000000, 0x0 },
+        { 14434213158574, 0x10000060e, 544, 36, 59, 70, 0x4, 0x0, 0x0 },
+        { 14434213174058, 0x10000060e, 5210, 76, 46, 0, 0x1000000, 0x500000000, 0x0 },
+        { 14434213174120, 0x10000060e, 544, 36, 59, 70, 0x5, 0x0, 0x0 },
+        { 14434213178215, 0x10000060e, 336, 15, 54, 0, 0x0, 0x0, 0x0 },
+        { 14434318205801, 0x0, 646, 75, 62, 0, 0xe0000300, 0x0, 0x0 },
+        { 14434442945009, 0x0, 46, 39, 0, 0, 0x0, 0x0, 0x0 },
+        { 14434442946613, 0x10000060e, 155, 42, 53, 0, 0x0, 0x7, 0x0 },
+        { 14434442997748, 0x10000060e, 336, 15, 54, 0, 0x0, 0x0, 0x0 },
+        { 14434694368203, 0x0, 46, 39, 0, 0, 0x0, 0x0, 0x0 },
+        { 14434694369119, 0x10000060e, 155, 42, 53, 0, 0x0, 0x7, 0x0 },
+        { 14434694411174, 0x10000060e, 336, 15, 54, 0, 0x0, 0x0, 0x0 },
+        { 14434949884039, 0x0, 46, 39, 0, 0, 0x0, 0x0, 0x0 },
+        { 14434949885641, 0x10000060e, 155, 42, 53, 0, 0x0, 0x7, 0x0 },
+        { 14434949916500, 0x10000060e, 336, 15, 54, 0, 0x0, 0x0, 0x0 },
+        { 14435199504855, 0x0, 46, 39, 0, 0, 0x0, 0x0, 0x0 },
+        { 14435199505908, 0x10000060e, 155, 42, 53, 0, 0x0, 0x7, 0x0 },
+        { 14435199541492, 0x10000060e, 336, 15, 54, 0, 0x0, 0x0, 0x0 },
+        { 14435449182361, 0x0, 46, 39, 0, 0, 0x0, 0x0, 0x0 },
+        { 14435449184120, 0x10000060e, 155, 42, 53, 0, 0x0, 0x7, 0x0 },
+        { 14435449221097, 0x10000060e, 336, 15, 54, 0, 0x0, 0x0, 0x0 },
+        { 14435701940310, 0x0, 46, 39, 0, 0, 0x0, 0x0, 0x0 },
+        { 14435701941895, 0x10000060e, 155, 42, 53, 0, 0x0, 0x7, 0x0 },
+        { 14435701956078, 0x10000060e, 155, 42, 53, 0, 0x0, 0x8, 0x0 },
+        { 14435701973515, 0x10000060e, 435, 40, 60, 49, 0x1, 0x0, 0x10000 },
+        { 14435701973830, 0x10000060e, 435, 40, 60, 49, 0x2, 0x0, 0x10001 },
+        { 14435701974083, 0x10000060e, 435, 40, 60, 49, 0x3, 0x0, 0x0 },
+        { 14435701974611, 0x10000060e, 435, 40, 60, 49, 0x4, 0x0, 0x0 },
+        { 14435701974824, 0x10000060e, 435, 40, 60, 49, 0x5, 0x0, 0x0 },
+        { 14435701975722, 0x10000060e, 336, 15, 54, 0, 0x0, 0x0, 0x0 },
+        { 14436984025039, 0x0, 662, 84, 84, 0, 0x20, 0x20, 0x0 },
+        { 14441884190994, 0x0, 662, 84, 84, 0, 0x0, 0x0, 0x0 },
+        { 14441885008777, 0x0, 685, 88, 56, 53, 0x1, 0x1, 0xe0000210 },
+        { 14441886039227, 0x0, 685, 88, 56, 53, 0x1, 0x0, 0xe0000210 },
+        { 14441900050692, 0x0, 646, 75, 62, 0, 0xe0000280, 0x0, 0x0 },
+        { 14448075147105, 0x10000060e, 1610, 14, 53, 0, 0x0, 0x2, 0x0 },
+        { 14448075165576, 0x10000060e, 155, 42, 53, 0, 0x0, 0x5, 0x0 },
+        { 14448075166128, 0x10000060e, 190, 41, 61, 61, 0x0, 0x1, 0x0 },
+        { 14448075166317, 0x10000060e, 1642, 25, 58, 0, 0x1, 0x0, 0x0 },
+        { 14706345401660, 0x0, 646, 75, 62, 0, 0xe0000320, 0x0, 0x0 },
+        { 14706367023194, 0x0, 685, 88, 56, 53, 0x0, 0x4, 0xe0000230 },
+        { 14706368266170, 0x0, 662, 84, 84, 0, 0x1, 0x1, 0x0 },
+        { 14706531252006, 0x0, 662, 84, 84, 0, 0x11, 0x1, 0x0 },
+        { 14708725897745, 0x10000060e, 1610, 14, 53, 0, 0x0, 0x2, 0x0 },
+        { 14708725907767, 0x10000060e, 155, 42, 53, 0, 0x0, 0x5, 0x0 },
+        { 14708725908238, 0x10000060e, 190, 41, 61, 61, 0x0, 0x0, 0x1 },
+        { 14708725908354, 0x10000060e, 1642, 25, 58, 0, 0x0, 0x1, 0x0 },
+        { 14708725960466, 0x0, 228, 1, 43, 0, 0x2, 0xa, 0x0 },
+        { 14708725981820, 0x0, 228, 1, 43, 0, 0x1, 0xfa, 0x0 },
+        { 14708725995587, 0x10000060e, 336, 15, 54, 0, 0x0, 0x0, 0x0 },
+        { 14708737238883, 0x0, 46, 39, 0, 0, 0x1, 0x0, 0x0 },
+        { 14708737240306, 0x10000060e, 155, 42, 53, 0, 0x0, 0x6, 0x0 },
+        { 14708737392060, 0x10000060e, 5210, 76, 46, 0, 0x1000001, 0x200000000, 0x0 },
+        { 14708737392466, 0x10000060e, 431, 40, 60, 49, 0x2, 0x1, 0x100000001 },
+        { 14708738063938, 0x10000060e, 2012, 2, 44, 62, 0x200000000, 0x100000000, 0x0 },
+        { 14708738064232, 0x10000060e, 1975, 35, 50, 69, 0x2, 0x200000002, 0x1 },
+        { 14708738359310, 0x10000060e, 2012, 2, 44, 62, 0x200000000, 0x200000100, 0x0 },
+        { 14708738656541, 0x10000060e, 2012, 2, 44, 62, 0x200000000, 0x200000202, 0x0 },
+        { 14708738657211, 0x10000060e, 2209, 12, 46, 56, 0x0, 0x200000000, 0x14000200007700 },
+        { 14708740285260, 0x10000060e, 431, 40, 60, 49, 0x2, 0x1, 0x100000001 },
+        { 14708740899479, 0x10000060e, 2012, 2, 44, 62, 0x200000000, 0x100000000, 0x0 },
+        { 14708740899645, 0x10000060e, 1975, 35, 50, 69, 0x2, 0x200000002, 0x1 },
+        { 14708741487297, 0x10000060e, 2012, 2, 44, 62, 0x200000000, 0x100000000, 0x0 },
+        { 14708741487429, 0x10000060e, 1975, 35, 50, 69, 0x2, 0x200000002, 0x1 },
+        { 14708742133801, 0x10000060e, 2012, 2, 44, 62, 0x200000000, 0x600000000, 0x0 },
+        { 14708742765261, 0x10000060e, 2012, 2, 44, 62, 0x200000000, 0x10000000e, 0x0 },
+        { 14708743381288, 0x10000060e, 2012, 2, 44, 62, 0x200000000, 0x400000020, 0x0 },
+        { 14708744121117, 0x10000060e, 2012, 2, 44, 62, 0x200000000, 0x1000000060, 0x0 },
+        { 14708744679879, 0x10000060e, 2012, 2, 44, 62, 0x200000000, 0x100000090, 0x0 },
+        { 14708745490534, 0x10000060e, 2012, 2, 44, 62, 0x200000000, 0x1000002200, 0x0 },
+        { 14708746158773, 0x10000060e, 2012, 2, 44, 62, 0x200000000, 0xc00000500, 0x0 },
+        { 14708748078068, 0x10000060e, 5368, 5, 46, 0, 0x1, 0x200000000, 0x0 },
+        { 14708748097416, 0x10000060e, 544, 36, 59, 70, 0x2, 0x0, 0x1 },
+        { 14708748116270, 0x10000060e, 5210, 76, 46, 0, 0x1000000, 0x300000000, 0x0 },
+        { 14708748116409, 0x10000060e, 544, 36, 59, 70, 0x3, 0x0, 0x0 },
+        { 14708748131755, 0x10000060e, 5210, 76, 46, 0, 0x1000000, 0x400000000, 0x0 },
+        { 14708748131805, 0x10000060e, 544, 36, 59, 70, 0x4, 0x0, 0x0 },
+        { 14708748146869, 0x10000060e, 5210, 76, 46, 0, 0x1000000, 0x500000000, 0x0 },
+        { 14708748146919, 0x10000060e, 544, 36, 59, 70, 0x5, 0x0, 0x0 },
+        { 14708748151245, 0x10000060e, 336, 15, 54, 0, 0x0, 0x0, 0x0 },
+        { 14708848139933, 0x0, 646, 75, 62, 0, 0xe0000300, 0x0, 0x0 },
+        { 14708975976824, 0x0, 46, 39, 0, 0, 0x0, 0x0, 0x0 },
+        { 14708975977611, 0x10000060e, 155, 42, 53, 0, 0x0, 0x7, 0x0 },
+        { 14708975990752, 0x10000060e, 336, 15, 54, 0, 0x0, 0x0, 0x0 },
+        { 14709225729279, 0x0, 46, 39, 0, 0, 0x0, 0x0, 0x0 },
+        { 14709225730128, 0x10000060e, 155, 42, 53, 0, 0x0, 0x7, 0x0 },
+        { 14709225743147, 0x10000060e, 336, 15, 54, 0, 0x0, 0x0, 0x0 },
+        { 14709479367506, 0x0, 46, 39, 0, 0, 0x0, 0x0, 0x0 },
+        { 14709479369530, 0x10000060e, 155, 42, 53, 0, 0x0, 0x7, 0x0 },
+        { 14709479408381, 0x10000060e, 336, 15, 54, 0, 0x0, 0x0, 0x0 },
+        { 14709729350685, 0x0, 46, 39, 0, 0, 0x0, 0x0, 0x0 },
+        { 14709729351477, 0x10000060e, 155, 42, 53, 0, 0x0, 0x7, 0x0 },
+        { 14709729380421, 0x10000060e, 336, 15, 54, 0, 0x0, 0x0, 0x0 },
+        { 14709982082879, 0x0, 46, 39, 0, 0, 0x0, 0x0, 0x0 },
+        { 14709982083978, 0x10000060e, 155, 42, 53, 0, 0x0, 0x7, 0x0 },
+        { 14709982101485, 0x10000060e, 336, 15, 54, 0, 0x0, 0x0, 0x0 },
+        { 14710232805174, 0x0, 46, 39, 0, 0, 0x0, 0x0, 0x0 },
+        { 14710232806946, 0x10000060e, 155, 42, 53, 0, 0x0, 0x7, 0x0 },
+        { 14710232833641, 0x10000060e, 155, 42, 53, 0, 0x0, 0x8, 0x0 },
+        { 14710232844722, 0x10000060e, 435, 40, 60, 49, 0x1, 0x0, 0x10000 },
+        { 14710232844916, 0x10000060e, 435, 40, 60, 49, 0x2, 0x0, 0x10001 },
+        { 14710232845072, 0x10000060e, 435, 40, 60, 49, 0x3, 0x0, 0x0 },
+        { 14710232845362, 0x10000060e, 435, 40, 60, 49, 0x4, 0x0, 0x0 },
+        { 14710232845474, 0x10000060e, 435, 40, 60, 49, 0x5, 0x0, 0x0 },
+        { 14710232846072, 0x10000060e, 336, 15, 54, 0, 0x0, 0x0, 0x0 },
+        { 14711534750512, 0x0, 662, 84, 84, 0, 0x1, 0x1, 0x0 },
+        { 14738329734830, 0x0, 685, 88, 56, 53, 0x1, 0x1, 0xe0000210 },
+        { 14738330117261, 0x0, 662, 84, 84, 0, 0x0, 0x0, 0x0 },
+        { 16279291127633, 0x0, 662, 84, 84, 0, 0x20, 0x20, 0x0 },
+        { 16279292128812, 0x0, 685, 88, 56, 53, 0x0, 0x4, 0xe0000230 },
+        { 16279295831283, 0x0, 662, 84, 84, 0, 0x30, 0x10, 0x0 },
+        { 16284303279970, 0x0, 662, 84, 84, 0, 0x20, 0x20, 0x0 },
+        { 16289294058431, 0x0, 662, 84, 84, 0, 0x0, 0x0, 0x0 },
+        { 16289294458190, 0x0, 685, 88, 56, 53, 0x1, 0x1, 0xe0000210 },
+        { 16663764125303, 0x0, 685, 88, 56, 53, 0x0, 0x4, 0xe0000230 },
+        { 16663765079423, 0x0, 662, 84, 84, 0, 0x1, 0x1, 0x0 },
+        { 16663769917376, 0x0, 662, 84, 84, 0, 0x11, 0x1, 0x0 },
+        { 16668772534965, 0x0, 662, 84, 84, 0, 0x1, 0x1, 0x0 },
+        { 16693995250853, 0x0, 685, 88, 56, 53, 0x1, 0x1, 0xe0000210 },
+        { 16693995422765, 0x0, 662, 84, 84, 0, 0x0, 0x0, 0x0 },
+        { 16696105360659, 0x0, 662, 84, 84, 0, 0x20, 0x20, 0x0 },
+        { 16696105967229, 0x0, 685, 88, 56, 53, 0x0, 0x4, 0xe0000230 },
+        { 16696110412852, 0x0, 662, 84, 84, 0, 0x30, 0x10, 0x0 },
+        { 16701111255945, 0x0, 662, 84, 84, 0, 0x20, 0x20, 0x0 },
+        { 16706107976333, 0x0, 662, 84, 84, 0, 0x0, 0x0, 0x0 },
+        { 16706108782622, 0x0, 685, 88, 56, 53, 0x1, 0x1, 0xe0000210 },
+        { 20739887723873, 0x0, 646, 75, 62, 0, 0xe0000270, 0x0, 0x0 },
+        { 20739936258817, 0x0, 646, 75, 62, 0, 0xe0000280, 0x0, 0x0 },
+        { 20746113466416, 0x10000060e, 1610, 14, 53, 0, 0x0, 0x2, 0x0 },
+        { 20746113484203, 0x10000060e, 155, 42, 53, 0, 0x0, 0x5, 0x0 },
+        { 20746113484679, 0x10000060e, 190, 41, 61, 61, 0x0, 0x1, 0x0 },
+        { 20746113484888, 0x10000060e, 1642, 25, 58, 0, 0x1, 0x0, 0x0 },
+        { 20763101935628, 0x0, 685, 88, 56, 53, 0x1, 0x0, 0xe0000210 },
+        { 20874058891575, 0x0, 646, 75, 62, 0, 0xe0000320, 0x0, 0x0 },
+        { 20874073769609, 0x0, 685, 88, 56, 53, 0x0, 0x4, 0xe0000230 },
+        { 20874080451875, 0x0, 662, 84, 84, 0, 0x1, 0x1, 0x0 },
+        { 20874234686075, 0x0, 662, 84, 84, 0, 0x11, 0x1, 0x0 },
+        { 20876443251144, 0x10000060e, 1610, 14, 53, 0, 0x0, 0x2, 0x0 },
+        { 20876443258599, 0x10000060e, 155, 42, 53, 0, 0x0, 0x5, 0x0 },
+        { 20876443258909, 0x10000060e, 190, 41, 61, 61, 0x0, 0x0, 0x1 },
+        { 20876443259027, 0x10000060e, 1642, 25, 58, 0, 0x0, 0x1, 0x0 },
+        { 20876443297705, 0x0, 228, 1, 43, 0, 0x2, 0xa, 0x0 },
+        { 20876443310572, 0x0, 228, 1, 43, 0, 0x1, 0xfa, 0x0 },
+        { 20876443319233, 0x10000060e, 336, 15, 54, 0, 0x0, 0x0, 0x0 },
+        { 20876454323039, 0x0, 46, 39, 0, 0, 0x1, 0x0, 0x0 },
+        { 20876454323933, 0x10000060e, 155, 42, 53, 0, 0x0, 0x6, 0x0 },
+        { 20876454483071, 0x10000060e, 5210, 76, 46, 0, 0x1000001, 0x200000000, 0x0 },
+        { 20876454483314, 0x10000060e, 431, 40, 60, 49, 0x2, 0x1, 0x100000001 },
+        { 20876455078693, 0x10000060e, 2012, 2, 44, 62, 0x200000000, 0x100000000, 0x0 },
+        { 20876455078841, 0x10000060e, 1975, 35, 50, 69, 0x2, 0x200000002, 0x1 },
+        { 20876455394601, 0x10000060e, 2012, 2, 44, 62, 0x200000000, 0x200000100, 0x0 },
+        { 20876455715928, 0x10000060e, 2012, 2, 44, 62, 0x200000000, 0x200000202, 0x0 },
+        { 20876455716388, 0x10000060e, 2209, 12, 46, 56, 0x0, 0x200000000, 0x14000200007700 },
+        { 20876457323714, 0x10000060e, 431, 40, 60, 49, 0x2, 0x1, 0x100000001 },
+        { 20876457857749, 0x10000060e, 2012, 2, 44, 62, 0x200000000, 0x100000000, 0x0 },
+        { 20876457857847, 0x10000060e, 1975, 35, 50, 69, 0x2, 0x200000002, 0x1 },
+        { 20876458383720, 0x10000060e, 2012, 2, 44, 62, 0x200000000, 0x100000000, 0x0 },
+        { 20876458383773, 0x10000060e, 1975, 35, 50, 69, 0x2, 0x200000002, 0x1 },
+        { 20876458966904, 0x10000060e, 2012, 2, 44, 62, 0x200000000, 0x600000000, 0x0 },
+        { 20876459521438, 0x10000060e, 2012, 2, 44, 62, 0x200000000, 0x10000000e, 0x0 },
+        { 20876460146883, 0x10000060e, 2012, 2, 44, 62, 0x200000000, 0x400000020, 0x0 },
+        { 20876460836509, 0x10000060e, 2012, 2, 44, 62, 0x200000000, 0x1000000060, 0x0 },
+        { 20876461364373, 0x10000060e, 2012, 2, 44, 62, 0x200000000, 0x100000090, 0x0 },
+        { 20876462091648, 0x10000060e, 2012, 2, 44, 62, 0x200000000, 0x1000002200, 0x0 },
+        { 20876462802762, 0x10000060e, 2012, 2, 44, 62, 0x200000000, 0xc00000500, 0x0 },
+        { 20876464487929, 0x10000060e, 5368, 5, 46, 0, 0x1, 0x200000000, 0x0 },
+        { 20876464507445, 0x10000060e, 544, 36, 59, 70, 0x2, 0x0, 0x1 },
+        { 20876464527979, 0x10000060e, 5210, 76, 46, 0, 0x1000000, 0x300000000, 0x0 },
+        { 20876464528101, 0x10000060e, 544, 36, 59, 70, 0x3, 0x0, 0x0 },
+        { 20876464545029, 0x10000060e, 5210, 76, 46, 0, 0x1000000, 0x400000000, 0x0 },
+        { 20876464545089, 0x10000060e, 544, 36, 59, 70, 0x4, 0x0, 0x0 },
+        { 20876464560111, 0x10000060e, 5210, 76, 46, 0, 0x1000000, 0x500000000, 0x0 },
+        { 20876464560164, 0x10000060e, 544, 36, 59, 70, 0x5, 0x0, 0x0 },
+        { 20876464564665, 0x10000060e, 336, 15, 54, 0, 0x0, 0x0, 0x0 },
+        { 20876564373209, 0x0, 646, 75, 62, 0, 0xe0000300, 0x0, 0x0 },
+        { 20876694107169, 0x0, 46, 39, 0, 0, 0x0, 0x0, 0x0 },
+        { 20876694107981, 0x10000060e, 155, 42, 53, 0, 0x0, 0x7, 0x0 },
+        { 20876694142417, 0x10000060e, 336, 15, 54, 0, 0x0, 0x0, 0x0 },
+        { 20876945270094, 0x0, 46, 39, 0, 0, 0x0, 0x0, 0x0 },
+        { 20876945271747, 0x10000060e, 155, 42, 53, 0, 0x0, 0x7, 0x0 },
+        { 20876945301471, 0x10000060e, 336, 15, 54, 0, 0x0, 0x0, 0x0 },
+        { 20877033772733, 0x0, 662, 84, 84, 0, 0x31, 0x1, 0x0 },
+        { 20877195083154, 0x0, 46, 39, 0, 0, 0x0, 0x0, 0x0 },
+        { 20877195084020, 0x10000060e, 155, 42, 53, 0, 0x0, 0x7, 0x0 },
+        { 20877195098901, 0x10000060e, 336, 15, 54, 0, 0x0, 0x0, 0x0 },
+        { 20877447839811, 0x0, 46, 39, 0, 0, 0x0, 0x0, 0x0 },
+        { 20877447840837, 0x10000060e, 155, 42, 53, 0, 0x0, 0x7, 0x0 },
+        { 20877447865542, 0x10000060e, 336, 15, 54, 0, 0x0, 0x0, 0x0 },
+        { 20877697698335, 0x0, 46, 39, 0, 0, 0x0, 0x0, 0x0 },
+        { 20877697699343, 0x10000060e, 155, 42, 53, 0, 0x0, 0x7, 0x0 },
+        { 20877697717193, 0x10000060e, 336, 15, 54, 0, 0x0, 0x0, 0x0 },
+        { 20877950567409, 0x0, 46, 39, 0, 0, 0x0, 0x0, 0x0 },
+        { 20877950568423, 0x10000060e, 155, 42, 53, 0, 0x0, 0x7, 0x0 },
+        { 20877950580002, 0x10000060e, 155, 42, 53, 0, 0x0, 0x8, 0x0 },
+        { 20877950590308, 0x10000060e, 435, 40, 60, 49, 0x1, 0x0, 0x10000 },
+        { 20877950590529, 0x10000060e, 435, 40, 60, 49, 0x2, 0x0, 0x10001 },
+        { 20877950590699, 0x10000060e, 435, 40, 60, 49, 0x3, 0x0, 0x0 },
+        { 20877950590852, 0x10000060e, 435, 40, 60, 49, 0x4, 0x0, 0x0 },
+        { 20877950591042, 0x10000060e, 435, 40, 60, 49, 0x5, 0x0, 0x0 },
+        { 20877950591788, 0x10000060e, 336, 15, 54, 0, 0x0, 0x0, 0x0 },
+        { 20879029380939, 0x0, 662, 84, 84, 0, 0x11, 0x1, 0x0 },
+        { 20879240305990, 0x0, 662, 84, 84, 0, 0x1, 0x1, 0x0 },
+        { 20909067507771, 0x0, 685, 88, 56, 53, 0x1, 0x1, 0xe0000210 },
+        { 20909067612426, 0x0, 662, 84, 84, 0, 0x0, 0x0, 0x0 },
+        { 21050440276116, 0x0, 685, 88, 56, 53, 0x0, 0x4, 0xe0000230 },
+        { 21050441080472, 0x0, 662, 84, 84, 0, 0x1, 0x1, 0x0 },
+        { 21050450776156, 0x0, 662, 84, 84, 0, 0x11, 0x1, 0x0 },
+        { 21055454069520, 0x0, 662, 84, 84, 0, 0x1, 0x1, 0x0 },
+        { 21080663527592, 0x0, 685, 88, 56, 53, 0x1, 0x1, 0xe0000210 },
+        { 21080664126416, 0x0, 662, 84, 84, 0, 0x0, 0x0, 0x0 },
+        { 24673808420151, 0x0, 646, 75, 62, 0, 0xe0000270, 0x0, 0x0 },
+        { 24673832623253, 0x0, 646, 75, 62, 0, 0xe0000280, 0x0, 0x0 },
+        { 24679867088575, 0x10000060e, 1610, 14, 53, 0, 0x0, 0x2, 0x0 },
+        { 24679867100072, 0x10000060e, 155, 42, 53, 0, 0x0, 0x5, 0x0 },
+        { 24679867100561, 0x10000060e, 190, 41, 61, 61, 0x0, 0x1, 0x0 },
+        { 24679867100738, 0x10000060e, 1642, 25, 58, 0, 0x1, 0x0, 0x0 },
+        { 24696901167199, 0x0, 685, 88, 56, 53, 0x1, 0x0, 0xe0000210 },
+        { 24752445939164, 0x0, 646, 75, 62, 0, 0xe0000320, 0x0, 0x0 },
+        { 24752461182213, 0x0, 685, 88, 56, 53, 0x0, 0x4, 0xe0000230 },
+        { 24752464739475, 0x0, 662, 84, 84, 0, 0x1, 0x1, 0x0 },
+        { 24752624316311, 0x0, 662, 84, 84, 0, 0x11, 0x1, 0x0 },
+        { 24754812517458, 0x10000060e, 1610, 14, 53, 0, 0x0, 0x2, 0x0 },
+        { 24754812526708, 0x10000060e, 155, 42, 53, 0, 0x0, 0x5, 0x0 },
+        { 24754812527053, 0x10000060e, 190, 41, 61, 61, 0x0, 0x0, 0x1 },
+        { 24754812527167, 0x10000060e, 1642, 25, 58, 0, 0x0, 0x1, 0x0 },
+        { 24754812701088, 0x0, 228, 1, 43, 0, 0x2, 0xa, 0x0 },
+        { 24754812741794, 0x0, 228, 1, 43, 0, 0x1, 0xfa, 0x0 },
+        { 24754812747162, 0x10000060e, 336, 15, 54, 0, 0x0, 0x0, 0x0 },
+        { 24754824172050, 0x0, 46, 39, 0, 0, 0x1, 0x0, 0x0 },
+        { 24754824172834, 0x10000060e, 155, 42, 53, 0, 0x0, 0x6, 0x0 },
+        { 24754824257864, 0x10000060e, 5210, 76, 46, 0, 0x1000001, 0x200000000, 0x0 },
+        { 24754824258060, 0x10000060e, 431, 40, 60, 49, 0x2, 0x1, 0x100000001 },
+        { 24754824944577, 0x10000060e, 2012, 2, 44, 62, 0x200000000, 0x100000000, 0x0 },
+        { 24754824944713, 0x10000060e, 1975, 35, 50, 69, 0x2, 0x200000002, 0x1 },
+        { 24754825239377, 0x10000060e, 2012, 2, 44, 62, 0x200000000, 0x200000100, 0x0 },
+        { 24754825534728, 0x10000060e, 2012, 2, 44, 62, 0x200000000, 0x200000202, 0x0 },
+        { 24754825535256, 0x10000060e, 2209, 12, 46, 56, 0x0, 0x200000000, 0x14000200007700 },
+        { 24754827156292, 0x10000060e, 431, 40, 60, 49, 0x2, 0x1, 0x100000001 },
+        { 24754827712553, 0x10000060e, 2012, 2, 44, 62, 0x200000000, 0x100000000, 0x0 },
+        { 24754827712675, 0x10000060e, 1975, 35, 50, 69, 0x2, 0x200000002, 0x1 },
+        { 24754828267783, 0x10000060e, 2012, 2, 44, 62, 0x200000000, 0x100000000, 0x0 },
+        { 24754828267912, 0x10000060e, 1975, 35, 50, 69, 0x2, 0x200000002, 0x1 },
+        { 24754828894417, 0x10000060e, 2012, 2, 44, 62, 0x200000000, 0x600000000, 0x0 },
+        { 24754829440695, 0x10000060e, 2012, 2, 44, 62, 0x200000000, 0x10000000e, 0x0 },
+        { 24754830055586, 0x10000060e, 2012, 2, 44, 62, 0x200000000, 0x400000020, 0x0 },
+        { 24754830756801, 0x10000060e, 2012, 2, 44, 62, 0x200000000, 0x1000000060, 0x0 },
+        { 24754831303787, 0x10000060e, 2012, 2, 44, 62, 0x200000000, 0x100000090, 0x0 },
+        { 24754832026182, 0x10000060e, 2012, 2, 44, 62, 0x200000000, 0x1000002200, 0x0 },
+        { 24754832702185, 0x10000060e, 2012, 2, 44, 62, 0x200000000, 0xc00000500, 0x0 },
+        { 24754834755172, 0x10000060e, 5368, 5, 46, 0, 0x1, 0x200000000, 0x0 },
+        { 24754834773285, 0x10000060e, 544, 36, 59, 70, 0x2, 0x0, 0x1 },
+        { 24754834792508, 0x10000060e, 5210, 76, 46, 0, 0x1000000, 0x300000000, 0x0 },
+        { 24754834792651, 0x10000060e, 544, 36, 59, 70, 0x3, 0x0, 0x0 },
+        { 24754834808167, 0x10000060e, 5210, 76, 46, 0, 0x1000000, 0x400000000, 0x0 },
+        { 24754834808237, 0x10000060e, 544, 36, 59, 70, 0x4, 0x0, 0x0 },
+        { 24754834857508, 0x10000060e, 5210, 76, 46, 0, 0x1000000, 0x500000000, 0x0 },
+        { 24754834857724, 0x10000060e, 544, 36, 59, 70, 0x5, 0x0, 0x0 },
+        { 24754834864163, 0x10000060e, 336, 15, 54, 0, 0x0, 0x0, 0x0 },
+        { 24754930249317, 0x0, 646, 75, 62, 0, 0xe0000300, 0x0, 0x0 },
+        { 24755063398222, 0x0, 46, 39, 0, 0, 0x0, 0x0, 0x0 },
+        { 24755063400264, 0x10000060e, 155, 42, 53, 0, 0x0, 0x7, 0x0 },
+        { 24755063438950, 0x10000060e, 336, 15, 54, 0, 0x0, 0x0, 0x0 },
+        { 24755313153650, 0x0, 46, 39, 0, 0, 0x0, 0x0, 0x0 },
+        { 24755313154947, 0x10000060e, 155, 42, 53, 0, 0x0, 0x7, 0x0 },
+        { 24755313174626, 0x10000060e, 336, 15, 54, 0, 0x0, 0x0, 0x0 },
+        { 24755563522281, 0x0, 46, 39, 0, 0, 0x0, 0x0, 0x0 },
+        { 24755563522941, 0x10000060e, 155, 42, 53, 0, 0x0, 0x7, 0x0 },
+        { 24755563534627, 0x10000060e, 336, 15, 54, 0, 0x0, 0x0, 0x0 },
+        { 24755816740639, 0x0, 46, 39, 0, 0, 0x0, 0x0, 0x0 },
+        { 24755816741415, 0x10000060e, 155, 42, 53, 0, 0x0, 0x7, 0x0 },
+        { 24755816751735, 0x10000060e, 336, 15, 54, 0, 0x0, 0x0, 0x0 },
+        { 24756069489881, 0x0, 46, 39, 0, 0, 0x0, 0x0, 0x0 },
+        { 24756069491627, 0x10000060e, 155, 42, 53, 0, 0x0, 0x7, 0x0 },
+        { 24756069530256, 0x10000060e, 336, 15, 54, 0, 0x0, 0x0, 0x0 },
+        { 24756319967462, 0x0, 46, 39, 0, 0, 0x0, 0x0, 0x0 },
+        { 24756319968980, 0x10000060e, 155, 42, 53, 0, 0x0, 0x7, 0x0 },
+        { 24756319986174, 0x10000060e, 155, 42, 53, 0, 0x0, 0x8, 0x0 },
+        { 24756320010724, 0x10000060e, 435, 40, 60, 49, 0x1, 0x0, 0x10000 },
+        { 24756320011063, 0x10000060e, 435, 40, 60, 49, 0x2, 0x0, 0x10001 },
+        { 24756320011307, 0x10000060e, 435, 40, 60, 49, 0x3, 0x0, 0x0 },
+        { 24756320011622, 0x10000060e, 435, 40, 60, 49, 0x4, 0x0, 0x0 },
+        { 24756320011825, 0x10000060e, 435, 40, 60, 49, 0x5, 0x0, 0x0 },
+        { 24756320013303, 0x10000060e, 336, 15, 54, 0, 0x0, 0x0, 0x0 },
+        { 24757625659835, 0x0, 662, 84, 84, 0, 0x1, 0x1, 0x0 },
+        { 24784211216425, 0x0, 685, 88, 56, 53, 0x1, 0x1, 0xe0000210 },
+        { 24784211479540, 0x0, 662, 84, 84, 0, 0x0, 0x0, 0x0 },
+        { 28384883280105, 0x0, 646, 75, 62, 0, 0xe0000270, 0x0, 0x0 },
+        { 28384933569904, 0x0, 646, 75, 62, 0, 0xe0000280, 0x0, 0x0 },
+        { 28391205049231, 0x10000060e, 1610, 14, 53, 0, 0x0, 0x2, 0x0 },
+        { 28391205062154, 0x10000060e, 155, 42, 53, 0, 0x0, 0x5, 0x0 },
+        { 28391205062525, 0x10000060e, 190, 41, 61, 61, 0x0, 0x1, 0x0 },
+        { 28391205062681, 0x10000060e, 1642, 25, 58, 0, 0x1, 0x0, 0x0 },
+        { 28407625467120, 0x0, 685, 88, 56, 53, 0x1, 0x0, 0xe0000210 },
+        { 28653052397879, 0x0, 646, 75, 62, 0, 0xe0000320, 0x0, 0x0 },
+        { 28653052989123, 0x0, 685, 88, 56, 53, 0x0, 0x4, 0xe0000230 },
+        { 28653059503470, 0x0, 662, 84, 84, 0, 0x1, 0x1, 0x0 },
+        { 28653060362508, 0x0, 662, 84, 84, 0, 0x11, 0x1, 0x0 },
+        { 28654870776508, 0x10000060e, 1610, 14, 53, 0, 0x0, 0x2, 0x0 },
+        { 28654870784695, 0x10000060e, 155, 42, 53, 0, 0x0, 0x5, 0x0 },
+        { 28654870785029, 0x10000060e, 190, 41, 61, 61, 0x0, 0x0, 0x1 },
+        { 28654870785128, 0x10000060e, 1642, 25, 58, 0, 0x0, 0x1, 0x0 },
+        { 28654870827118, 0x0, 228, 1, 43, 0, 0x2, 0xa, 0x0 },
+        { 28654870860807, 0x0, 228, 1, 43, 0, 0x1, 0xfa, 0x0 },
+        { 28654870906007, 0x10000060e, 336, 15, 54, 0, 0x0, 0x0, 0x0 },
+        { 28654880962859, 0x0, 46, 39, 0, 0, 0x1, 0x0, 0x0 },
+        { 28654880963542, 0x10000060e, 155, 42, 53, 0, 0x0, 0x6, 0x0 },
+        { 28654881022442, 0x10000060e, 5210, 76, 46, 0, 0x1000001, 0x200000000, 0x0 },
+        { 28654881022682, 0x10000060e, 431, 40, 60, 49, 0x2, 0x1, 0x100000001 },
+        { 28654881579659, 0x10000060e, 2012, 2, 44, 62, 0x200000000, 0x100000000, 0x0 },
+        { 28654881579772, 0x10000060e, 1975, 35, 50, 69, 0x2, 0x200000002, 0x1 },
+        { 28654881870622, 0x10000060e, 2012, 2, 44, 62, 0x200000000, 0x200000100, 0x0 },
+        { 28654882166889, 0x10000060e, 2012, 2, 44, 62, 0x200000000, 0x200000202, 0x0 },
+        { 28654882167350, 0x10000060e, 2209, 12, 46, 56, 0x0, 0x200000000, 0x14000200007700 },
+        { 28654883790274, 0x10000060e, 431, 40, 60, 49, 0x2, 0x1, 0x100000001 },
+        { 28654884345529, 0x10000060e, 2012, 2, 44, 62, 0x200000000, 0x100000000, 0x0 },
+        { 28654884345667, 0x10000060e, 1975, 35, 50, 69, 0x2, 0x200000002, 0x1 },
+        { 28654884889059, 0x10000060e, 2012, 2, 44, 62, 0x200000000, 0x100000000, 0x0 },
+        { 28654884889149, 0x10000060e, 1975, 35, 50, 69, 0x2, 0x200000002, 0x1 },
+        { 28654885518798, 0x10000060e, 2012, 2, 44, 62, 0x200000000, 0x600000000, 0x0 },
+        { 28654886061633, 0x10000060e, 2012, 2, 44, 62, 0x200000000, 0x10000000e, 0x0 },
+        { 28654886653224, 0x10000060e, 2012, 2, 44, 62, 0x200000000, 0x400000020, 0x0 },
+        { 28654887373253, 0x10000060e, 2012, 2, 44, 62, 0x200000000, 0x1000000060, 0x0 },
+        { 28654887901850, 0x10000060e, 2012, 2, 44, 62, 0x200000000, 0x100000090, 0x0 },
+        { 28654888616259, 0x10000060e, 2012, 2, 44, 62, 0x200000000, 0x1000002200, 0x0 },
+        { 28654889276391, 0x10000060e, 2012, 2, 44, 62, 0x200000000, 0xc00000500, 0x0 },
+        { 28654890822763, 0x10000060e, 5368, 5, 46, 0, 0x1, 0x200000000, 0x0 },
+        { 28654890838221, 0x10000060e, 544, 36, 59, 70, 0x2, 0x0, 0x1 },
+        { 28654890855503, 0x10000060e, 5210, 76, 46, 0, 0x1000000, 0x300000000, 0x0 },
+        { 28654890855652, 0x10000060e, 544, 36, 59, 70, 0x3, 0x0, 0x0 },
+        { 28654890870983, 0x10000060e, 5210, 76, 46, 0, 0x1000000, 0x400000000, 0x0 },
+        { 28654890871036, 0x10000060e, 544, 36, 59, 70, 0x4, 0x0, 0x0 },
+        { 28654890885705, 0x10000060e, 5210, 76, 46, 0, 0x1000000, 0x500000000, 0x0 },
+        { 28654890885756, 0x10000060e, 544, 36, 59, 70, 0x5, 0x0, 0x0 },
+        { 28654890889554, 0x10000060e, 336, 15, 54, 0, 0x0, 0x0, 0x0 },
+        { 28654987448566, 0x0, 646, 75, 62, 0, 0xe0000300, 0x0, 0x0 },
+        { 28655122275075, 0x0, 46, 39, 0, 0, 0x0, 0x0, 0x0 },
+        { 28655122275834, 0x10000060e, 155, 42, 53, 0, 0x0, 0x7, 0x0 },
+        { 28655122286767, 0x10000060e, 336, 15, 54, 0, 0x0, 0x0, 0x0 },
+        { 28655372532399, 0x0, 46, 39, 0, 0, 0x0, 0x0, 0x0 },
+        { 28655372533219, 0x10000060e, 155, 42, 53, 0, 0x0, 0x7, 0x0 },
+        { 28655372545178, 0x10000060e, 336, 15, 54, 0, 0x0, 0x0, 0x0 },
+        { 28655623414880, 0x0, 46, 39, 0, 0, 0x0, 0x0, 0x0 },
+        { 28655623416706, 0x10000060e, 155, 42, 53, 0, 0x0, 0x7, 0x0 },
+        { 28655623453056, 0x10000060e, 336, 15, 54, 0, 0x0, 0x0, 0x0 },
+        { 28655873640410, 0x0, 46, 39, 0, 0, 0x0, 0x0, 0x0 },
+        { 28655873641237, 0x10000060e, 155, 42, 53, 0, 0x0, 0x7, 0x0 },
+        { 28655873652221, 0x10000060e, 336, 15, 54, 0, 0x0, 0x0, 0x0 },
+        { 28656127090951, 0x0, 46, 39, 0, 0, 0x0, 0x0, 0x0 },
+        { 28656127092766, 0x10000060e, 155, 42, 53, 0, 0x0, 0x7, 0x0 },
+        { 28656127130329, 0x10000060e, 336, 15, 54, 0, 0x0, 0x0, 0x0 },
+        { 28656381679650, 0x0, 46, 39, 0, 0, 0x0, 0x0, 0x0 },
+        { 28656381681611, 0x10000060e, 155, 42, 53, 0, 0x0, 0x7, 0x0 },
+        { 28656381701940, 0x10000060e, 155, 42, 53, 0, 0x0, 0x8, 0x0 },
+        { 28656381722868, 0x10000060e, 435, 40, 60, 49, 0x1, 0x0, 0x10000 },
+        { 28656381723205, 0x10000060e, 435, 40, 60, 49, 0x2, 0x0, 0x10001 },
+        { 28656381723460, 0x10000060e, 435, 40, 60, 49, 0x3, 0x0, 0x0 },
+        { 28656381723775, 0x10000060e, 435, 40, 60, 49, 0x4, 0x0, 0x0 },
+        { 28656381723986, 0x10000060e, 435, 40, 60, 49, 0x5, 0x0, 0x0 },
+        { 28656381724834, 0x10000060e, 336, 15, 54, 0, 0x0, 0x0, 0x0 },
+        { 28658057926538, 0x0, 662, 84, 84, 0, 0x1, 0x1, 0x0 },
+    }
+};
+### End: displaypolicyd (took 0.005 sec) #####################################
+
+### Start: Devices ###########################################################
+### Start: AGDC[1] 0x1000005b8 ###############################################
+IOService:/IOResources/AppleGPUWrangler
+Vendor: Apple [0000106b]: AppleGPUWrangler [8 10000] (0)
+### End: AGDC[1] 0x1000005b8 (took 0.000 sec) ################################
+
+### Start: AGDC[2] 0x100000591 ###############################################
+IOService:/AppleACPIPlatformExpert/GMUX/AppleMuxControl/AGDCMuxClientControl
+Vendor: AppleMuxControl [0000106b]: AppleMuxControl [9 10000] (0)
+### End: AGDC[2] 0x100000591 (took 0.000 sec) ################################
+
+### Start: AGDC[3] 0x100000593 ###############################################
+IOService:/AppleACPIPlatformExpert/PCI0@0/AppleACPIPCI/PEG0@1/IOPP/GFX0@0/AMD9500ControllerWrangler
+Vendor: AMD [00001002]: GPURoot [7 30000] (0)
+### End: AGDC[3] 0x100000593 (took 0.000 sec) ################################
+
+### Start: AGDC[4] 0x10000060c ###############################################
+IOService:/AppleACPIPlatformExpert/PCI0@0/AppleACPIPCI/PEG0@1/IOPP/GFX0@0/AtiDeviceControl
+See 0x10000060e
+### End: AGDC[4] 0x10000060c (took 0.000 sec) ################################
+
+### Start: AGDC[5] 0x10000060e ###############################################
+IOService:/AppleACPIPlatformExpert/PCI0@0/AppleACPIPCI/PEG0@1/IOPP/GFX0@0/AtiDeviceControl/AppleGraphicsDevicePolicy/AGDPClientControl
+Vendor: AMD [00001002]: DiscreteGPU [2 30000] (0)
+--BEGIN Device Dump--
+Name	AMD9500Controller
+Initialized	Yes
+Enabled	Yes
+Aperature Mode	1 
+WSRV: Support	Supported
+IOP: Support	Supported
+IOP: Activity	Active
+AGDC: Support	Supported
+AGDC: Registered	Registered
+Primary Display	1 
+Connection Seed	1
+Memory (Video)	2147483648 Bytes ( 2048 MB )
+Memory (Aperture)	268435456 Bytes ( 256 MB )
+Memory (Reserved)	3145728 Bytes ( 3 MB )
+Memory (Reg Aperture)	262144 Bytes ( 256 KB )
+Device Info	device: 67ef, A11
+Current V.Clk 0	540000 kHz
+Current V.Clk 1	400000 kHz
+Current Memory Clock	300 MHz
+Current Engine Clock	218 MHz
+MASK: Supported Connect Flags	0x100
+MASK: Disabled Connectors	0
+MASK: Disabled Connections	0
+MASK: Connectors Changed	0
+MASK: Drivers Pending Changes	0
+MASK: DriversPendingASetMode	0
+MASK: ActiveInternalConnector	0x1
+Temperature	35 C
+Num Framebuffers	5
+Mirrored	No
+Registered Displays	1
+Registered Displays (DP)	1
+Registered Displays (DIG)	1 - Map: 0x1
+Registered VRAM	35651584 Bytes ( 34 MB )
+Power Play Ceiling	0
+Power Play Floor	0
+Power Play Forced	0
+Power Play Supported	Yes
+Power Play Thermal	No
+Chip Device Id	0x67ef
+Chip ATI Rev	0x1
+Boot S.Clk	2139 MHz
+Boot M.Clk	3000 MHz
+Min D.Clk 0	0 MHz
+Min D.Clk 1	0 MHz
+Spread Spectrum	sclk:0 (per cent)
+Cursor Bytes	0xc0000
+Apple RGB MUX	No
+Apple MUX State	0 (0:CRTC, 1:TV)
+Project Name	Longavi
+Power Play	DICT	8
+Power Levels	min:0, max:16, count:16
+Current Power Level	hw:0, sw:0
+TDP Table	min:0, max:35, count:16
+TDP HW Limit	35
+Initialized	YES
+Is Asleep	NO
+ForceMaxClocks	NO
+AllDisplaysInSync	NO
+ASIC Info	DICT	11
+Famild ID	130
+Device ID	0x67ef
+ATI Revision Number	1
+Emulated Revision Number	90
+PCI Revision ID	199
+PCI Address	1:0:0
+FB Base	0
+FB Top	0x7fffffff
+MEM SIZE: Local Framebuffer	2048 MB
+MEM SIZE: Aperture	256 MB
+MEM SIZE: Register Aperture	256 KB
+Shared Surface Info	DICT	5
+Shared Surface @ 0	DICT	8
+Mode	0
+Master Index	0
+Controller Map	0
+Controller Num	0
+Rotation Flags	0
+Number of Tiles	0 x 0
+Tile2Crtc Map	0:0, 1:0, 2:0, 3:0, 4:0, 5:0.
+Crtc2Tile Map	0:0, 1:0, 2:0, 3:0, 4:0, 5:0.
+Shared Surface @ 1	DICT	8
+Mode	0
+Master Index	0
+Controller Map	0
+Controller Num	0
+Rotation Flags	0
+Number of Tiles	0 x 0
+Tile2Crtc Map	0:0, 1:0, 2:0, 3:0, 4:0, 5:0.
+Crtc2Tile Map	0:0, 1:0, 2:0, 3:0, 4:0, 5:0.
+Shared Surface @ 2	DICT	8
+Mode	0
+Master Index	0
+Controller Map	0
+Controller Num	0
+Rotation Flags	0
+Number of Tiles	0 x 0
+Tile2Crtc Map	0:0, 1:0, 2:0, 3:0, 4:0, 5:0.
+Crtc2Tile Map	0:0, 1:0, 2:0, 3:0, 4:0, 5:0.
+Shared Surface @ 3	DICT	8
+Mode	0
+Master Index	0
+Controller Map	0
+Controller Num	0
+Rotation Flags	0
+Number of Tiles	0 x 0
+Tile2Crtc Map	0:0, 1:0, 2:0, 3:0, 4:0, 5:0.
+Crtc2Tile Map	0:0, 1:0, 2:0, 3:0, 4:0, 5:0.
+Shared Surface @ 4	DICT	8
+Mode	0
+Master Index	0
+Controller Map	0
+Controller Num	0
+Rotation Flags	0
+Number of Tiles	0 x 0
+Tile2Crtc Map	0:0, 1:0, 2:0, 3:0, 4:0, 5:0.
+Crtc2Tile Map	0:0, 1:0, 2:0, 3:0, 4:0, 5:0.
+Interrupts	DICT	18
+Interrupt Port0	DICT	 30
+Interrupt Name	V.Blank
+Index	0
+Ignore?	No
+On By Default?	No
+Should Notify Callback?	Yes
+HW Enabled?	Yes
+Pulse-Based?	Yes
+Ack Is Write Only	No
+Enable Reg Readback	Yes
+Interrupt Type	"vblx" --> 0x76626c78
+Interrupt Name	V.Sync
+Index	0
+Ignore?	No
+On By Default?	No
+Should Notify Callback?	Yes
+HW Enabled?	No
+Pulse-Based?	Yes
+Ack Is Write Only	No
+Enable Reg Readback	Yes
+Interrupt Type	"vsnc" --> 0x76736e63
+Interrupt Name	V.Update
+Index	0
+Ignore?	No
+On By Default?	Yes
+Should Notify Callback?	Yes
+HW Enabled?	Yes
+Pulse-Based?	Yes
+Ack Is Write Only	Yes
+Enable Reg Readback	No
+Interrupt Type	"vbl " --> 0x76626c20
+Interrupt Port1	DICT	 30
+Interrupt Name	V.Blank
+Index	1
+Ignore?	No
+On By Default?	No
+Should Notify Callback?	Yes
+HW Enabled?	Yes
+Pulse-Based?	Yes
+Ack Is Write Only	No
+Enable Reg Readback	Yes
+Interrupt Type	"vblx" --> 0x76626c78
+Interrupt Name	V.Sync
+Index	1
+Ignore?	No
+On By Default?	No
+Should Notify Callback?	Yes
+HW Enabled?	No
+Pulse-Based?	Yes
+Ack Is Write Only	No
+Enable Reg Readback	Yes
+Interrupt Type	"vsnc" --> 0x76736e63
+Interrupt Name	V.Update
+Index	1
+Ignore?	No
+On By Default?	Yes
+Should Notify Callback?	Yes
+HW Enabled?	Yes
+Pulse-Based?	Yes
+Ack Is Write Only	Yes
+Enable Reg Readback	No
+Interrupt Type	"vbl " --> 0x76626c20
+Interrupt Port2	DICT	 30
+Interrupt Name	V.Blank
+Index	2
+Ignore?	No
+On By Default?	No
+Should Notify Callback?	Yes
+HW Enabled?	Yes
+Pulse-Based?	Yes
+Ack Is Write Only	No
+Enable Reg Readback	Yes
+Interrupt Type	"vblx" --> 0x76626c78
+Interrupt Name	V.Sync
+Index	2
+Ignore?	No
+On By Default?	No
+Should Notify Callback?	Yes
+HW Enabled?	No
+Pulse-Based?	Yes
+Ack Is Write Only	No
+Enable Reg Readback	Yes
+Interrupt Type	"vsnc" --> 0x76736e63
+Interrupt Name	V.Update
+Index	2
+Ignore?	No
+On By Default?	Yes
+Should Notify Callback?	Yes
+HW Enabled?	Yes
+Pulse-Based?	Yes
+Ack Is Write Only	Yes
+Enable Reg Readback	No
+Interrupt Type	"vbl " --> 0x76626c20
+Interrupt Port3	DICT	 30
+Interrupt Name	V.Blank
+Index	3
+Ignore?	No
+On By Default?	No
+Should Notify Callback?	Yes
+HW Enabled?	Yes
+Pulse-Based?	Yes
+Ack Is Write Only	No
+Enable Reg Readback	Yes
+Interrupt Type	"vblx" --> 0x76626c78
+Interrupt Name	V.Sync
+Index	3
+Ignore?	No
+On By Default?	No
+Should Notify Callback?	Yes
+HW Enabled?	No
+Pulse-Based?	Yes
+Ack Is Write Only	No
+Enable Reg Readback	Yes
+Interrupt Type	"vsnc" --> 0x76736e63
+Interrupt Name	V.Update
+Index	3
+Ignore?	No
+On By Default?	Yes
+Should Notify Callback?	Yes
+HW Enabled?	Yes
+Pulse-Based?	Yes
+Ack Is Write Only	Yes
+Enable Reg Readback	No
+Interrupt Type	"vbl " --> 0x76626c20
+Interrupt Port4	DICT	 30
+Interrupt Name	V.Blank
+Index	4
+Ignore?	No
+On By Default?	No
+Should Notify Callback?	Yes
+HW Enabled?	Yes
+Pulse-Based?	Yes
+Ack Is Write Only	No
+Enable Reg Readback	Yes
+Interrupt Type	"vblx" --> 0x76626c78
+Interrupt Name	V.Sync
+Index	4
+Ignore?	No
+On By Default?	No
+Should Notify Callback?	Yes
+HW Enabled?	No
+Pulse-Based?	Yes
+Ack Is Write Only	No
+Enable Reg Readback	Yes
+Interrupt Type	"vsnc" --> 0x76736e63
+Interrupt Name	V.Update
+Index	4
+Ignore?	No
+On By Default?	Yes
+Should Notify Callback?	Yes
+HW Enabled?	Yes
+Pulse-Based?	Yes
+Ack Is Write Only	Yes
+Enable Reg Readback	No
+Interrupt Type	"vbl " --> 0x76626c20
+Interrupt Port5	DICT	 30
+Interrupt Name	V.Blank
+Index	5
+Ignore?	No
+On By Default?	No
+Should Notify Callback?	Yes
+HW Enabled?	No
+Pulse-Based?	Yes
+Ack Is Write Only	No
+Enable Reg Readback	Yes
+Interrupt Type	"vblx" --> 0x76626c78
+Interrupt Name	V.Sync
+Index	5
+Ignore?	No
+On By Default?	No
+Should Notify Callback?	Yes
+HW Enabled?	No
+Pulse-Based?	Yes
+Ack Is Write Only	No
+Enable Reg Readback	Yes
+Interrupt Type	"vsnc" --> 0x76736e63
+Interrupt Name	V.Update
+Index	5
+Ignore?	No
+On By Default?	Yes
+Should Notify Callback?	Yes
+HW Enabled?	Yes
+Pulse-Based?	Yes
+Ack Is Write Only	Yes
+Enable Reg Readback	No
+Interrupt Type	"vbl " --> 0x76626c20
+Line Buffers	DICT	5
+LineBuffers @ 0	DICT	10
+LB Index	0
+LB Offset	0 (0)
+LB Size	24595 (0x6013)
+Using 100 %	Yes
+Max Number of Lines	8
+Current LB Depth	4 (30 bpp)
+Number of Entries	5124
+Line Buffer Capabilities	0xf
+HW State @ 0	DICT	5
+Source Window	3840 x 2160
+Destination Window	2880 x 1620
+Scaling Taps	1 x 1
+Line Buffer Depth	4 - 30 bpp
+Interlaced	No
+SW State @ 0	DICT	5
+Source Window	3840 x 2160
+Destination Window	2880 x 1620
+Scaling Taps	1 x 1
+Line Buffer Depth	4 - 30 bpp
+Interlaced	No
+LineBuffers @ 1	DICT	10
+LB Index	1
+LB Offset	2048 (0x800)
+LB Size	24595 (0x6013)
+Using 100 %	Yes
+Max Number of Lines	6
+Current LB Depth	4 (30 bpp)
+Number of Entries	5124
+Line Buffer Capabilities	0xf
+HW State @ 1	DICT	5
+Source Window	3840 x 2160
+Destination Window	3840 x 2160
+Scaling Taps	1 x 1
+Line Buffer Depth	4 - 30 bpp
+Interlaced	No
+SW State @ 1	DICT	5
+Source Window	3840 x 2160
+Destination Window	3840 x 2160
+Scaling Taps	1 x 1
+Line Buffer Depth	4 - 30 bpp
+Interlaced	No
+LineBuffers @ 2	DICT	9
+LB Index	2
+LB Offset	4096 (0x1000)
+LB Size	24595 (0x6013)
+Using 100 %	Yes
+Current LB Depth	4 (30 bpp)
+Number of Entries	5124
+Line Buffer Capabilities	0xf
+HW State @ 2	DICT	5
+Source Window	0 x 0
+Destination Window	0 x 0
+Scaling Taps	0 x 0
+Line Buffer Depth	4 - 30 bpp
+Interlaced	No
+SW State @ 2	DICT	5
+Source Window	0 x 0
+Destination Window	0 x 0
+Scaling Taps	0 x 0
+Line Buffer Depth	4 - 30 bpp
+Interlaced	No
+LineBuffers @ 3	DICT	9
+LB Index	3
+LB Offset	38912 (0x9800)
+LB Size	24595 (0x6013)
+Using 100 %	Yes
+Current LB Depth	4 (30 bpp)
+Number of Entries	5124
+Line Buffer Capabilities	0xf
+HW State @ 3	DICT	5
+Source Window	0 x 0
+Destination Window	0 x 0
+Scaling Taps	0 x 0
+Line Buffer Depth	4 - 30 bpp
+Interlaced	No
+SW State @ 3	DICT	5
+Source Window	0 x 0
+Destination Window	0 x 0
+Scaling Taps	0 x 0
+Line Buffer Depth	4 - 30 bpp
+Interlaced	No
+LineBuffers @ 4	DICT	9
+LB Index	4
+LB Offset	40960 (0xa000)
+LB Size	24595 (0x6013)
+Using 100 %	Yes
+Current LB Depth	4 (30 bpp)
+Number of Entries	5124
+Line Buffer Capabilities	0xf
+HW State @ 4	DICT	5
+Source Window	0 x 0
+Destination Window	0 x 0
+Scaling Taps	0 x 0
+Line Buffer Depth	4 - 30 bpp
+Interlaced	No
+SW State @ 4	DICT	5
+Source Window	0 x 0
+Destination Window	0 x 0
+Scaling Taps	0 x 0
+Line Buffer Depth	4 - 30 bpp
+Interlaced	No
+Connector Assigner	DICT	13
+Connector@1	DICT	39
+Is Online	Yes
+Active Connection Type	DP
+Connected Connection Type	DP
+Current Panel Type	DIGITAL
+Supported Connection	0x100
+Use hw i2c	No
+Link Sense Line	DDC 2
+Link UNIPHY	UNIPHY A
+Link DIG Number	DIG A
+Link HPD Num	HPD 2
+Type	DISPLAY PORT
+Active CRTCs	0: A 
+Connected drivers	0: 1 
+Connected CRTCs	0:1 
+Required ScanOuts	0:1 Total:1.
+Change Event	 -1 
+Priority Index	1
+PLL Index	6
+Has EDID	Yes
+Is EMC Display	No
+Use Internal	No
+Use Internal EDID Caching	No
+Use Single Link Only	Yes
+Use RGB On YUV	No
+Use Backlight	No
+Use Clamshell	No
+Use Hdcp	Yes
+Supports DP MST	Yes
+Use Apple RGB MUX	No
+Use DAC Auto Calibration	No
+Forced to CRTC Number	CRTC 2
+Forced to DIG_FE for MST Device	DIG_FE D
+Connector Features	0x3043020100
+Current DP Train Params 1	DICT	15
+DisplayPort Version	12
+Link Lanes	2 {2,2}
+Link Rate (Mbps)	5400 {5400,5400}
+Link Bits	24 {24,24}
+Voltage Swing (Level)	{2,2,0,0}
+Pre-Emphasis (Level)	{0,0,0,0}
+Spread	Enabled
+Enhanced Framing	Enabled
+Scrambler	Enabled
+MST	Disabled
+No Mst	YES
+Force Training Times	YES
+Force Framing	YES
+Force Bit-Depth Range	YES
+Force EQ Training Pattern	YES
+Target DP Train Params 1	DICT	15
+DisplayPort Version	12
+Link Lanes	2 {2,2}
+Link Rate (Mbps)	5400 {5400,5400}
+Link Bits	24 {24,24}
+Voltage Swing (Level)	{0,0,0,0}
+Pre-Emphasis (Level)	{0,0,0,0}
+Spread	Enabled
+Enhanced Framing	Enabled
+Scrambler	Enabled
+MST	Disabled
+No Mst	YES
+Force Training Times	YES
+Force Framing	YES
+Force Bit-Depth Range	YES
+Force EQ Training Pattern	YES
+Active Info 00 1	DICT	16
+Connected	Yes
+Dual Link	No
+Coherent	No
+MST	No
+Connection Type	DP
+Pixel Clock	297000 kHz
+Lane Count	2
+Link Clock	540000 kHz
+Link Bits	24 bpc
+CRTC Index	1
+PLL Index	6
+Backlight Freq	0 Hz
+Link Format	RGB
+DIG FE	A
+Number of Devices	1
+Timing	DICT	21
+Display Mode	80001002
+Refresh Rate (Calculated)	30 Hz
+Refresh Rate (Stored)	0.0 Hz
+Window (Active)	3840 x 2160
+Window (Scaled)	0 x 0
+Scaled Inset	0 x 0
+Pixel Clock	297000000 Hz
+Scaler Flags	0
+Signal Config	0
+Blanking	560 x 90
+Border {left,right}	{0, 0}
+Border {top,bottom}	{0, 0}
+Sync Offset (h, v)	176 x 8
+Sync Pulse Width (h, v)	88, 10
+Sync Config (h, v)	+ x +
+Num Links	1
+VB Extension	0
+Pixel Encoding	1 (RGB444)
+Bits Per Color Component	2 (8 bpc)
+Colorimetry	128 (BT.709)
+Dynamic Range	1 (SDR)
+
+--END Device Dump--
+### End: AGDC[5] 0x10000060e (took 0.005 sec) ################################
+
+### Start: AGDC[6] 0x100000629 ###############################################
+IOService:/AppleACPIPlatformExpert/PCI0@0/AppleACPIPCI/IGPU@2/AppleIntelFramebufferController/IntelFBClientControl
+Vendor: AppleIntelFramebufferController [0000106b]: IntegratedGPU [1 10000] (0)
+### End: AGDC[6] 0x100000629 (took 0.126 sec) ################################
+
+### End: Devices (took 0.127 sec) ############################################
+
+### Start: mpxdiagnose #######################################################
+### End: mpxdiagnose (took 0.007 sec) ########################################
+
+
+
+================================================================================
+Warning: output to stderr (2) bypassed collector
+================================================================================
+Error: AUX CMD: 69330,2 = Success, 1
+================================================================================
+
+
+AGDCDiagnose completed in 0.402902 seconds
+
